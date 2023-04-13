@@ -1,0 +1,136 @@
+
+<div class="mt-3">
+  <mat-accordion >
+    <mat-expansion-panel hideToggle expanded>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+            <mat-icon>face</mat-icon>
+            <span>
+              PERSONAL DATA
+            </span>
+            
+          </div>
+          
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <ng-container [ngTemplateOutlet]="personalData"></ng-container>
+  
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
+
+
+<ng-template #personalData>
+  <div class="personal-info" fxLayout="column" fxLayoutGap="20px">
+    <form [formGroup]="personalFg">
+
+    
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
+        <mat-form-field fxFlex="30">
+          <mat-label>First Name</mat-label>
+          <input matInput required
+            placeholder="e.g. Juan">
+          <mat-hint>Required</mat-hint>
+        </mat-form-field>
+      
+        <mat-form-field fxFlex="27">
+          <mat-label>Middle Name</mat-label>
+          <input matInput
+            placeholder="e.g. Dalisay">
+        </mat-form-field>
+      
+        <mat-form-field fxFlex="30">
+          <mat-label>Last Name</mat-label>
+          <input matInput required
+            placeholder="e.g. Dela Cruz">
+          <mat-hint>Required</mat-hint>
+        </mat-form-field>
+      
+        <mat-form-field fxFlex="15">
+          <mat-label>Ext.</mat-label>
+          <input matInput
+            placeholder="e.g. Jr.">
+        </mat-form-field>
+      </div>
+    
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
+        <mat-form-field fxFlex="30">
+          <mat-label>College</mat-label>
+          <input matInput required 
+            formControlName="college" 
+            placeholder="e.g. College of Computer Studies"
+            [matAutocomplete]="collegeAutoComplete">
+            
+          <mat-autocomplete autoActiveFirstOption #collegeAutoComplete="matAutocomplete" panelWidth="auto">
+            <mat-option *ngFor="let option of filteredCollege | async" [value]="option.description">
+              <div fxLayout="column">
+                <span>{{option.name}}</span>
+                <span class="option-description">{{option.description}}</span>
+              </div>
+            </mat-option>
+          </mat-autocomplete>
+          <mat-hint>Required {{personalFg.get('college').valid}}</mat-hint>
+        </mat-form-field>
+    
+        <mat-form-field fxFlex="15">
+          <mat-label>Course & Year</mat-label>
+          <input matInput required 
+            formControlName="course" 
+            placeholder="e.g. BSCS 4"
+            [matAutocomplete]="coursesAutoComplete">
+            
+          <mat-autocomplete autoActiveFirstOption #coursesAutoComplete="matAutocomplete" panelWidth="auto">
+            <mat-option *ngFor="let option of filteredCourses | async" [value]="option.name">
+              <div fxLayout="column">
+                <span>{{option.name}}</span>
+                <span class="option-description">{{option.description}} - {{option.year}}</span>
+              </div>
+            </mat-option>
+          </mat-autocomplete>
+          <mat-hint>Required {{personalFg.get('course').valid}}</mat-hint>
+        </mat-form-field>
+    
+        <mat-form-field fxFlex="15">
+          <mat-label>Date of Birth</mat-label>
+          <input matInput required [matDatepicker]="birthPicker" placeholder="e.g. 4/19/2000">
+          <mat-hint>Required</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="birthPicker"></mat-datepicker-toggle>
+          <mat-datepicker #birthPicker></mat-datepicker>
+        </mat-form-field>
+    
+        <mat-form-field fxFlex="17">
+          <mat-label>Gender</mat-label>
+          <input matInput required>
+          <mat-hint>Required</mat-hint>
+        </mat-form-field>
+    
+        <mat-form-field fxFlex="25">
+          <mat-label>Civil Status</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </div>
+    
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
+        <mat-form-field fxFlex="15">
+          <mat-label>Blood Type</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field fxFlex="35">
+          <mat-label>Place of Birth</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field fxFlex="25">
+          <mat-label>Religion</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field fxFlex="25">
+          <mat-label>Nationality</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </div>
+    </form>
+    
+  </div>
+</ng-template>
+

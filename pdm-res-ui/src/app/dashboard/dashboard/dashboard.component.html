@@ -1,0 +1,25 @@
+
+<div fxLayout="column" fxLayoutAlign="center center" class="dashboard">
+  <div class="welcome">{{welcomeMessage}}</div>
+  <div *ngFor="let service of services" class="services" (click)="onServiceSelect(service.link)">
+    {{service.label}}
+  </div>
+
+  
+</div>
+
+<ng-template #registrationInfo>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Register / Sign-in To Proceed</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>You need to register first before accessing our serivices or sign-in if you are already registered.</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="onRegister()">REGISTER</button>
+      <button mat-button>SIGN-IN</button>
+    </mat-card-actions>
+  </mat-card>
+
+</ng-template>
