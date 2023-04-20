@@ -1,0 +1,75 @@
+<div fxLayout="column" fxLayoutGap="20px" [formGroup]="dentalFg">
+  <span>
+    Please check the appropriate box below
+  </span>
+  <div fxLayout="column">
+    <div>
+      <mat-checkbox formControlName="onMedicalTreatment">Are you now under current medical treatment?</mat-checkbox>
+    </div>
+    <div fxLayout="row" fxLayout.xs="column" 
+      fxLayoutAlign="space-between center" fxLayoutAlign.xs="start start">
+      <mat-checkbox fxFlex="40" formControlName="hasBadExperience">Did you have any bad experiences in any dental clinics?</mat-checkbox>
+      <mat-form-field fxFlex="60" *ngIf="dentalFg.get('hasBadExperience').value">
+        <mat-label>Please specify</mat-label>
+        <input matInput
+          required
+          placeholder="e.g. Extracted wrong tooth"
+          formControlName="hasBadExperienceDet">
+        <mat-hint>Required</mat-hint>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-checkbox formControlName="hasUnusualReaction">Have you ever experienced an unusual reaction to Dental Anesthetic?</mat-checkbox>
+    </div>
+    <div>
+      <mat-checkbox formControlName="isBleedProfusely">Do you bleed profusely during or after surgery or tooth surgery?</mat-checkbox>
+    </div>
+    <div>
+      <mat-checkbox formControlName="hasUndergoneSurgery">Have you undergone any major operation or surgery?</mat-checkbox>
+    </div>
+    <div>
+      <mat-checkbox formControlName="hasAllergicReactions">Do you have allergic reactions to any foods or medicines?</mat-checkbox>
+    </div>
+    <div fxLayout="row" fxLayout.xs="column" 
+      fxLayoutAlign="space-between center" fxLayoutAlign.xs="start start">
+      <mat-checkbox fxFlex="40" formControlName="hasMedication">Are you taking any drug or medication?</mat-checkbox>
+      <mat-form-field fxFlex="60" *ngIf="dentalFg.get('hasMedication').value">
+        <mat-label>Please specify</mat-label>
+        <input matInput
+          required
+          placeholder="e.g. Hypertension maintenance"
+          formControlName="hasMedicationDet">
+      </mat-form-field>
+    </div>
+    <div fxLayout="column" class="mt-2 mb-2 ms-3">
+      <span>Do you have any:</span>
+      <div fxLayout="row wrap">
+        <div *ngFor="let condition of dentalConditions" fxFlex="33">
+          <mat-checkbox [formControlName]="condition.controlKey">{{condition.name}}</mat-checkbox>
+        </div>
+      </div>
+    </div>
+    <div>
+      <mat-checkbox>Do you experience shortness of breath when climbing upstairs?</mat-checkbox>
+    </div>
+    <div>
+      <mat-checkbox>Do you have wounds or breaks in the skin that does not heal?</mat-checkbox>
+    </div>
+    <div>
+      <mat-checkbox>Are you on a special diet?</mat-checkbox>
+    </div>
+    <div>
+      <mat-checkbox>(Women) are you pregnant?</mat-checkbox>
+    </div>
+    <div>
+      <mat-checkbox>(Women) are you having your monthly period right now?</mat-checkbox>
+    </div>
+    <div class="mt-4" fxLayout="column">
+      <span class="warning-label">Please check this to move to Next Step</span>
+      <mat-checkbox formControlName="remarksCheck">
+        I do you hereby consent the performance upon myself/spouse/son/daughter/others of all dental procedures, operations and/or treatment that may be considered necessary to restore my oral and dental health.
+        This consent is given voluntarily and whatever result of any intervention or treatment maybe, I absolve my dentist from all liability.        
+      </mat-checkbox>
+    </div>
+  </div>
+</div>

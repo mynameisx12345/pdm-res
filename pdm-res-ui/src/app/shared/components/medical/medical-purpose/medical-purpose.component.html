@@ -1,0 +1,9 @@
+<div fxLayout="column" [formGroup]="medicalPurposeFg">
+  <mat-checkbox formControlName="medicalExam">Medical Examination</mat-checkbox>
+  <mat-checkbox formControlName="medicalClearance">Medical Clearance</mat-checkbox>
+  <mat-checkbox formControlName="others">Others</mat-checkbox>
+  <mat-form-field *ngIf="medicalPurposeFg.get('others').value">
+    <mat-label>Specify Details</mat-label>
+    <input matInput formControlName="othersDet">
+  </mat-form-field>
+</div>

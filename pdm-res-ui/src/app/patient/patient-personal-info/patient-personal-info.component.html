@@ -1,24 +1,132 @@
-
-<div class="mt-3">
+<div class="mt-3 mb-3" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="20px">
   <mat-accordion >
     <mat-expansion-panel hideToggle expanded>
       <mat-expansion-panel-header>
         <mat-panel-title>
-          <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
-            <mat-icon>face</mat-icon>
-            <span>
-              PERSONAL DATA
-            </span>
-            
+          <div fxLayout="row" fxLayoutAlign="space-between center">
+            <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <mat-icon>face</mat-icon>
+              <span>
+                PERSONAL DATA
+              </span>
+            </div>
           </div>
-          
         </mat-panel-title>
+        <mat-panel-description fxLayout="row" fxLayoutAlign="end center">
+          <mat-icon color="warn" *ngIf="!personalFg.valid">warning</mat-icon>
+      </mat-panel-description>
       </mat-expansion-panel-header>
       <ng-container [ngTemplateOutlet]="personalData"></ng-container>
-  
+    </mat-expansion-panel>
+
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <div fxLayout="row" fxLayoutAlign="space-between center">
+            <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <mat-icon>account_circle</mat-icon>
+              <span>
+                ACCOUNT INFO
+              </span>
+            </div>
+          </div>
+        </mat-panel-title>
+        <mat-panel-description fxLayout="row" fxLayoutAlign="end center">
+          <mat-icon color="warn" *ngIf="!accountFg.valid">warning</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <ng-container [ngTemplateOutlet]="accountInfo"></ng-container>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <div fxLayout="row" fxLayoutAlign="space-between center">
+            <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <mat-icon>contacts</mat-icon>
+              <span>
+                CONTACT DETAILS
+              </span>
+            </div>
+          </div>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <ng-container [ngTemplateOutlet]="contactDetails"></ng-container>
     </mat-expansion-panel>
   </mat-accordion>
+
+  <div fxLayout="row" fxLayoutAlign="center center" class="w-75" fxLayoutGap="20px">
+    <button mat-raised-button color="accent" class="ps-5 pe-5" 
+      [disabled]="!personalFg.valid || !accountFg.valid"
+      (click)="onSubmitRegistration()">
+      Save
+    </button>
+    <button mat-raised-button color="primary" (click)="cancelRegistration()">Cancel</button>
+  </div>
 </div>
+
+<ng-template #contactDetails>
+  <div class="personal-info" fxLayout="column" fxLayoutGap="20px">
+    <form [formGroup]="contactFg">
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
+        <mat-form-field fxFlex="60">
+          <mat-label>Present Address</mat-label>
+          <input matInput
+            placeholder="e.g. Tibiao, Antique"
+            formControlName="address">
+        </mat-form-field>
+      
+        <mat-form-field fxFlex="40">
+          <mat-label>Contact Number</mat-label>
+          <input matInput
+            placeholder="e.g. 09xx-xxxx-xxx"
+            formControlName="contactNumber">
+        </mat-form-field>
+      </div>
+  
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
+        <mat-form-field fxFlex="60">
+          <mat-label>Contact Person (in case of emergency)</mat-label>
+          <input matInput
+            placeholder="e.g. Maria Dela Cruz"
+            formControlName="contactPerson">
+        </mat-form-field>
+      
+        <mat-form-field fxFlex="40">
+          <mat-label>Contact Number</mat-label>
+          <input matInput
+            placeholder="e.g. 09xx-xxxx-xxx"
+            formControlName="contactPerNumber">
+        </mat-form-field>
+      </div>
+    </form>
+    
+  </div>
+</ng-template>
+
+<ng-template #accountInfo>
+  <div class="personal-info" fxLayout="column" fxLayoutGap="20px">
+    <form [formGroup]="accountFg">
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
+        <mat-form-field fxFlex="60">
+          <mat-label>E-mail</mat-label>
+          <input matInput required
+            placeholder="e.g. juandelacruz@mymail.com"
+            formControlName="email">
+          <mat-hint>Required</mat-hint>
+        </mat-form-field>
+      
+        <mat-form-field fxFlex="40">
+          <mat-label>Password</mat-label>
+          <input matInput required type="password"
+            formControlName="password">
+          <mat-hint>Required</mat-hint>
+        </mat-form-field>
+      </div>
+    </form>
+    
+  </div>
+</ng-template>
 
 
 <ng-template #personalData>
@@ -30,27 +138,31 @@
         <mat-form-field fxFlex="30">
           <mat-label>First Name</mat-label>
           <input matInput required
-            placeholder="e.g. Juan">
+            placeholder="e.g. Juan"
+            formControlName="firstname">
           <mat-hint>Required</mat-hint>
         </mat-form-field>
       
         <mat-form-field fxFlex="27">
           <mat-label>Middle Name</mat-label>
           <input matInput
-            placeholder="e.g. Dalisay">
+            placeholder="e.g. Dalisay"
+            formControlName="middlename">
         </mat-form-field>
       
         <mat-form-field fxFlex="30">
           <mat-label>Last Name</mat-label>
           <input matInput required
-            placeholder="e.g. Dela Cruz">
+            placeholder="e.g. Dela Cruz"
+            formControlName="lastname">
           <mat-hint>Required</mat-hint>
         </mat-form-field>
       
         <mat-form-field fxFlex="15">
           <mat-label>Ext.</mat-label>
           <input matInput
-            placeholder="e.g. Jr.">
+            placeholder="e.g. Jr."
+            formControlName="ext">
         </mat-form-field>
       </div>
     
@@ -70,7 +182,7 @@
               </div>
             </mat-option>
           </mat-autocomplete>
-          <mat-hint>Required {{personalFg.get('college').valid}}</mat-hint>
+          <mat-hint>Required</mat-hint>
         </mat-form-field>
     
         <mat-form-field fxFlex="15">
@@ -88,12 +200,13 @@
               </div>
             </mat-option>
           </mat-autocomplete>
-          <mat-hint>Required {{personalFg.get('course').valid}}</mat-hint>
+          <mat-hint>Required</mat-hint>
         </mat-form-field>
     
         <mat-form-field fxFlex="15">
           <mat-label>Date of Birth</mat-label>
-          <input matInput required [matDatepicker]="birthPicker" placeholder="e.g. 4/19/2000">
+          <input matInput required [matDatepicker]="birthPicker" placeholder="e.g. 4/19/2000"
+            formControlName="birthDate">
           <mat-hint>Required</mat-hint>
           <mat-datepicker-toggle matIconSuffix [for]="birthPicker"></mat-datepicker-toggle>
           <mat-datepicker #birthPicker></mat-datepicker>
@@ -101,32 +214,60 @@
     
         <mat-form-field fxFlex="17">
           <mat-label>Gender</mat-label>
-          <input matInput required>
+          <input matInput required 
+            formControlName="gender"
+            placeholder="e.g. Female"
+            [matAutocomplete]="gendersAutoComplete">
+          <mat-autocomplete autoActiveFirstOption #gendersAutoComplete="matAutocomplete" panelWidth="auto">
+            <mat-option *ngFor="let option of filteredGenders | async" [value]="option.name">
+              <div fxLayout="column">
+                <span>{{option.name}}</span>
+              </div>
+            </mat-option>
+          </mat-autocomplete>
           <mat-hint>Required</mat-hint>
         </mat-form-field>
     
         <mat-form-field fxFlex="25">
           <mat-label>Civil Status</mat-label>
-          <input matInput>
+          <input matInput
+            formControlName="civilStatus"
+            placeholder="e.g. Single"
+            [matAutocomplete]="civilStatusesAutoComplete">
+          <mat-autocomplete autoActiveFirstOption #civilStatusesAutoComplete="matAutocomplete" panelWidth="auto">
+            <mat-option *ngFor="let option of filteredCivilStatuses | async" [value]="option.name">
+              <div fxLayout="column">
+                <span>{{option.name}}</span>
+              </div>
+            </mat-option>
+          </mat-autocomplete>
         </mat-form-field>
       </div>
     
       <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
         <mat-form-field fxFlex="15">
           <mat-label>Blood Type</mat-label>
-          <input matInput>
+          <input matInput
+            formControlName="bloodType"
+            placeholder="e.g. A">
         </mat-form-field>
         <mat-form-field fxFlex="35">
           <mat-label>Place of Birth</mat-label>
-          <input matInput>
+          <input matInput
+            formControlName="birthPlace"
+            placeholder="e.g. Tibiao, Antique">
         </mat-form-field>
         <mat-form-field fxFlex="25">
           <mat-label>Religion</mat-label>
-          <input matInput>
+          <input matInput
+            formControlName="religion"
+            placeholder="e.g. Catholic">
         </mat-form-field>
         <mat-form-field fxFlex="25">
           <mat-label>Nationality</mat-label>
-          <input matInput>
+          <input matInput
+            formControlName="nationality"
+            placeholder="e.g. Filipino">
         </mat-form-field>
       </div>
     </form>
@@ -134,3 +275,17 @@
   </div>
 </ng-template>
 
+<ng-template #dialogBox>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Unsaved Changes</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>You have unsaved changes. Do you want to proceed?</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Yes</button>
+      <button mat-button>No</button>
+    </mat-card-actions>
+  </mat-card>
+</ng-template>

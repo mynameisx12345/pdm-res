@@ -4,7 +4,8 @@ import { PatientPersonalInfoComponent } from './patient-personal-info/patient-pe
 import { RouterModule, Routes } from '@angular/router';
 import { ModuleModule } from '../shared/module/module.module';
 import { StoreModule } from '@ngrx/store';
-import { collegeReducer, courseYearsReducer } from '../maintenance/state/college.state/college.state.reducer';
+import { civilStatusesReducer, collegeReducer, courseYearsReducer, gendersReducer } from '../maintenance/state/college.state/college.state.reducer';
+import { patientReducer } from '../maintenance/state/patient.state/patient.state.reducer';
 const routes: Routes = [
   {
     path: '', 
@@ -25,6 +26,9 @@ const routes: Routes = [
     ModuleModule,
     StoreModule.forFeature('colleges', collegeReducer),
     StoreModule.forFeature('courseYears',courseYearsReducer),
+    StoreModule.forFeature('genders',gendersReducer),
+    StoreModule.forFeature('civilStatuses', civilStatusesReducer),
+    StoreModule.forFeature('patient',patientReducer)
   ]
 })
 export class PatientModule { }

@@ -12,11 +12,29 @@ const routes: Routes = [
     data: {
       breadcrumb: 'Home'
     },
+    // children: [
+    //   {
+    //     path: 'register',
+    //     loadChildren: ()=> import('./patient/patient.module').then(m=>m.PatientModule)
+    //   },
+    // ]
     //loadChildren: ()=> import('./patient/patient.module').then(m=>m.PatientModule)
   },
   {
     path: 'register',
     loadChildren: ()=> import('./patient/patient.module').then(m=>m.PatientModule)
+  },
+  {
+    path: 'consultation',
+    loadChildren: () => import('./consultation/consultation.module').then(m=>m.ConsultationModule)
+  },
+  {
+    path: 'tooth-extraction',
+    loadChildren: () => import('./tooth-extraction/tooth-extraction.module').then(m=>m.ToothExtractionModule)
+  },
+  {
+    path: 'first-aid',
+    loadChildren: () => import('./first-aid/first-aid.module').then(m=>m.FirstAidModule)
   }
 ];
 

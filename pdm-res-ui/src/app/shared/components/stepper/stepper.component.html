@@ -1,0 +1,31 @@
+<mat-stepper linear #stepper class="w-100" style="overflow:auto">
+  <mat-step [completed]="stepsStatus.one" isEditable="true">
+    <ng-template matStepLabel>Fill out health data</ng-template>
+    <ng-container [ngTemplateOutlet]="stepOneContent"></ng-container>
+    <div fxLayout="row" fxLayoutAlign="center center" class="mt-2">
+      <button mat-button matStepperNext
+        (click)="setCurrentStep('one',stepper)"
+        [disabled]="stepOneDisabled">
+        Go Next
+      </button>
+    </div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Specify your purpose</ng-template>
+    <ng-container [ngTemplateOutlet]="stepTwoContent"></ng-container>
+    <div fxLayout="row" fxLayoutAlign="center center" class="mt-2">
+      <button mat-button matStepperNext
+        (click)="setCurrentStep('two',stepper)"
+        [disabled]="stepOneDisabled">
+        Go Next
+      </button>
+    </div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <span>You're almost there!</span>
+      <button mat-raised-button color="accent" (click)="done()">DONE</button>
+    </div>
+  </mat-step>
+</mat-stepper>

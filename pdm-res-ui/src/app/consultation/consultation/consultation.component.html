@@ -1,0 +1,90 @@
+<div class="mt-3 mb-3 w-100" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="20px">
+  <div class="w-100" fxLayout="row" fxLayoutAlign="center center" style="position:relative">
+    <!-- <mat-stepper linear #stepper 
+      [orientation]="sharedUtility.isMobile ? 'vertical' : 'horizontal'">
+      <mat-step [completed]="stepsStatus.one" isEditable="true">
+        <ng-template matStepLabel>Fill out health data</ng-template>
+        <ng-container [ngTemplateOutlet]="content"></ng-container>
+        <div fxLayout="row" fxLayoutAlign="center center" class="mt-2">
+          <button mat-button matStepperNext
+            (click)="setCurrentStep('one',stepper)"
+            [disabled]="!hasSelectedOption() || 
+              (consultationOption.get('medical').value && !medicalFg.valid)  ||
+              (consultationOption.get('dental').value && !dentalFg.valid)  ">
+            Go Next
+          </button>
+        </div>
+      </mat-step>
+      <mat-step [completed]="currentStep > 2">
+        <ng-template matStepLabel>Specify your purpose</ng-template>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Done</ng-template>
+      </mat-step>
+    </mat-stepper> -->
+
+    <app-stepper [stepOneDisabled]="!hasSelectedOption() || 
+      (consultationOption.get('medical').value && !medicalFg.valid)  ||
+      (consultationOption.get('dental').value && !dentalFg.valid)"
+      [stepOneContent]="content"
+      [stepTwoContent]="purpose" class="w-100"></app-stepper>
+  </div>
+  
+  <ng-template #content>
+    <div [formGroup]="consultationOption" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="20px" class="w-100">
+      <div fxLayout="row" fxLayoutAlign="start center">
+        <span>Select Consultation Option:</span>
+        <section fxLayout="row" fxLayoutGap="20px">
+          <mat-checkbox formControlName="medical">Medical</mat-checkbox>
+          <mat-checkbox formControlName="dental">Dental</mat-checkbox>
+        </section>
+      </div>
+      <span class="message">
+        Please check the following questions with openness and sincerity. All data gathered will be treated with CONFIDENTIALLITY.
+      </span>
+    </div>
+    <mat-accordion class="w-100">
+      <mat-expansion-panel hideToggle expanded *ngIf="(consultationOption.get('medical').valueChanges | async) === true">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            MEDICAL FORM
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+  
+        <app-medical [medicalFg]="medicalFg"></app-medical>
+      </mat-expansion-panel>
+      <mat-expansion-panel hideToggle expanded  *ngIf="(consultationOption.get('dental').valueChanges | async) === true">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            DENTAL FORM
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+  
+        <app-dental [dentalFg]="dentalFg"></app-dental>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </ng-template>
+
+  <ng-template #purpose >
+    <mat-accordion>
+      <mat-expansion-panel hideToggle expanded *ngIf="consultationOption.get('medical').value">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            MEDICAL PURPOSE
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <app-medical-purpose [medicalPurposeFg]="medicalPurposeFg"></app-medical-purpose>
+      </mat-expansion-panel>
+      <mat-expansion-panel hideToggle expanded *ngIf="consultationOption.get('dental').value">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            DENTAL PURPOSE
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <app-dental-purpose [dentalPurposeFg]="dentalPurposeFg"></app-dental-purpose>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </ng-template>
+  
+  
+</div>

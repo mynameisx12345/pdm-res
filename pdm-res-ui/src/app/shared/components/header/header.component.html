@@ -11,12 +11,18 @@
         <app-breadcrumb></app-breadcrumb>
     </div>
   </div>
+  <div fxLayot="row" fxLayoutAlign="start end" class="h-100" fxLayoutGap="10px"
+    *ngIf="(currentPatient$ | async) as currentPatient">
+    <mat-icon>person</mat-icon>
+    {{currentPatient.firstname}} {{currentPatient.lastname}}
+  </div>
   
-  <div fxLayot="row" fxLayoutAlign="start end" class="h-100" fxLayoutGap="10px">
+  <div fxLayot="row" fxLayoutAlign="start end" class="h-100" fxLayoutGap="10px"
+    *ngIf="(currentPatient$ | async) === null">
     <div fxLayout="row" fxLayoutAlign="center center" class="signing">
-      <mat-icon>person</mat-icon> Sign-in
+      <mat-icon>person_search</mat-icon> Sign-in
     </div>
-    <div fxLayout="row" fxLayoutAlign="center center" class="signing">
+    <div fxLayout="row" fxLayoutAlign="center center" class="signing" (click)="register()">
       <mat-icon>person_add</mat-icon> Register
     </div>
   </div>

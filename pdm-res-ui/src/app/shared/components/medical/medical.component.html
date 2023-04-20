@@ -1,0 +1,139 @@
+<div fxLayout="column" [formGroup]="medicalFg" fxLayoutGap="20px">
+  <span>
+    Please check the corresponding box if you have been diagnosed to have any of the following conditions (Hypertension Diabetes Bronchial Asthma Hearth Disease). If YES, please specify medications.
+  </span>
+  <div fxLayout="column">
+    <div>
+      <mat-form-field class="w-100">
+        <mat-label>Medication</mat-label>
+        <input matInput formControlName="medications">
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" 
+      fxLayout.xs="column" fxLayoutAlign.xs="start start">
+      <mat-checkbox fxFlex="20" formControlName="hasHistory">History of Hospitalization</mat-checkbox>
+      <mat-form-field fxFlex="80" *ngIf="medicalFg.get('hasHistory').value">
+        <mat-label>Date and Reason of Hospitalization</mat-label>
+        <input matInput 
+          formControlName="hasHistoryDet"
+          placeholder="e.g. 01/01/2020 - Arm Injury">
+        <mat-hint>Required</mat-hint>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" 
+      fxLayout.xs="column" fxLayoutAlign.xs="start start">
+      <mat-checkbox fxFlex="20" formControlName="hasSurgical">Surgical Operation</mat-checkbox>
+      <mat-form-field fxFlex="80" *ngIf="medicalFg.get('hasSurgical').value">
+        <mat-label>Specify kind of operation</mat-label>
+        <input matInput
+          placeholder="e.g. Caesarian"
+          formControlName="hasSurgicalDet">
+          <mat-hint>Required</mat-hint>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" 
+      fxLayout.xs="column" fxLayoutAlign.xs="start start">
+      <mat-checkbox fxFlex="30" formControlName="hasMedAllergies">Do you have any allergies to medication?</mat-checkbox>
+      <mat-form-field fxFlex="70" *ngIf="medicalFg.get('hasMedAllergies').value">
+        <mat-label>Please list</mat-label>
+        <input matInput 
+          placeholder="e.g. Allergies on paracetamol"
+          formControlName="hasMedAllergiesDet">
+          <mat-hint>Required</mat-hint>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" 
+      fxLayout.xs="column" fxLayoutAlign.xs="start start">
+      <mat-checkbox fxFlex="30" formControlName="hasOthAllergies">Do you have any allergies to medication?</mat-checkbox>
+      <mat-form-field fxFlex="70"  *ngIf="medicalFg.get('hasOthAllergies').value">
+        <mat-label>Please list</mat-label>
+        <input matInput 
+          placeholder="e.g. Allergies on seafoods"
+          formControlName="hasOthAllergiesDet">
+          <mat-hint>Required</mat-hint>
+      </mat-form-field>
+    </div>
+  </div>
+  <div fxLayout="column">
+    <span>Please check if any blood relatives (children, brothers, sisters, parents, aunts, uncles or grandparents) had or currently have any of the following conditions).  If YES, please specify the relationship (i.e. father, grandmother).</span>
+    <div fxLayout="row wrap" fxLayoutGap="20px" fxLayout.xs="column">
+      <div fxFlex="30" fxLayout="column" *ngFor="let condition of relationCondition">
+        <mat-checkbox [formControlName]="condition.controlKey">{{condition.name}}</mat-checkbox>
+        <mat-form-field *ngIf="medicalFg.get(condition.controlKey).value">
+          <mat-label>Relationship</mat-label>
+          <input matInput [formControlName]="condition.relationKey"
+            placeholder="e.g. Mother">
+            <mat-hint>Required</mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="column">
+    <span> Please check if you have any of the following (present or past) medical conditions. If YES, please give details</span>
+    <div fxLayout="row wrap" fxLayoutGap="20px" fxLayout.xs="column">
+      <div fxFlex="30" fxLayout="column" *ngFor="let condition of medicalCondition">
+        <mat-checkbox [formControlName]="condition.controlKey">{{condition.name}}</mat-checkbox>
+        <mat-form-field *ngIf="medicalFg.get(condition.controlKey).value">
+          <mat-label>Relationship</mat-label>
+          <input matInput [formControlName]="condition.relationKey"
+            placeholder="e.g. Got this last year but only minor">
+            <mat-hint>Required</mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="column">
+    <span>For Females Only</span>
+    <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="20px" fxLayout.xs="column">
+      <mat-form-field fxFlex="50">
+        <mat-label>Age of Menarche</mat-label>
+        <input matInput type="number"
+          placeholder="e.g. 5"
+          formControlName="ageOfMenarche">
+      </mat-form-field>
+      <mat-form-field fxFlex="50">
+        <mat-label>First Day of Last Menstruation</mat-label>
+        <input matInput
+          [matDatepicker]="firstDay"
+          placeholder="e.g. 1/10/2020"
+          formControlName="lastMenstruation">
+        <mat-datepicker-toggle matIconSuffix [for]="firstDay"></mat-datepicker-toggle>
+        <mat-datepicker #firstDay></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between center"
+      fxLayoutAlign.xs="start start">
+      <mat-checkbox fxFlex="30" formControlName="beenPregnant">Have you ever been pregnant?</mat-checkbox>
+      <mat-form-field fxFlex="70" *ngIf="medicalFg.get('beenPregnant').value">
+        <mat-label>Please give details</mat-label>
+        <input matInput
+          placeholder="e.g. Last pregnancy last year"
+          formControlName="beenPregnantDet">
+        <mat-hint>Required</mat-hint>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between center"
+      fxLayout.mAlign.xs="start start">
+      <mat-checkbox fxFlex="30" formControlName="hasBreastLump">Have you noticed any breast lump?</mat-checkbox>
+      <mat-form-field fxFlex="70" *ngIf="medicalFg.get('hasBreastLump').value">
+        <mat-label>Please give details</mat-label>
+        <input matInput
+          placeholder="e.g. Only one and size about half centimeter"
+          formControlName="hasBreastLumpDet">
+        <mat-hint>Required</mat-hint>
+      </mat-form-field>
+    </div>
+  </div>
+  <div fxLayout="column">
+    <div fxLayout="column" fxLayoutAlign="start start">
+      <span class="warning-label">Please check this to move to Next Step</span>
+      <mat-checkbox formControlName="remarksCheck">
+        I do hereby state that, to the best of my knowledge and belief, the medical history and information that i have provide is complete and accurate.
+        I further understand that any medical information with held, incomplete, or incorrect discharges the University from all medical and Legal liability.
+        I authorize the Health Services Unit to provide medical services and therapeutic services to the above named student as may be necessary, and if needed, to refer to private/hospital care when special service is indicated.
+      </mat-checkbox>
+    </div>
+  </div>
+  
+
+</div>
