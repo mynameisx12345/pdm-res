@@ -26,6 +26,7 @@
     <app-stepper [stepOneDisabled]="!hasSelectedOption() || 
       (consultationOption.get('medical').value && !medicalFg.valid)  ||
       (consultationOption.get('dental').value && !dentalFg.valid)"
+      (complete)="complete()"
       [stepOneContent]="content"
       [stepTwoContent]="purpose" class="w-100"></app-stepper>
   </div>

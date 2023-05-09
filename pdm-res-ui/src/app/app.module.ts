@@ -10,6 +10,8 @@ import { ComponentsModule } from './shared/components/components.module';
 import { ModuleModule } from './shared/module/module.module';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtools, StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { EffectsModule } from '@ngrx/effects';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { StoreDevtools, StoreDevtoolsModule } from '@ngrx/store-devtools';
     BrowserAnimationsModule,
     ComponentsModule,
     ModuleModule,
+    HttpClientModule,
+    EffectsModule.forRoot([]),
     StoreModule.forRoot({}),
     StoreDevtoolsModule.instrument({
       logOnly: !isDevMode(), // Restrict extension to log-only mode

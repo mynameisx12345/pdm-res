@@ -15,6 +15,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatStepperModule} from '@angular/material/stepper';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [],
@@ -37,7 +38,8 @@ import {MatStepperModule} from '@angular/material/stepper';
     MatNativeDateModule,
     MatTooltipModule,
     MatCheckboxModule,
-    MatStepperModule
+    MatStepperModule,
+    MatSnackBarModule
   ],
   providers: [
     {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'fill', floatLabel: 'always'}}

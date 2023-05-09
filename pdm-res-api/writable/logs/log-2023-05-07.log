@@ -1,0 +1,159 @@
+CRITICAL - 2023-05-07 13:18:12 --> syntax error, unexpected token "if"
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(417): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-07 13:18:18 --> syntax error, unexpected token "if"
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(417): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-07 13:28:26 --> Only arrays and Traversables can be unpacked
+in APPPATH\Models\MaintenanceModel.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-07 13:29:25 --> Only arrays and Traversables can be unpacked
+in APPPATH\Models\MaintenanceModel.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-07 13:29:28 --> Only arrays and Traversables can be unpacked
+in APPPATH\Models\MaintenanceModel.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-07 13:30:04 --> Only arrays and Traversables can be unpacked
+in APPPATH\Models\MaintenanceModel.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-07 13:30:50 --> Only arrays and Traversables can be unpacked
+in APPPATH\Models\MaintenanceModel.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-07 13:31:57 --> Only arrays and Traversables can be unpacked
+in APPPATH\Models\MaintenanceModel.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-07 13:31:59 --> Only arrays and Traversables can be unpacked
+in APPPATH\Models\MaintenanceModel.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-07 13:32:21 --> Only arrays and Traversables can be unpacked
+in APPPATH\Models\MaintenanceModel.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-07 13:32:42 --> CodeIgniter\Database\BaseBuilder::insert(): Argument #1 ($set) must be of type ?array, stdClass given, called in C:\xampp\htdocs\clinic_app\pdm-res-api\app\Models\MaintenanceModel.php on line 39
+in SYSTEMPATH\Database\BaseBuilder.php on line 1885.
+ 1 APPPATH\Models\MaintenanceModel.php(39): CodeIgniter\Database\BaseBuilder->insert(Object(stdClass))
+ 2 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-07 13:36:01 --> CodeIgniter\Database\BaseBuilder::insert(): Argument #1 ($set) must be of type ?array, stdClass given, called in C:\xampp\htdocs\clinic_app\pdm-res-api\app\Models\MaintenanceModel.php on line 40
+in SYSTEMPATH\Database\BaseBuilder.php on line 1885.
+ 1 APPPATH\Models\MaintenanceModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Object(stdClass))
+ 2 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-07 13:36:03 --> CodeIgniter\Database\BaseBuilder::insert(): Argument #1 ($set) must be of type ?array, stdClass given, called in C:\xampp\htdocs\clinic_app\pdm-res-api\app\Models\MaintenanceModel.php on line 40
+in SYSTEMPATH\Database\BaseBuilder.php on line 1885.
+ 1 APPPATH\Models\MaintenanceModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Object(stdClass))
+ 2 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-07 13:36:23 --> CodeIgniter\Database\BaseBuilder::insert(): Argument #1 ($set) must be of type ?array, stdClass given, called in C:\xampp\htdocs\clinic_app\pdm-res-api\app\Models\MaintenanceModel.php on line 40
+in SYSTEMPATH\Database\BaseBuilder.php on line 1885.
+ 1 APPPATH\Models\MaintenanceModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Object(stdClass))
+ 2 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-07 13:36:24 --> CodeIgniter\Database\BaseBuilder::insert(): Argument #1 ($set) must be of type ?array, stdClass given, called in C:\xampp\htdocs\clinic_app\pdm-res-api\app\Models\MaintenanceModel.php on line 40
+in SYSTEMPATH\Database\BaseBuilder.php on line 1885.
+ 1 APPPATH\Models\MaintenanceModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Object(stdClass))
+ 2 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-05-07 13:36:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0) VALUES (:0:)' at line 1
+ERROR - 2023-05-07 13:37:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0) VALUES (:0:)' at line 1
+ERROR - 2023-05-07 13:38:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0) VALUES (:0:)' at line 1
+ERROR - 2023-05-07 13:38:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0) VALUES (:0:)' at line 1
+CRITICAL - 2023-05-07 13:44:09 --> Undefined variable $data_A
+in APPPATH\Models\MaintenanceModel.php on line 44.
+ 1 APPPATH\Models\MaintenanceModel.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_A', 'APPPATH\\Models\\MaintenanceModel.php', 44)
+ 2 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-07 13:44:59 --> Undefined variable $data_A
+in APPPATH\Models\MaintenanceModel.php on line 45.
+ 1 APPPATH\Models\MaintenanceModel.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_A', 'APPPATH\\Models\\MaintenanceModel.php', 45)
+ 2 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-07 13:45:19 --> Undefined variable $data_A
+in APPPATH\Models\MaintenanceModel.php on line 45.
+ 1 APPPATH\Models\MaintenanceModel.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_A', 'APPPATH\\Models\\MaintenanceModel.php', 45)
+ 2 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(57): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-05-07 13:47:01 --> Unknown column 'wew' in 'field list'
+ERROR - 2023-05-07 13:47:25 --> Unknown column 'wew' in 'field list'
+ERROR - 2023-05-07 13:47:26 --> Unknown column 'wew' in 'field list'
+ERROR - 2023-05-07 13:47:27 --> Unknown column 'wew' in 'field list'
+ERROR - 2023-05-07 13:47:29 --> Unknown column 'wew' in 'field list'
+ERROR - 2023-05-07 13:49:11 --> Cannot add or update a child row: a foreign key constraint fails (`app_pdm_res`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`college_id`) REFERENCES `colleges` (`id`))
+ERROR - 2023-05-07 13:49:21 --> Cannot add or update a child row: a foreign key constraint fails (`app_pdm_res`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`college_id`) REFERENCES `colleges` (`id`))

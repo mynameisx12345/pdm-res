@@ -1,0 +1,511 @@
+CRITICAL - 2023-05-08 11:53:18 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 11:53:39 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 11:57:57 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 11:58:57 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 11:58:58 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 11:59:22 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 11:59:51 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 11:59:52 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:22:58 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:26:13 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:26:52 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:26:53 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:27:05 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:27:06 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:27:07 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:27:08 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:27:53 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:28:16 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:28:18 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:28:19 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:28:39 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:34:46 --> Attempt to read property "isInsert" on array
+in APPPATH\Controllers\MaintenanceController.php on line 35.
+ 1 APPPATH\Controllers\MaintenanceController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "isInsert" on array', 'APPPATH\\Controllers\\MaintenanceController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:35:28 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:35:29 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:35:30 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:35:31 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:35:31 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:35:32 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:35:32 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 12:36:37 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:27:26 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:27:27 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:27:28 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:27:29 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:27:30 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:27:32 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:28:57 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:29:25 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:30:44 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:30:50 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:34:11 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:34:20 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:41:19 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:43:57 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:44:06 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Controllers\MaintenanceController.php on line 34.
+ 1 APPPATH\Controllers\MaintenanceController.php(34): print_r('ret', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:44:55 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\MaintenanceController.php on line 36.
+ 1 APPPATH\Controllers\MaintenanceController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\MaintenanceController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:45:20 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\MaintenanceController.php on line 36.
+ 1 APPPATH\Controllers\MaintenanceController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\MaintenanceController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:47:47 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\MaintenanceController.php on line 36.
+ 1 APPPATH\Controllers\MaintenanceController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\MaintenanceController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:47:50 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\MaintenanceController.php on line 36.
+ 1 APPPATH\Controllers\MaintenanceController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\MaintenanceController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:49:39 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\MaintenanceController.php on line 36.
+ 1 APPPATH\Controllers\MaintenanceController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\MaintenanceController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:49:45 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\MaintenanceController.php on line 36.
+ 1 APPPATH\Controllers\MaintenanceController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\MaintenanceController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:50:08 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\MaintenanceController.php on line 36.
+ 1 APPPATH\Controllers\MaintenanceController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\MaintenanceController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:50:46 --> Undefined variable $userId
+in APPPATH\Models\MaintenanceModel.php on line 48.
+ 1 APPPATH\Models\MaintenanceModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'APPPATH\\Models\\MaintenanceModel.php', 48)
+ 2 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:50:54 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\MaintenanceController.php on line 36.
+ 1 APPPATH\Controllers\MaintenanceController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\MaintenanceController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:52:10 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\MaintenanceController.php on line 36.
+ 1 APPPATH\Controllers\MaintenanceController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\MaintenanceController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:53:06 --> print_r(): Argument #2 ($return) must be of type bool, array given
+in APPPATH\Models\MaintenanceModel.php on line 50.
+ 1 APPPATH\Models\MaintenanceModel.php(50): print_r('a', [...])
+ 2 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:53:45 --> Undefined variable $userId
+in APPPATH\Models\MaintenanceModel.php on line 49.
+ 1 APPPATH\Models\MaintenanceModel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'APPPATH\\Models\\MaintenanceModel.php', 49)
+ 2 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:53:47 --> Undefined variable $userId
+in APPPATH\Models\MaintenanceModel.php on line 49.
+ 1 APPPATH\Models\MaintenanceModel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'APPPATH\\Models\\MaintenanceModel.php', 49)
+ 2 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:53:48 --> Undefined variable $userId
+in APPPATH\Models\MaintenanceModel.php on line 49.
+ 1 APPPATH\Models\MaintenanceModel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'APPPATH\\Models\\MaintenanceModel.php', 49)
+ 2 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:53:49 --> Undefined variable $userId
+in APPPATH\Models\MaintenanceModel.php on line 49.
+ 1 APPPATH\Models\MaintenanceModel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'APPPATH\\Models\\MaintenanceModel.php', 49)
+ 2 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:54:11 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\MaintenanceController.php on line 36.
+ 1 APPPATH\Controllers\MaintenanceController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\MaintenanceController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:54:40 --> Trying to access array offset on value of type bool
+in APPPATH\Controllers\MaintenanceController.php on line 36.
+ 1 APPPATH\Controllers\MaintenanceController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Controllers\\MaintenanceController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:54:59 --> Undefined variable $userId
+in APPPATH\Models\MaintenanceModel.php on line 47.
+ 1 APPPATH\Models\MaintenanceModel.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'APPPATH\\Models\\MaintenanceModel.php', 47)
+ 2 APPPATH\Controllers\MaintenanceController.php(33): App\Models\MaintenanceModel->register(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

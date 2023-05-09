@@ -1,6 +1,6 @@
 import { createReducer, on } from "@ngrx/store";
 import { initialStatePatient } from "./patient.state";
-import { updateCurrentPatient } from "./patient.state.action";
+import { addMyRequest, updateCurrentPatient } from "./patient.state.action";
 
 const _patientReducer = createReducer(
   initialStatePatient,
@@ -8,6 +8,12 @@ const _patientReducer = createReducer(
     return {
       ...state,
       patient: action
+    }
+  }),
+  on(addMyRequest,(state,action)=>{
+    return {
+      ...state,
+      myRequests: [...state.myRequests, action]
     }
   })
   );

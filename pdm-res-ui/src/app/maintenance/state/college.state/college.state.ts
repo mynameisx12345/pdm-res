@@ -5,10 +5,7 @@ export interface CollegeState {
 }
 
 export const intialState: CollegeState = {
-  colleges:[
-    {id:'1', name:'CCS', description: 'College of Computer Studies'},
-    {id:'2', name:'CTE', description: 'College of Fisheries'},
-  ]
+  colleges:[]
 }
 
 export interface CourseYearState {
@@ -16,11 +13,7 @@ export interface CourseYearState {
 }
 
 export const intialStateCourseYears: CourseYearState = {
-  courseYears: [
-    {id: '1', name: 'BSIT 4', description: 'Bachelor of Science in Information Technologyy', year: '4', collegeId: '1'},
-    {id: '2', name: 'BSCS 4', description: 'Bachelor of Science in Computer Science', year: '4', collegeId: '1'},
-    {id: '3', name: 'BSF 4', description: 'Bachelor of Science in Fisheries', year: '4', collegeId: '2'},
-  ]
+  courseYears: []
 }
 
 export interface GenderState {
@@ -29,9 +22,8 @@ export interface GenderState {
 
 export const initialStateGender: GenderState = {
   genders: [
-    {id:'1', name:'Male'},
-    {id:'2', name:'Female'},
-    {id:'2', name:'Others'},
+    {id:"1", name:'Male'},
+    {id:"2", name:'Female'}
   ]
 }
 
@@ -41,9 +33,11 @@ export interface CivilStatusState {
 
 export const initialStateCivilStatuses: CivilStatusState = {
   civilStatuses: [
-    {id: '1', name: 'Single'},
-    {id: '2', name: 'Married'},
-    {id: '3', name: 'Legally Separated'}
+    {id: "1", name: 'Single'},
+    {id: "2", name: 'Married'},
+    {id: "3", name: 'Widow'},
+    {id: "4", name: 'Widower'},
+    {id: "5", name: 'Legally Separated'}
   ]
 }
 

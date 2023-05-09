@@ -1,13 +1,27 @@
-import { createReducer } from "@ngrx/store";
+import { createReducer, on } from "@ngrx/store";
 import { initialStateCivilStatuses, initialStateGender, intialState, intialStateCourseYears } from "./college.state";
+import { loadColleges, loadCourseYears } from "./college.state.action";
 
-const _collegesReducer = createReducer(intialState);
+const _collegesReducer = createReducer(intialState,
+  on(loadColleges,(state,action)=>{
+    
+    return {
+      ...state,
+      colleges: action.data
+    }
+  }));
 
 export function collegeReducer (state, action){
   return _collegesReducer(state,action);
 }
 
-const _courseYearsReducer = createReducer(intialStateCourseYears);
+const _courseYearsReducer = createReducer(intialStateCourseYears,
+  on(loadCourseYears,(state,action)=>{
+    return {
+      ...state,
+      courseYears: action.data
+    }
+  }));
 
 export function courseYearsReducer (state,action){
   return _courseYearsReducer(state,action);

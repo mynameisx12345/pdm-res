@@ -5,6 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ModuleModule } from '../shared/module/module.module';
 import { ComponentsModule } from '../shared/components/components.module';
 import { SharedUtility } from '../shared/util';
+import { StoreModule } from '@ngrx/store';
+import { patientReducer } from '../maintenance/state/patient.state/patient.state.reducer';
 
 const routes: Routes = [
   {
@@ -24,7 +26,8 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     ModuleModule,
-    ComponentsModule
+    ComponentsModule,
+    StoreModule.forFeature('patient', patientReducer)
   ],
   providers: [
     SharedUtility

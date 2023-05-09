@@ -2,6 +2,7 @@ import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
+import { populateColleges } from 'src/app/maintenance/state/college.state/college.state.action';
 import { getPatient } from 'src/app/maintenance/state/patient.state/patient.state.selector';
 
 @Component({
@@ -41,6 +42,8 @@ export class DashboardComponent implements OnInit {
     this.currentPatient$.subscribe((patient)=>{
       this.loggedIn = patient !== null;
     })
+
+    this.initiateMaintenanceData();
   }
 
   onServiceSelect(link){
@@ -58,5 +61,9 @@ export class DashboardComponent implements OnInit {
   onRegister(){
     this.currentDialog.close();
     this.router.navigate(['register']);
+  }
+
+  initiateMaintenanceData(){
+    //this.store.dispatch(populateColleges());
   }
 }

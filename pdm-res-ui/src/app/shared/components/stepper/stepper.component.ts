@@ -1,4 +1,4 @@
-import { Component, Input, TemplateRef } from '@angular/core';
+import { Component, EventEmitter, Input, Output, TemplateRef } from '@angular/core';
 import { MatStepper } from '@angular/material/stepper';
 import { Router } from '@angular/router';
 
@@ -16,13 +16,14 @@ export class StepperComponent {
   @Input() stepOneDisabled: boolean;
   @Input() stepOneContent: TemplateRef<any>;
   @Input() stepTwoContent: TemplateRef<any>;
+  @Output() complete = new EventEmitter;
 
   constructor(
     private readonly router: Router
   ){}
 
   setCurrentStep (curStep,stepper:MatStepper) {
-    this.stepsStatus[curStep] = true
+    this.stepsStatus[curStep] = true;
     this.goNext(stepper);
   }
 
@@ -33,6 +34,6 @@ export class StepperComponent {
   }
 
   done(){
-    this.router.navigate(['/home']);
+    this.complete.emit();
   }
 }

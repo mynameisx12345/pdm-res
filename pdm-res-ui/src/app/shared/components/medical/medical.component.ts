@@ -26,35 +26,35 @@ export class MedicalComponent implements OnInit, AfterViewInit{
 
   ngOnInit(): void {
 
-    let formControls = {
-      medications: [''],
-      hasHistory: [false],
-      hasHistoryDet: [''],
-      hasSurgical: [false],
-      hasSurgicalDet: [''],
-      hasMedAllergies:[false],
-      hasMedAllergiesDet: [''],
-      hasOthAllergies: [false],
-      hasOthAllergiesDet: [''],
-      ageOfMenarche: [''],
-      lastMenstruation : [''],
-      beenPregnant: [false],
-      beenPregnantDet: [''],
-      hasBreastLump: [false],
-      hasBreastLumpDet: [''],
-      //remarksCheck: [false, Validators.requiredTrue],
-      ...this.medicalFg.controls
-    }
+    // let formControls = {
+    //   medications: [''],
+    //   hasHistory: [false],
+    //   hasHistoryDet: [''],
+    //   hasSurgical: [false],
+    //   hasSurgicalDet: [''],
+    //   hasMedAllergies:[false],
+    //   hasMedAllergiesDet: [''],
+    //   hasOthAllergies: [false],
+    //   hasOthAllergiesDet: [''],
+    //   ageOfMenarche: [''],
+    //   lastMenstruation : [''],
+    //   beenPregnant: [false],
+    //   beenPregnantDet: [''],
+    //   hasBreastLump: [false],
+    //   hasBreastLumpDet: [''],
+    //   //remarksCheck: [false, Validators.requiredTrue],
+    //   ...this.medicalFg.controls
+    // }
 
-    this.relationCondition.forEach((relation)=>{
-      formControls[relation.controlKey] = [false];
-      formControls[relation.relationKey] = [''];
-    });
+    // this.relationCondition.forEach((relation)=>{
+    //   formControls[relation.controlKey] = [false];
+    //   formControls[relation.relationKey] = [''];
+    // });
 
-    this.medicalCondition.forEach((relation)=>{
-      formControls[relation.controlKey] = [false];
-      formControls[relation.relationKey] = [''];
-    });
+    // this.medicalCondition.forEach((relation)=>{
+    //   formControls[relation.controlKey] = [false];
+    //   formControls[relation.relationKey] = [''];
+    // });
 
    // this.medicalFg = this.fb.group(formControls);
     //this.medicalFg.get('hasHistoryDet').setAsyncValidators(this.requiredIfTrue(this.medicalFg));
