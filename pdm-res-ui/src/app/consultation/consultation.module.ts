@@ -7,6 +7,9 @@ import { ComponentsModule } from '../shared/components/components.module';
 import { SharedUtility } from '../shared/util';
 import { StoreModule } from '@ngrx/store';
 import { patientReducer } from '../maintenance/state/patient.state/patient.state.reducer';
+import { AuthGuard } from '../guards/auth.guard';
+import { EffectsModule } from '@ngrx/effects';
+import { PatientEffects } from '../maintenance/state/patient.state/patient.state.effects';
 
 const routes: Routes = [
   {
@@ -14,7 +17,8 @@ const routes: Routes = [
     component: ConsultationComponent,
     data: {
       breadcrumb:'Consultation'
-    }
+    },
+    canActivate: [AuthGuard]
   }
 ]
 
@@ -27,7 +31,8 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     ModuleModule,
     ComponentsModule,
-    StoreModule.forFeature('patient', patientReducer)
+    StoreModule.forFeature('patient', patientReducer),
+    EffectsModule.forFeature([PatientEffects])
   ],
   providers: [
     SharedUtility

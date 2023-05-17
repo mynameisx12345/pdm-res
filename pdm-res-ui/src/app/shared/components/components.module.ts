@@ -13,6 +13,14 @@ import { DentalComponent } from './dental/dental.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { MedicalPurposeComponent } from './medical/medical-purpose/medical-purpose.component';
 import { DentalPurposeComponent } from './dental/dental-purpose/dental-purpose.component';
+import { AdminPanelComponent } from './admin-panel/admin-panel.component';
+import { RequestStatusComponent } from './request-status/request-status.component';
+import { PrintHeaderComponent } from './print-header/print-header.component';
+import { civilStatusesReducer, collegeReducer, courseYearsReducer, gendersReducer } from 'src/app/maintenance/state/college.state/college.state.reducer';
+import { EffectsModule } from '@ngrx/effects';
+import { MaintenanceEffects } from 'src/app/maintenance/state/college.state/college.effects';
+import { PatientEffects } from 'src/app/maintenance/state/patient.state/patient.state.effects';
+
 
 
 
@@ -26,13 +34,22 @@ import { DentalPurposeComponent } from './dental/dental-purpose/dental-purpose.c
     DentalComponent,
     StepperComponent,
     MedicalPurposeComponent,
-    DentalPurposeComponent
+    DentalPurposeComponent,
+    AdminPanelComponent,
+    RequestStatusComponent,
+    PrintHeaderComponent
   ],
   imports: [
     CommonModule,
     ModuleModule,
     RouterModule,
-    StoreModule.forFeature('patient', patientReducer)
+    StoreModule.forFeature('patient', patientReducer),
+    StoreModule.forFeature('colleges', collegeReducer),
+    StoreModule.forFeature('courseYears',courseYearsReducer),
+    StoreModule.forFeature('genders',gendersReducer),
+    StoreModule.forFeature('civilStatuses', civilStatusesReducer),
+    EffectsModule.forFeature([MaintenanceEffects]),
+    EffectsModule.forFeature([PatientEffects])
 
   ],
   exports: [
@@ -43,7 +60,10 @@ import { DentalPurposeComponent } from './dental/dental-purpose/dental-purpose.c
     DentalComponent,
     StepperComponent,
     MedicalPurposeComponent,
-    DentalPurposeComponent
+    DentalPurposeComponent,
+    AdminPanelComponent,
+    RequestStatusComponent,
+    PrintHeaderComponent
   ]
 })
 export class ComponentsModule { }

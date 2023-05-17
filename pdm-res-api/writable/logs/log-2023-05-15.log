@@ -1,0 +1,8 @@
+CRITICAL - 2023-05-15 02:59:34 --> Attempt to assign property "dt_processed" on null
+in APPPATH\Models\RequestsModel.php on line 22.
+ 1 APPPATH\Controllers\RequestsController.php(14): App\Models\RequestsModel->request(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

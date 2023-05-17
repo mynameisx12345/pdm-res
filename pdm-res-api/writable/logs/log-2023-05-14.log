@@ -1,0 +1,33 @@
+ERROR - 2023-05-14 08:21:06 --> Unknown column 'patient_name' in 'field list'
+ERROR - 2023-05-14 08:22:00 --> Unknown column 'patient_name' in 'field list'
+ERROR - 2023-05-14 08:23:43 --> Unknown column 'patient_name' in 'field list'
+CRITICAL - 2023-05-14 11:04:48 --> syntax error, unexpected token "}"
+in APPPATH\Models\MaintenanceModel.php on line 33.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\MaintenanceModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\MaintenanceModel')
+ 3 APPPATH\Controllers\MaintenanceController.php(31): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\MaintenanceModel')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-14 11:04:56 --> syntax error, unexpected token "}"
+in APPPATH\Models\MaintenanceModel.php on line 33.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\MaintenanceModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\MaintenanceModel')
+ 3 APPPATH\Controllers\MaintenanceController.php(31): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\MaintenanceModel')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-14 11:05:26 --> syntax error, unexpected token "}"
+in APPPATH\Models\MaintenanceModel.php on line 33.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\MaintenanceModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\MaintenanceModel')
+ 3 APPPATH\Controllers\MaintenanceController.php(31): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\MaintenanceModel')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->register()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

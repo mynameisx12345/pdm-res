@@ -1,0 +1,20 @@
+<div fxALayout="row" fxLayoutAlign="space-between center" *ngIf="!!requestData?.status">
+  <button mat-raised-button color="accent" 
+    (click)="startProcess()"
+    [disabled]="requestData?.status === 'Processing' || requestData?.status === 'Completed'">START PROCESSING</button>
+  <button mat-raised-button color="warn" 
+    (click)="completeRequest()"
+    *ngIf="requestData?.status === 'Processing' || requestData?.status === 'Completed'" 
+    [disabled]="requestData?.status === 'Completed'">MARK AS COMPLETE</button>
+  <button mat-raised-button color="primary"
+    [matMenuTriggerFor]="actionMenu">ACTIONS / FORMS</button>
+  <mat-menu #actionMenu="matMenu">
+    <button mat-menu-item
+      (click)="openMedExam()">
+      Medical Examination
+    </button>
+    <button mat-menu-item>
+      Medical Clearance
+    </button>
+  </mat-menu>
+</div>

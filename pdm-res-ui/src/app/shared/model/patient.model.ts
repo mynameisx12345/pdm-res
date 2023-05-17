@@ -32,7 +32,7 @@ export interface PatientModel {
   college:string,
   courseId: number,
   course: string,
-  birthDate: string,
+  birthDate: any,
   genderId: number,
   gender: string,
   civilStatusId: number,
@@ -78,5 +78,16 @@ export interface MyRequestsModel {
   id: number,
   patientId: number,
   requestType: string,
-  requestJson: {}
+  requestJson: string,
+  status: string,
+  patientName: string
+}
+
+export interface MyRequestsModlI {
+  id: number,
+  patient_id: number,
+  request_type: string,
+  request_json: string,
+  status: string,
+  patient_name?: string
 }

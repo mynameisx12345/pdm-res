@@ -1,0 +1,46 @@
+CRITICAL - 2023-05-11 03:30:59 --> Attempt to read property "status" on array
+in APPPATH\Models\RequestsModel.php on line 19.
+ 1 APPPATH\Models\RequestsModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "status" on array', 'APPPATH\\Models\\RequestsModel.php', 19)
+ 2 APPPATH\Controllers\RequestsController.php(14): App\Models\RequestsModel->request(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-11 03:31:28 --> Attempt to read property "status" on array
+in APPPATH\Models\RequestsModel.php on line 19.
+ 1 APPPATH\Models\RequestsModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "status" on array', 'APPPATH\\Models\\RequestsModel.php', 19)
+ 2 APPPATH\Controllers\RequestsController.php(14): App\Models\RequestsModel->request(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-11 03:31:57 --> Attempt to read property "status" on array
+in APPPATH\Models\RequestsModel.php on line 20.
+ 1 APPPATH\Models\RequestsModel.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "status" on array', 'APPPATH\\Models\\RequestsModel.php', 20)
+ 2 APPPATH\Controllers\RequestsController.php(14): App\Models\RequestsModel->request(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-11 03:32:31 --> Attempt to read property "status" on array
+in APPPATH\Models\RequestsModel.php on line 20.
+ 1 APPPATH\Models\RequestsModel.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "status" on array', 'APPPATH\\Models\\RequestsModel.php', 20)
+ 2 APPPATH\Controllers\RequestsController.php(14): App\Models\RequestsModel->request(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-11 03:32:54 --> Attempt to read property "status" on array
+in APPPATH\Models\RequestsModel.php on line 20.
+ 1 APPPATH\Models\RequestsModel.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "status" on array', 'APPPATH\\Models\\RequestsModel.php', 20)
+ 2 APPPATH\Controllers\RequestsController.php(14): App\Models\RequestsModel->request(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-05-11 03:45:47 --> Unknown column 'requst_json' in 'field list'

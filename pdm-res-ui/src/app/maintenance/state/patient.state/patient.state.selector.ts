@@ -6,7 +6,6 @@ export const getPatient = createSelector(getPatientState, (state)=>{
   return state.patient;
 });
 
-const getPatientRequestsState = createFeatureSelector<PatientState>('myRequests');
-export const getPatientRequests = createSelector(getPatientRequestsState, (state)=>{
+export const getPatientRequests = createSelector(getPatientState, (state)=>{
   return state.myRequests;
 })

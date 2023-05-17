@@ -1,0 +1,519 @@
+CRITICAL - 2023-05-10 13:51:39 --> Class "App\Controllers\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:52:22 --> Class "App\Controllers\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:52:41 --> Class "App\Controllers\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:52:56 --> Class "App\Controllers\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:53:40 --> Class "App\Controllers\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:54:39 --> Class "App\Controllers\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:55:50 --> Class "App\Controllers\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:55:58 --> Class "App\Controllers\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:56:10 --> Class "App\Controllers\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:57:30 --> Class "App\Controllers\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:57:47 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:57:49 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:58:23 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:58:24 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:58:25 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:58:26 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:58:26 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:58:26 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:59:24 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:59:58 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 13:59:59 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:00:00 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:01:09 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:01:10 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:01:11 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:01:12 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:01:12 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:01:12 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:01:13 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:01:56 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:01:57 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:01:58 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:01:59 --> Class "App\Models\RequestsModel" not found
+in APPPATH\Controllers\RequestsController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:03:25 --> Undefined variable $isInsert
+in APPPATH\Models\RequestsModel.php on line 15.
+ 1 APPPATH\Models\RequestsModel.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isInsert', 'APPPATH\\Models\\RequestsModel.php', 15)
+ 2 APPPATH\Controllers\RequestsController.php(15): App\Models\RequestsModel->request(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:03:55 --> Undefined variable $isInsert
+in APPPATH\Models\RequestsModel.php on line 15.
+ 1 APPPATH\Models\RequestsModel.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isInsert', 'APPPATH\\Models\\RequestsModel.php', 15)
+ 2 APPPATH\Controllers\RequestsController.php(14): App\Models\RequestsModel->request(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:04:16 --> Undefined variable $isInsert
+in APPPATH\Models\RequestsModel.php on line 15.
+ 1 APPPATH\Models\RequestsModel.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isInsert', 'APPPATH\\Models\\RequestsModel.php', 15)
+ 2 APPPATH\Controllers\RequestsController.php(15): App\Models\RequestsModel->request(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:09:01 --> Attempt to read property "id" on null
+in APPPATH\Models\RequestsModel.php on line 13.
+ 1 APPPATH\Models\RequestsModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Models\\RequestsModel.php', 13)
+ 2 APPPATH\Controllers\RequestsController.php(15): App\Models\RequestsModel->request(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:09:04 --> Attempt to read property "id" on null
+in APPPATH\Models\RequestsModel.php on line 13.
+ 1 APPPATH\Models\RequestsModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Models\\RequestsModel.php', 13)
+ 2 APPPATH\Controllers\RequestsController.php(15): App\Models\RequestsModel->request(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:11:51 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...], false)
+ 6 APPPATH\Models\RequestsModel.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH\Controllers\RequestsController.php(15): App\Models\RequestsModel->request(Object(stdClass))
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:12:02 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...], false)
+ 6 APPPATH\Models\RequestsModel.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH\Controllers\RequestsController.php(15): App\Models\RequestsModel->request(Object(stdClass))
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:12:03 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...], false)
+ 6 APPPATH\Models\RequestsModel.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH\Controllers\RequestsController.php(15): App\Models\RequestsModel->request(Object(stdClass))
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:12:05 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...], false)
+ 6 APPPATH\Models\RequestsModel.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH\Controllers\RequestsController.php(15): App\Models\RequestsModel->request(Object(stdClass))
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:12:06 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...], false)
+ 6 APPPATH\Models\RequestsModel.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH\Controllers\RequestsController.php(15): App\Models\RequestsModel->request(Object(stdClass))
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:12:07 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `requests` (`id`, `patientId`, `requestType`, `requestJson`) VALUES (:id:, :patientId:, :requestType:, :requestJson:)', [...], false)
+ 6 APPPATH\Models\RequestsModel.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH\Controllers\RequestsController.php(15): App\Models\RequestsModel->request(Object(stdClass))
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:12:17 --> Attempt to read property "id" on null
+in APPPATH\Models\RequestsModel.php on line 13.
+ 1 APPPATH\Models\RequestsModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Models\\RequestsModel.php', 13)
+ 2 APPPATH\Controllers\RequestsController.php(15): App\Models\RequestsModel->request(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:12:57 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...], false)
+ 6 APPPATH\Models\RequestsModel.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH\Controllers\RequestsController.php(15): App\Models\RequestsModel->request(Object(stdClass))
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:13:08 --> Attempt to read property "id" on null
+in APPPATH\Models\RequestsModel.php on line 13.
+ 1 APPPATH\Models\RequestsModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Models\\RequestsModel.php', 13)
+ 2 APPPATH\Controllers\RequestsController.php(15): App\Models\RequestsModel->request(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-05-10 14:13:12 --> Unknown column 'patientId' in 'field list'
+CRITICAL - 2023-05-10 14:13:44 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...], false)
+ 6 APPPATH\Models\RequestsModel.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH\Controllers\RequestsController.php(15): App\Models\RequestsModel->request(Object(stdClass))
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:14:02 --> Attempt to read property "id" on null
+in APPPATH\Models\RequestsModel.php on line 13.
+ 1 APPPATH\Models\RequestsModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Models\\RequestsModel.php', 13)
+ 2 APPPATH\Controllers\RequestsController.php(15): App\Models\RequestsModel->request(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:14:15 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...], false)
+ 6 APPPATH\Models\RequestsModel.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH\Controllers\RequestsController.php(15): App\Models\RequestsModel->request(Object(stdClass))
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:14:43 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...], false)
+ 6 APPPATH\Models\RequestsModel.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH\Controllers\RequestsController.php(15): App\Models\RequestsModel->request(Object(stdClass))
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:15:17 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...], false)
+ 6 APPPATH\Models\RequestsModel.php(19): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH\Controllers\RequestsController.php(14): App\Models\RequestsModel->request(Object(stdClass))
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:15:21 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...], false)
+ 6 APPPATH\Models\RequestsModel.php(19): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH\Controllers\RequestsController.php(14): App\Models\RequestsModel->request(Object(stdClass))
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-10 14:15:40 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `requests` (`id`, `patientId`, `request_type`, `request_json`) VALUES (:id:, :patientId:, :request_type:, :request_json:)', [...], false)
+ 6 APPPATH\Models\RequestsModel.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH\Controllers\RequestsController.php(14): App\Models\RequestsModel->request(Object(stdClass))
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-05-10 14:19:39 --> Unknown column 'patientId' in 'field list'
+ERROR - 2023-05-10 14:20:46 --> Unknown column 'patientId' in 'field list'
+ERROR - 2023-05-10 14:21:58 --> Unknown column 'patientId' in 'field list'
+ERROR - 2023-05-10 14:22:59 --> Unknown column 'patientId' in 'field list'
+ERROR - 2023-05-10 14:23:00 --> Unknown column 'patientId' in 'field list'
+ERROR - 2023-05-10 14:23:02 --> Unknown column 'patientId' in 'field list'
+ERROR - 2023-05-10 14:23:04 --> Unknown column 'patientId' in 'field list'
+CRITICAL - 2023-05-10 14:23:11 --> Attempt to read property "id" on null
+in APPPATH\Models\RequestsModel.php on line 13.
+ 1 APPPATH\Models\RequestsModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Models\\RequestsModel.php', 13)
+ 2 APPPATH\Controllers\RequestsController.php(14): App\Models\RequestsModel->request(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-05-10 14:23:22 --> Unknown column 'patientId' in 'field list'
+ERROR - 2023-05-10 14:23:25 --> Unknown column 'patientId' in 'field list'
+CRITICAL - 2023-05-10 14:23:47 --> Attempt to read property "id" on null
+in APPPATH\Models\RequestsModel.php on line 13.
+ 1 APPPATH\Models\RequestsModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Models\\RequestsModel.php', 13)
+ 2 APPPATH\Controllers\RequestsController.php(14): App\Models\RequestsModel->request(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->request()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-05-10 14:23:53 --> Unknown column 'patientId' in 'field list'
+ERROR - 2023-05-10 14:23:56 --> Unknown column 'patientId' in 'field list'
+ERROR - 2023-05-10 14:24:09 --> Unknown column 'patientId' in 'field list'
+ERROR - 2023-05-10 14:24:11 --> Unknown column 'patientId' in 'field list'
+ERROR - 2023-05-10 14:24:18 --> Unknown column 'patientId' in 'field list'
+ERROR - 2023-05-10 14:24:19 --> Unknown column 'patientId' in 'field list'

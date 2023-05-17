@@ -1,0 +1,102 @@
+<div class="medical w-100" fxLayout="column" fxLayoutGap="20px">
+  <div fxLayot="column" fxLayoutGap="10px">
+    <span>Purpose:</span>
+    <div fxLayout="row" fxLayout.xs="column">
+      <mat-checkbox>Enrollment</mat-checkbox>
+      <mat-checkbox>On-the-Job Training</mat-checkbox>
+      <mat-checkbox>Intramurals/SCUAA</mat-checkbox>
+      <mat-checkbox>Others</mat-checkbox>
+    </div>
+    <mat-form-field class="w-100">
+      <mat-label>Specify Others</mat-label>
+      <input matInput>
+    </mat-form-field>
+  </div>
+  <div fxLayout="column" fxLayoutGap="10px">
+    <span>Other Information:</span>
+    <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="20px">
+      <mat-form-field fxFlex="23%">
+        <mat-label>Height</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field fxFlex="23%">
+        <mat-label>Weight</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field fxFlex="23%">
+        <mat-label>Temperature</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field fxFlex="23%">
+        <mat-label>Pulse Rate</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field fxFlex="23%">
+        <mat-label>Blood Pressure</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </div>
+  </div>
+  
+  <div fxLayout="column" fxLayoutGap="10px">
+    <span>Results:</span>
+    <mat-form-field class="w-100">
+      <mat-label>Head and Neck</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <mat-form-field class="w-100">
+      <mat-label>Respiratory System</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <mat-form-field class="w-100">
+      <mat-label>Cardiovascular System</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <mat-form-field class="w-100">
+      <mat-label>Digestive System</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <mat-form-field class="w-100">
+      <mat-label>Genito-Urinary</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <mat-form-field class="w-100">
+      <mat-label>Nervous System</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <mat-form-field class="w-100">
+      <mat-label>Reproductive System</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <mat-form-field class="w-100">
+      <mat-label>Locomotor System</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <mat-form-field class="w-100">
+      <mat-label>Past Medical History</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <mat-form-field class="w-100">
+      <mat-label>Remarks</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+      <mat-form-field fxFlex="45">
+        <mat-label>Physician</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field fxFlex="45">
+        <mat-label>License No.</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <button mat-raised-button (click)="printPreview()">
+      PRINT PREVIEW
+    </button>
+    <button mat-raised-button color="warn" (click)="cancel()">
+      Cancel
+    </button>
+  </div>
+</div>

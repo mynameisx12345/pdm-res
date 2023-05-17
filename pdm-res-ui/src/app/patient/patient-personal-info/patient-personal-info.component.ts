@@ -2,14 +2,16 @@ import { Location } from '@angular/common';
 import { Component, inject, OnDestroy, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { AbstractControl, AsyncValidator, AsyncValidatorFn, FormBuilder, FormGroup, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { BehaviorSubject, map, Observable, of, startWith, switchMap, take, tap, withLatestFrom } from 'rxjs';
+import { BehaviorSubject, combineLatest, map, Observable, of, startWith, switchMap, take, tap, withLatestFrom } from 'rxjs';
 import { populateColleges, populateCourseYears } from 'src/app/maintenance/state/college.state/college.state.action';
 import { getCivilStatuses, getColleges, getCourseYears, getGenders } from 'src/app/maintenance/state/college.state/college.state.selector';
 import { registerStart, updateCurrentPatient } from 'src/app/maintenance/state/patient.state/patient.state.action';
+import { getPatient } from 'src/app/maintenance/state/patient.state/patient.state.selector';
 import { CivilStatusModel, CollegeModel, CourseYear, Gender } from 'src/app/shared/model/patient.model';
 import { PatientService } from '../patient-personal.service';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-patient-personal-info',
@@ -31,6 +33,9 @@ export class PatientPersonalInfoComponent implements OnInit, OnDestroy {
   filteredCivilStatuses: Observable<CivilStatusModel[]>;
   registrationValueInit = null;
   currentDialog: MatDialogRef<any>;
+  patientInfo$ = this.patientService.userToEdit$;
+
+
 
   @ViewChild('dialogBox') dialogBox:TemplateRef<any>;
   constructor(
@@ -39,7 +44,8 @@ export class PatientPersonalInfoComponent implements OnInit, OnDestroy {
     private readonly location: Location,
     private readonly dialog: MatDialog,
     private readonly router: Router,
-    private readonly patientService: PatientService
+    private readonly patientService: PatientService,
+    private readonly route: ActivatedRoute
   ){}
 
   ngOnInit(): void {
@@ -63,6 +69,7 @@ export class PatientPersonalInfoComponent implements OnInit, OnDestroy {
       birthPlace: [''],
       religion: [''],
       nationality: [''],
+      id:[null]
     });
 
     this.setDataIds('college', this.colleges$, 'description', 'collegeId');
@@ -88,6 +95,17 @@ export class PatientPersonalInfoComponent implements OnInit, OnDestroy {
     this.filteredCourses = this.filterOption('course', this.courseYears$);
     this.filteredGenders = this.filterOption('gender', this.genders$);
     this.filteredCivilStatuses = this.filterOption('civilStatus', this.civilStatuses$);
+
+    combineLatest([this.route.queryParams, this.patientInfo$]).pipe(
+      map(([params, patientInfo])=>{
+         if(params.hasOwnProperty('id')){
+           this.personalFg.patchValue(patientInfo);
+           this.accountFg.patchValue(patientInfo);
+           this.contactFg.patchValue(patientInfo);
+           
+         }
+      })
+    ).subscribe();
   }
 
   setDataIds(field, dataList$:Observable<any>, selectedColumn,patchColumn){
@@ -97,9 +115,9 @@ export class PatientPersonalInfoComponent implements OnInit, OnDestroy {
         let [selectedCollege]:any[] = colleges.filter(col=>col[selectedColumn] === college);
         let patch = {};
         patch[patchColumn]= selectedCollege?.id || null
-        console.log('patch', patchColumn)
+        //console.log('patch', patchColumn)
         this.personalFg.patchValue(patch);
-        console.log('a', this.personalFg.value)
+        //console.log('a', this.personalFg.value)
       })
     ).subscribe();
   }
@@ -109,6 +127,7 @@ export class PatientPersonalInfoComponent implements OnInit, OnDestroy {
   }
 
   get registrationValueCur(){
+    this.personalFg.patchValue({birthDate: moment(this.personalFg.value.birthDate).format('YYYY-MM-DD')})
     return {
       ...this.personalFg.value,
       ...this.accountFg.value,
@@ -151,25 +170,10 @@ export class PatientPersonalInfoComponent implements OnInit, OnDestroy {
   onSubmitRegistration(){
     this.setInitialValue();
     this.store.dispatch(registerStart(this.registrationValueCur));
-    // this.patientService.register(this.registrationValueCur).pipe(
-    //   tap(()=>{
-       
-    //   })
-    // ).subscribe(()=>{
-    //   this.store.dispatch(updateCurrentPatient(this.registrationValueCur));
-    //   this.router.navigate(['home']);
-    // });
-
     
   }
 
   ngOnDestroy(): void {
-    // if(JSON.stringify(this.registrationValueCur) !== JSON.stringify(this.registrationValueInit)){
-    //   this.currentDialog = this.dialog.open(this.dialogBox, {
-    //     disableClose: false,
-    //     width: '30%',
-    //   })
-    // }
   }
 
   initiateMaintenanceData(){

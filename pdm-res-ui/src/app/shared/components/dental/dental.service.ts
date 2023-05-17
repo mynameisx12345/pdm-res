@@ -22,6 +22,11 @@ export class DentalService {
       hasAllergicReactions: [false],
       hasMedication: [false],
       hasMedicationDet: [''],
+      hasShortBreath: [false],
+      hasWounds: [false],
+      hasSpecialDiet: [false],
+      hasPregnancy: [false],
+      hasPeriod: [false],
       remarksCheck: [false, Validators.requiredTrue]
 
     }

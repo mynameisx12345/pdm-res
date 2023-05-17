@@ -1,0 +1,31 @@
+<div fxLayout="column" fxLayoutAlign="center center" class="w-100" *ngIf="(patientInfo$ | async) as patientInfo">
+  <div fxLayout="column" class="w-100 print" #print >
+    <app-print-header></app-print-header>
+    <span class="mt-3" fxLayout="row" fxLayoutAlign="center center">MEDICAL EXAMINATION FORM</span>
+    <div fxLayout="row" fxLayoutAlign="end center">Date: {{curDate}}</div>
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+      <div>Name: <span>{{patientInfo.firstname}} {{patientInfo.middlename}} {{patientInfo.lastname}} {{patientInfo.ext}}</span></div>
+      <div>Department: {{patientInfo?.college}}</div>
+      <div>Course & Year: {{patientInfo?.course}}</div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+      <div>Date of Birth: {{patientInfo?.birthDate}}</div>
+      <div>Place of Birth: {{patientInfo?.birthPlace}}</div>
+      <div>Age: {{getAge(patientInfo)}}</div>
+      <div>Gender: {{patientInfo?.gender}}</div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+      <div>Address: {{patientInfo?.address}}</div>
+      <div>Civil Status: {{patientInfo?.civilStatus}}</div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+      <div>Contact Person In Case of Emergency: {{patientInfo?.contactPerson}}</div>
+      <div>Contact No.: {{patientInfo?.contactPerNumber}}</div>
+    </div>
+    <hr/>
+  </div>
+  
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <button mat-button (click)="startPrint(print)">PRINT</button>
+  </div>
+</div>

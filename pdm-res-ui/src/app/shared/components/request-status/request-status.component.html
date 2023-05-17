@@ -1,0 +1,12 @@
+<div class="w-100 status">
+  <div class="w-100" 
+    [ngClass]="{'initiated': requestData?.status === 'Initiated',
+      'processing':requestData?.status === 'Processing',
+      'completed':requestData?.status === 'Completed'}" 
+    fxLayout="column" fxLayoutAlign="start center">
+    <span fxLayaout="column" fxLayoutAlign="center center">
+      {{requestData?.status}}
+    </span>
+    
+  </div>
+</div>

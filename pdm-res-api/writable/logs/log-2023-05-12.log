@@ -1,0 +1,122 @@
+CRITICAL - 2023-05-12 13:20:45 --> Too few arguments to function App\Models\MaintenanceModel::login(), 0 passed in C:\xampp\htdocs\clinic_app\pdm-res-api\app\Controllers\MaintenanceController.php on line 49 and exactly 1 expected
+in APPPATH\Models\MaintenanceModel.php on line 50.
+ 1 APPPATH\Controllers\MaintenanceController.php(49): App\Models\MaintenanceModel->login()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-12 13:21:31 --> Too few arguments to function App\Models\MaintenanceModel::login(), 0 passed in C:\xampp\htdocs\clinic_app\pdm-res-api\app\Controllers\MaintenanceController.php on line 49 and exactly 1 expected
+in APPPATH\Models\MaintenanceModel.php on line 50.
+ 1 APPPATH\Controllers\MaintenanceController.php(49): App\Models\MaintenanceModel->login()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-12 13:22:30 --> Too few arguments to function App\Models\MaintenanceModel::login(), 0 passed in C:\xampp\htdocs\clinic_app\pdm-res-api\app\Controllers\MaintenanceController.php on line 49 and exactly 1 expected
+in APPPATH\Models\MaintenanceModel.php on line 50.
+ 1 APPPATH\Controllers\MaintenanceController.php(49): App\Models\MaintenanceModel->login()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-12 13:22:50 --> Too few arguments to function App\Models\MaintenanceModel::login(), 0 passed in C:\xampp\htdocs\clinic_app\pdm-res-api\app\Controllers\MaintenanceController.php on line 50 and exactly 1 expected
+in APPPATH\Models\MaintenanceModel.php on line 50.
+ 1 APPPATH\Controllers\MaintenanceController.php(50): App\Models\MaintenanceModel->login()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-12 13:23:25 --> Attempt to read property "email" on null
+in APPPATH\Models\MaintenanceModel.php on line 53.
+ 1 APPPATH\Models\MaintenanceModel.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "email" on null', 'APPPATH\\Models\\MaintenanceModel.php', 53)
+ 2 APPPATH\Controllers\MaintenanceController.php(51): App\Models\MaintenanceModel->login(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-12 13:23:41 --> Attempt to read property "email" on null
+in APPPATH\Models\MaintenanceModel.php on line 53.
+ 1 APPPATH\Models\MaintenanceModel.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "email" on null', 'APPPATH\\Models\\MaintenanceModel.php', 53)
+ 2 APPPATH\Controllers\MaintenanceController.php(51): App\Models\MaintenanceModel->login(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-12 13:24:18 --> Attempt to read property "email" on null
+in APPPATH\Models\MaintenanceModel.php on line 53.
+ 1 APPPATH\Models\MaintenanceModel.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "email" on null', 'APPPATH\\Models\\MaintenanceModel.php', 53)
+ 2 APPPATH\Controllers\MaintenanceController.php(52): App\Models\MaintenanceModel->login(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-12 13:24:42 --> Attempt to read property "email" on null
+in APPPATH\Models\MaintenanceModel.php on line 53.
+ 1 APPPATH\Models\MaintenanceModel.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "email" on null', 'APPPATH\\Models\\MaintenanceModel.php', 53)
+ 2 APPPATH\Controllers\MaintenanceController.php(53): App\Models\MaintenanceModel->login(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-12 13:25:07 --> Attempt to read property "email" on null
+in APPPATH\Models\MaintenanceModel.php on line 53.
+ 1 APPPATH\Models\MaintenanceModel.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "email" on null', 'APPPATH\\Models\\MaintenanceModel.php', 53)
+ 2 APPPATH\Controllers\MaintenanceController.php(52): App\Models\MaintenanceModel->login(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-12 13:25:40 --> Attempt to read property "email" on null
+in APPPATH\Models\MaintenanceModel.php on line 53.
+ 1 APPPATH\Models\MaintenanceModel.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "email" on null', 'APPPATH\\Models\\MaintenanceModel.php', 53)
+ 2 APPPATH\Controllers\MaintenanceController.php(52): App\Models\MaintenanceModel->login(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-12 13:25:52 --> Attempt to read property "email" on null
+in APPPATH\Models\MaintenanceModel.php on line 53.
+ 1 APPPATH\Models\MaintenanceModel.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "email" on null', 'APPPATH\\Models\\MaintenanceModel.php', 53)
+ 2 APPPATH\Controllers\MaintenanceController.php(53): App\Models\MaintenanceModel->login(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-12 13:26:11 --> Attempt to read property "email" on null
+in APPPATH\Models\MaintenanceModel.php on line 54.
+ 1 APPPATH\Models\MaintenanceModel.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "email" on null', 'APPPATH\\Models\\MaintenanceModel.php', 54)
+ 2 APPPATH\Controllers\MaintenanceController.php(52): App\Models\MaintenanceModel->login(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-12 13:26:22 --> Attempt to read property "email" on null
+in APPPATH\Models\MaintenanceModel.php on line 54.
+ 1 APPPATH\Models\MaintenanceModel.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "email" on null', 'APPPATH\\Models\\MaintenanceModel.php', 54)
+ 2 APPPATH\Controllers\MaintenanceController.php(52): App\Models\MaintenanceModel->login(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-12 13:27:14 --> Attempt to read property "email" on null
+in APPPATH\Models\MaintenanceModel.php on line 53.
+ 1 APPPATH\Models\MaintenanceModel.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "email" on null', 'APPPATH\\Models\\MaintenanceModel.php', 53)
+ 2 APPPATH\Controllers\MaintenanceController.php(52): App\Models\MaintenanceModel->login(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

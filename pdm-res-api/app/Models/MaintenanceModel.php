@@ -22,28 +22,57 @@ class MaintenanceModel{
   }
 
   function register($data){
-    $builder = $this->db->table('users');
-    $builder->where('email', $data->email);
-    $query = $builder->countAllResults();
-
-    $isInsert = true;
-    if($query > 0){
-      $isInsert = false;
-    }
+    $isInsert = !(!!$data->id);
     
- 
     $dataA = get_object_vars($data);
     // $dataA = [
     //   "email" => $data->email
     // ];
     $userId = null;
     if($isInsert){
+      $builder = $this->db->table('users');
+      $builder->where('email', $data->email);
+      $query = $builder->countAllResults();
+      $accountExist = false;
+
+      if($query > 0){
+        //$isInsert = false;
+        $accountExist = true;
+      }
+  
+      if($accountExist){
+        return ['isSuccess'=> false, 'userId' => null];
+      }
+
       $this->db->table('users')
         ->insert($dataA);
       $userId = $this->db->insertID();
+    } else {
+      $builder = $this->db->table('users');
+      $userId = $data->id;
+      $builder->where('email', $data->email);
+      $builder->update($dataA);
     }
 
-    $ret = ['isInsert'=> $isInsert, 'userId' => $userId];
+    $ret = ['isSuccess'=> true, 'userId' => $userId];
     return $ret;
+  }
+
+  function login($data){
+    $builder = $this->db->table('users');
+    $builder->where('email', $data->email);
+    $builder->where('password', $data->password);
+    $query = $builder->get()->getResult();
+
+    return $query;
+  }
+
+  function getPatientInfo($id){
+    $builder = $this->db->table('users');
+    $builder->where('id', $id);
+    $query = $builder->get()->getResult();
+
+    return $query;
+    //$isInsert = 
   }
 }

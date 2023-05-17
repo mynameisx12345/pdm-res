@@ -3,6 +3,7 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { populateColleges } from 'src/app/maintenance/state/college.state/college.state.action';
+import { updateCurrentPatient } from 'src/app/maintenance/state/patient.state/patient.state.action';
 import { getPatient } from 'src/app/maintenance/state/patient.state/patient.state.selector';
 
 @Component({
@@ -39,6 +40,10 @@ export class DashboardComponent implements OnInit {
   ){}
 
   ngOnInit(): void {
+    let currentUser = JSON.parse(sessionStorage.getItem('user'));
+    if(currentUser){
+      this.store.dispatch(updateCurrentPatient(currentUser));
+    }
     this.currentPatient$.subscribe((patient)=>{
       this.loggedIn = patient !== null;
     })
@@ -65,5 +70,10 @@ export class DashboardComponent implements OnInit {
 
   initiateMaintenanceData(){
     //this.store.dispatch(populateColleges());
+  }
+
+  openLogin(){
+    this.currentDialog.close();
+    this.router.navigate(['login']);
   }
 }

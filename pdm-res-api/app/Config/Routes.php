@@ -41,6 +41,12 @@ $routes->get('getColleges', 'MaintenanceController::getColleges');
 $routes->get('getCourseYears', 'MaintenanceController::getCourseYears');
 $routes->group('user', function($routes){
     $routes->post('register', 'MaintenanceController::register');
+    $routes->post('login', 'MaintenanceController::login');
+    $routes->get('getPatientInfo', 'MaintenanceController::getPatientInfo');
+});
+$routes->group('request', function($routes){
+    $routes->post('add', 'RequestsController::request');
+    $routes->get('get', 'RequestsController::getRequest');
 });
 
 /*

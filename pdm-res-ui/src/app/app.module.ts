@@ -12,11 +12,14 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtools, StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { PatientEffects } from './maintenance/state/patient.state/patient.state.effects';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     ComponentsModule,
     ModuleModule,
     HttpClientModule,
-    EffectsModule.forRoot([]),
+    EffectsModule.forRoot([PatientEffects]),
     StoreModule.forRoot({}),
     StoreDevtoolsModule.instrument({
       logOnly: !isDevMode(), // Restrict extension to log-only mode

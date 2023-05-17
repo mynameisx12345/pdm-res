@@ -9,19 +9,36 @@ import { patientReducer } from '../maintenance/state/patient.state/patient.state
 import { EffectsModule } from '@ngrx/effects';
 import { MaintenanceEffects } from '../maintenance/state/college.state/college.effects';
 import { PatientEffects } from '../maintenance/state/patient.state/patient.state.effects';
+import { RequestsComponent } from './requests/requests.component';
+import { AuthGuard } from '../guards/auth.guard';
 const routes: Routes = [
   {
-    path: '', 
-    component: PatientPersonalInfoComponent,
-    data: {
-      breadcrumb: 'Register'
-    }
-  }
+    path: '',
+    children: [
+      {
+        path: 'register',
+        component: PatientPersonalInfoComponent,
+        data: {
+          breadcrumb: 'Information'
+        }
+      },
+      {
+        path: 'request',
+        component: RequestsComponent,
+        data: {
+          breadcrumb: 'Appointments'
+        },
+        canActivate: [AuthGuard],
+      }
+    ]
+  },
+ 
 ]
 
 @NgModule({
   declarations: [
-    PatientPersonalInfoComponent
+    PatientPersonalInfoComponent,
+    RequestsComponent
   ],
   imports: [
     CommonModule,
