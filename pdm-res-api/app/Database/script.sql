@@ -51,3 +51,15 @@ CREATE TABLE civil_statuses(
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50)
 )
+
+CREATE TABLE requests (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  patient_id INT,
+  FOREIGN KEY (patient_id) REFERENCES users(id),
+  request_type VARCHAR(50),
+  request_json JSON,
+  status VARCHAR(20),
+  dt_initiated VARCHAR(30),
+  dt_processed VARCHAR(30),
+  dt_completed VARCHAR(30)
+)

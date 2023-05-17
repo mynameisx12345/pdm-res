@@ -1,5 +1,5 @@
 <div class="mt-3 mb-3 w-100" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="20px">
-  <app-admin-panel class="w-100" 
+  <app-admin-panel class="w-100" *ngIf="patientInfo?.accountType==='A'"
     (startProcessing)="startProcessing()"
     (complete)="completeRequest()"
     [requestData]="currentRequest"></app-admin-panel>
