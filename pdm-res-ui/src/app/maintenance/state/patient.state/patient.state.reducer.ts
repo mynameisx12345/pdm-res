@@ -1,7 +1,7 @@
 import { act } from "@ngrx/effects";
 import { createReducer, on } from "@ngrx/store";
 import { initialStatePatient } from "./patient.state";
-import { addMyRequest, logout, populateMyRequest, updateCurrentPatient, updateMyRequest } from "./patient.state.action";
+import { addMyRequest, loadUsers, logout, populateMyRequest, updateCurrentPatient, updateMyRequest, updateUser } from "./patient.state.action";
 
 const _patientReducer = createReducer(
   initialStatePatient,
@@ -43,8 +43,47 @@ const _patientReducer = createReducer(
       ...state,
       myRequests: updatedRequests
     }
+  }),
+  on(loadUsers,(state,action)=>{
+    return {
+      ...state,
+      ...action
+    }
+  }),
+  on(updateUser,(state,action)=>{
+    console.log('action',action);
+    let updatedusers = state.users.map((user)=>{
+      
+      let accountTypes = {
+        'S' : 'Student',
+        'F' : 'Faculty',
+        'A' : 'Administrator',
+        'Student' : 'Student',
+        'Faculty' : 'Faculty',
+        'Administrator' : 'Administrator'
+      }
+
+      let isApproves = {
+        '1' : 'Yes',
+        'Yes' : 'Yes',
+        'No' : 'No'
+      }
+
+
+      let dataToReturn = Number(user.id) === Number(action.id) ? action : user; 
+      return {
+        ...dataToReturn,
+        isApproved: isApproves[dataToReturn.isApproved],
+        accountType: accountTypes[dataToReturn.accountType]
+      }
+
+    })
+    return {
+      ...state,
+      users: updatedusers
+    }
   })
-  );
+);
 
 export function patientReducer (state,action) {
   return _patientReducer(state,action);

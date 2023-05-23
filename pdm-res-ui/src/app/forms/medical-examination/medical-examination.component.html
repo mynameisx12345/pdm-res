@@ -1,15 +1,15 @@
-<div class="medical w-100" fxLayout="column" fxLayoutGap="20px">
+<div class="medical w-100" fxLayout="column" fxLayoutGap="20px" [formGroup]="examFg">
   <div fxLayot="column" fxLayoutGap="10px">
     <span>Purpose:</span>
     <div fxLayout="row" fxLayout.xs="column">
-      <mat-checkbox>Enrollment</mat-checkbox>
-      <mat-checkbox>On-the-Job Training</mat-checkbox>
-      <mat-checkbox>Intramurals/SCUAA</mat-checkbox>
-      <mat-checkbox>Others</mat-checkbox>
+      <mat-checkbox formControlName="isEnrollment">Enrollment</mat-checkbox>
+      <mat-checkbox formControlName="isTraining">On-the-Job Training</mat-checkbox>
+      <mat-checkbox formControlName="isIntramurals">Intramurals/SCUAA</mat-checkbox>
+      <mat-checkbox formControlName="isOthers">Others</mat-checkbox>
     </div>
-    <mat-form-field class="w-100">
+    <mat-form-field class="w-100" *ngIf="examFg.get('isOthers').value">
       <mat-label>Specify Others</mat-label>
-      <input matInput>
+      <input matInput formControlName="othersDet">
     </mat-form-field>
   </div>
   <div fxLayout="column" fxLayoutGap="10px">
@@ -17,23 +17,23 @@
     <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="20px">
       <mat-form-field fxFlex="23%">
         <mat-label>Height</mat-label>
-        <input matInput>
+        <input matInput formControlName="height">
       </mat-form-field>
       <mat-form-field fxFlex="23%">
         <mat-label>Weight</mat-label>
-        <input matInput>
+        <input matInput formControlName="weight">
       </mat-form-field>
       <mat-form-field fxFlex="23%">
         <mat-label>Temperature</mat-label>
-        <input matInput>
+        <input matInput formControlName="temperature">
       </mat-form-field>
       <mat-form-field fxFlex="23%">
         <mat-label>Pulse Rate</mat-label>
-        <input matInput>
+        <input matInput formControlName="pulseRate">
       </mat-form-field>
       <mat-form-field fxFlex="23%">
         <mat-label>Blood Pressure</mat-label>
-        <input matInput>
+        <input matInput formControlName="bloodPressure">
       </mat-form-field>
     </div>
   </div>
@@ -42,52 +42,52 @@
     <span>Results:</span>
     <mat-form-field class="w-100">
       <mat-label>Head and Neck</mat-label>
-      <input matInput>
+      <input matInput formControlName="headAndNeck">
     </mat-form-field>
     <mat-form-field class="w-100">
       <mat-label>Respiratory System</mat-label>
-      <input matInput>
+      <input matInput formControlName="respiratory">
     </mat-form-field>
     <mat-form-field class="w-100">
       <mat-label>Cardiovascular System</mat-label>
-      <input matInput>
+      <input matInput formControlName="cardio">
     </mat-form-field>
     <mat-form-field class="w-100">
       <mat-label>Digestive System</mat-label>
-      <input matInput>
+      <input matInput formControlName="digestive">
     </mat-form-field>
     <mat-form-field class="w-100">
       <mat-label>Genito-Urinary</mat-label>
-      <input matInput>
+      <input matInput formControlName="genito">
     </mat-form-field>
     <mat-form-field class="w-100">
       <mat-label>Nervous System</mat-label>
-      <input matInput>
+      <input matInput formControlName="nervous">
     </mat-form-field>
     <mat-form-field class="w-100">
       <mat-label>Reproductive System</mat-label>
-      <input matInput>
+      <input matInput formControlName="reproductive">
     </mat-form-field>
     <mat-form-field class="w-100">
       <mat-label>Locomotor System</mat-label>
-      <input matInput>
+      <input matInput formControlName="locomotor">
     </mat-form-field>
     <mat-form-field class="w-100">
       <mat-label>Past Medical History</mat-label>
-      <input matInput>
+      <input matInput formControlName="pastMedical">
     </mat-form-field>
     <mat-form-field class="w-100">
       <mat-label>Remarks</mat-label>
-      <input matInput>
+      <input matInput formControlName="remarks">
     </mat-form-field>
     <div fxLayout="row" fxLayoutAlign="space-between center">
       <mat-form-field fxFlex="45">
         <mat-label>Physician</mat-label>
-        <input matInput>
+        <input matInput formControlName="physician">
       </mat-form-field>
       <mat-form-field fxFlex="45">
         <mat-label>License No.</mat-label>
-        <input matInput>
+        <input matInput formControlName="licenseNo">
       </mat-form-field>
     </div>
   </div>
@@ -95,8 +95,8 @@
     <button mat-raised-button (click)="printPreview()">
       PRINT PREVIEW
     </button>
-    <button mat-raised-button color="warn" (click)="cancel()">
+    <!-- <button mat-raised-button color="warn" (click)="cancel()">
       Cancel
-    </button>
+    </button> -->
   </div>
 </div>

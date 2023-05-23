@@ -1,0 +1,42 @@
+ERROR - 2023-05-22 10:33:47 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2023-05-22 10:33:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\MaintenanceModel.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\MaintenanceController.php(51): App\Models\MaintenanceModel->login(Object(stdClass))
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-05-22 10:33:54 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2023-05-22 10:33:54 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\MaintenanceModel.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\MaintenanceController.php(51): App\Models\MaintenanceModel->login(Object(stdClass))
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-22 17:48:03 --> syntax error, unexpected variable "$query"
+in APPPATH\Models\MaintenanceModel.php on line 83.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\MaintenanceModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\MaintenanceModel')
+ 3 APPPATH\Controllers\MaintenanceController.php(77): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\MaintenanceModel')
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->getUsers()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

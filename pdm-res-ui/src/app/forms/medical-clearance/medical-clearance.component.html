@@ -1,0 +1,39 @@
+<div class="medical w-100" fxLayout="column" fxLayoutGap="20px" [formGroup]="clearanceFg">
+  <mat-form-field>
+    <mat-label>Date Examined</mat-label>
+    <input matInput [matDatepicker]="examPicker" formControlName="dtExam">
+    <mat-datepicker-toggle matIconSuffix [for]="examPicker"></mat-datepicker-toggle>
+    <mat-datepicker #examPicker></mat-datepicker>
+  </mat-form-field>
+  <div fxLayot="column" fxLayoutGap="10px">
+    <span>Purpose:</span>
+    <div fxLayout="row" fxLayout.xs="column">
+      <mat-checkbox formControlName="isEnrollment">Enrollment</mat-checkbox>
+      <mat-checkbox formControlName="isTraining">On-the-Job Training</mat-checkbox>
+      <mat-checkbox formControlName="isEmployment">Employment</mat-checkbox>
+      <mat-checkbox formControlName="isOthers">Others</mat-checkbox>
+    </div>
+    <mat-form-field class="w-100" *ngIf="clearanceFg.get('isOthers').value">
+      <mat-label>Specify Others</mat-label>
+      <input matInput formControlName="othersDet">
+    </mat-form-field>
+  </div>
+  <div fxLayout="row" fxLayoutGap="20px">
+    <mat-form-field fxFlex="60">
+      <mat-label>Physician</mat-label>
+      <input matInput formControlName="physician">
+    </mat-form-field>
+    <mat-form-field fxFlex="35">
+      <mat-label>License No.</mat-label>
+      <input matInput formControlName="licenseNo">
+    </mat-form-field>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <button mat-raised-button (click)="printPreview()">
+      PRINT PREVIEW
+    </button>
+    <!-- <button mat-raised-button color="warn">
+      Cancel
+    </button> -->
+  </div>
+</div>

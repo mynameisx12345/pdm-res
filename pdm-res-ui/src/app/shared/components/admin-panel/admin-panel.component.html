@@ -11,10 +11,23 @@
   <mat-menu #actionMenu="matMenu">
     <button mat-menu-item
       (click)="openMedExam()">
-      Medical Examination
+      <mat-icon>monitor_heart</mat-icon> Medical Examination
+    </button>
+    <button mat-menu-item
+      (click)="openMedClearance()">
+      <mat-icon>medical_services</mat-icon> Medical Clearance
     </button>
     <button mat-menu-item>
-      Medical Clearance
+      <mat-icon>description</mat-icon> Dental Service Summary
+    </button>
+    <button mat-menu-item>
+      <mat-icon>medical_information</mat-icon> Referral Form
+    </button>
+    <button mat-menu-item>
+      <mat-icon>arrow_right_alt</mat-icon> Refusal of Care
+    </button>
+    <button mat-menu-item>
+      <mat-icon>analytics</mat-icon> Laboratory and Diagnostic Form
     </button>
   </mat-menu>
 </div>

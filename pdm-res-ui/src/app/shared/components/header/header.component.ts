@@ -52,4 +52,8 @@ export class HeaderComponent implements OnInit {
         this.router.navigateByUrl(`/patient/register?id=${currentPatient.id}`);
       })).subscribe();
   }
+
+  openUserList(){
+    this.router.navigate(['maintenance/user-list'])
+  }
 }

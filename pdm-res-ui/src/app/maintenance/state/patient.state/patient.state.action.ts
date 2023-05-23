@@ -27,3 +27,15 @@ export const logout = createAction(LOGOUT_USER);
 
 export const CHANGE_STATUS = '[request] change status';
 export const changeStatus = createAction(CHANGE_STATUS, props<MyRequestsModel>());
+
+export const POPULATE_USERS = '[users] populate users';
+export const populateUsers = createAction(POPULATE_USERS);
+
+export const LOAD_USERS = '[users] load users';
+export const loadUsers = createAction(LOAD_USERS,props<{users: PatientModel[]}>());
+
+export const UPDATE_STATUS = '[users] update status';
+export const updateStatus = createAction(UPDATE_STATUS,props<PatientModel>());
+
+export const UPDATE_USER = '[user] update user';
+export const updateUser = createAction(UPDATE_USER,props<PatientModel>());

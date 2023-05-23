@@ -5,6 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ModuleModule } from '../shared/module/module.module';
 import { MedicalExaminationPrintComponent } from './medical-examination-print/medical-examination-print.component';
 import { ComponentsModule } from '../shared/components/components.module';
+import { MedicalClearanceComponent } from './medical-clearance/medical-clearance.component';
+import { MedicalClearancePrintComponent } from './medical-clearance-print/medical-clearance-print.component';
 
 const routes: Routes = [
   {
@@ -23,6 +25,20 @@ const routes: Routes = [
         data: {
           breadcrumb: 'Print Medical Examination'
         }
+      },
+      {
+        path: 'medical-clearance',
+        component: MedicalClearanceComponent,
+        data: {
+          breadcrumb: 'Medical Clearance'
+        }
+      },
+      {
+        path: 'medical-clearance-print',
+        component: MedicalClearancePrintComponent,
+        data: {
+          breadcrumb: 'Print Medical Clearance'
+        }
       }
     ]
   }
@@ -31,7 +47,9 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     MedicalExaminationComponent,
-    MedicalExaminationPrintComponent
+    MedicalExaminationPrintComponent,
+    MedicalClearanceComponent,
+    MedicalClearancePrintComponent
   ],
   imports: [
     CommonModule,

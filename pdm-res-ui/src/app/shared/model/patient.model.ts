@@ -47,7 +47,8 @@ export interface PatientModel {
   contactNumber: string,
   contactPerson: string,
   contactPerNumber: string,
-  accountType: string
+  accountType: string,
+  isApproved?: string
 }
 
 export interface PatientModelI {
@@ -71,7 +72,8 @@ export interface PatientModelI {
   contact_number: string,
   contact_person: string,
   contact_person_no: string,
-  account_type: string
+  account_type: string,
+  is_approved?: string
 };
 
 export interface MyRequestsModel {

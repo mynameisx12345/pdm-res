@@ -9,3 +9,7 @@ export const getPatient = createSelector(getPatientState, (state)=>{
 export const getPatientRequests = createSelector(getPatientState, (state)=>{
   return state.myRequests;
 })
+
+export const getUsers = createSelector(getPatientState, (state)=>{
+  return state.users;
+})

@@ -24,6 +24,16 @@ export class AdminPanelComponent {
   }
 
   openMedExam(){
-    this.router.navigateByUrl(`forms/medical-examination?id=${this.requestData.patientId}`);
+    let url = `http://localhost:4200/forms/medical-examination?id=${this.requestData.patientId}`
+  
+    window.open(url, '_blank');
+    //this.router.navigateByUrl(`forms/medical-examination?id=${this.requestData.patientId}`);
+  }
+
+  openMedClearance(){
+    let url = `http://localhost:4200/forms/medical-clearance?id=${this.requestData.patientId}`
+  
+    window.open(url, '_blank');
+    //this.router.navigateByUrl(`forms/medical-examination?id=${this.requestData.patientId}`);
   }
 }

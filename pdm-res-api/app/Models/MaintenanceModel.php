@@ -62,6 +62,7 @@ class MaintenanceModel{
     $builder = $this->db->table('users');
     $builder->where('email', $data->email);
     $builder->where('password', $data->password);
+    $builder->where('is_approved',true);
     $query = $builder->get()->getResult();
 
     return $query;
@@ -74,5 +75,13 @@ class MaintenanceModel{
 
     return $query;
     //$isInsert = 
+  }
+
+  function getUsers(){
+    $builder = $this->db->table('users');
+    $builder->orderBy('id', 'DESC');
+    $query = $builder->get()->getResult();
+
+    return $query;
   }
 }

@@ -37,9 +37,20 @@
     <mat-icon>perm_media</mat-icon>
     Appointments
   </button>
+  <button mat-menu-item [matMenuTriggerFor]="adminSettings" *ngIf="(currentPatient$ | async)?.accountType !== 'S'">
+    <mat-icon>perm_media</mat-icon>
+    Admin Settings
+  </button>
   <button mat-menu-item (click)="signOut()">
     <mat-icon>exit_to_app</mat-icon>
     Sign-out
+  </button>
+</mat-menu>
+
+<mat-menu #adminSettings="matMenu">
+  <button mat-menu-item (click)="openUserList()">
+    <mat-icon>perm_media</mat-icon>
+    User List
   </button>
 </mat-menu>
 

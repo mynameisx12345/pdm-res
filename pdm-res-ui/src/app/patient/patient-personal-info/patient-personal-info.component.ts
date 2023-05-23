@@ -34,7 +34,18 @@ export class PatientPersonalInfoComponent implements OnInit, OnDestroy {
   registrationValueInit = null;
   currentDialog: MatDialogRef<any>;
   patientInfo$ = this.patientService.userToEdit$;
+  accountTypes = [
+    {id: 'S', name: 'Student'},
+    {id: 'F', name: 'Faculty/Staff'},
+    {id: 'A', name: 'Administrator'}
+  ];
 
+  facultyCollege ={
+    id: 5, name: 'FACULTY'
+  }
+  facultyCourse = {
+    id: 5, name:'FACULTY'
+  };
 
 
   @ViewChild('dialogBox') dialogBox:TemplateRef<any>;
@@ -80,8 +91,28 @@ export class PatientPersonalInfoComponent implements OnInit, OnDestroy {
     this.accountFg = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required],
-      accountType: ['S']
+      accountType: ['',Validators.required]
     });
+
+    this.accountFg.get('accountType').valueChanges.subscribe((type)=>{
+      if(type!=='S'){
+        let facultyInitiate = {
+          collegeId: this.facultyCollege.id,
+          college: this.facultyCollege.name,
+          courseId: this.facultyCourse.id,
+          course: this.facultyCourse.name
+        }
+        this.personalFg.patchValue(facultyInitiate);
+      } else {
+        let facultyInitiate = {
+          collegeId: null,
+          college: null,
+          courseId: null,
+          course: null
+        }
+        this.personalFg.patchValue({})
+      }
+    })
     this.contactFg = this.fb.group({
       address: [''],
       contactNumber: [''],

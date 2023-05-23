@@ -71,4 +71,15 @@ class MaintenanceController extends BaseController
       ->setStatusCode(200)
       ->setJson(["message"=>"Success", "user"=>$result]);
   }
+
+  public function getUsers(){
+    $db = db_connect();
+    $model = new MaintenanceModel($db);
+
+    $result = $model->getUsers();
+
+    return $this->response
+      ->setStatusCode(200)
+      ->setJson(["message"=>"Success", "user"=>$result]); 
+  }
 }

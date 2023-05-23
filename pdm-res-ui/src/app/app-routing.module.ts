@@ -46,6 +46,11 @@ const routes: Routes = [
     path: 'forms',
     loadChildren: () => import('./forms/forms.module').then(m=>m.FormsModule),
     canActivate: [AuthGuard]
+  },
+  {
+    path: 'maintenance',
+    loadChildren: () => import('./maintenance/maintenance.module').then(m=>m.MaintenanceModule),
+    canActivate: [AuthGuard],
   }
 ];
 

@@ -1,0 +1,13 @@
+<div fxLayout="column" fxLayoutAlign="center center" class="w-100" >
+  <div fxLayout="column" class="w-100 print" #print >
+    <app-print-header></app-print-header>
+    <span class="mt-3" fxLayout="row" fxLayoutAlign="center center">MEDICAL CLEARANCE FORM</span>
+    <div fxLayout="row" fxLayoutAlign="end center">Date: {{curDate}}</div>
+    <div fxLayout="row" fxLayoutAlign="start start">TO WHOM IT MAY CONCERN:</div>
+    <div fxLayout="row" *ngIf="(patientInfo$  | async) as patientInfo" class="ps-3">
+      This is to certify that {{patientInfo.firstname}} {{patientInfo.middlename}} {{patientInfo.lastname}} {{patientInfo.ext}}
+      , {{getAge(patientInfo)}} years old of {{patientInfo?.course}} was seen and examined at the Medical Clinic last ____________________________
+      and physically fit for:
+    </div>
+  </div>
+</div>

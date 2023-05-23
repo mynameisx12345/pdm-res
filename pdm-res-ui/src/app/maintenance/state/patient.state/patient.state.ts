@@ -2,10 +2,12 @@ import { MyRequestsModel, PatientModel } from "src/app/shared/model/patient.mode
 
 export interface PatientState {
   patient: PatientModel,
-  myRequests: MyRequestsModel[]
+  myRequests: MyRequestsModel[],
+  users: PatientModel[]
 }
 
 export const initialStatePatient: PatientState = {
   patient: null,
-  myRequests: []
+  myRequests: [],
+  users: []
 }

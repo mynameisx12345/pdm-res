@@ -1,10 +1,12 @@
+import { Location } from '@angular/common';
 import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { jsPDF}  from 'jspdf';
 import * as moment from 'moment';
 import { map, Observable, switchMap, tap } from 'rxjs';
 import { PatientService } from 'src/app/patient/patient-personal.service';
 import { PatientModel } from 'src/app/shared/model/patient.model';
+import { PrintService } from 'src/app/shared/services/print.service';
 
 @Component({
   selector: 'app-medical-examination-print',
@@ -16,10 +18,14 @@ export class MedicalExaminationPrintComponent implements OnInit{
   curDate = moment().format('YYYY-MM-DD');
   patientId: string;
   patientInfo$: Observable<PatientModel>;
+  medicalExamInfo$ = this.printService.medicalExamination$;
 
   constructor(
     private readonly route: ActivatedRoute,
-    private readonly patientService: PatientService
+    private readonly patientService: PatientService,
+    private readonly printService: PrintService,
+    private readonly location: Location,
+    private readonly router: Router
   ){}
 
   ngOnInit(): void {
@@ -33,9 +39,8 @@ export class MedicalExaminationPrintComponent implements OnInit{
       }),
       switchMap((id)=> this.patientService.getPatientInfo(id))
     )
-
-
   }
+
   startPrint(printHtml){
     const doc = new jsPDF();
 
@@ -51,10 +56,16 @@ export class MedicalExaminationPrintComponent implements OnInit{
       width: 190, //target width in the PDF document
       windowWidth: 900, //window width in CSS pixels
     })
+    setTimeout(() => {
+      window.close();
+    }, 1000);
   }
 
   getAge(patientInfo: PatientModel){
-   
     return moment().diff(patientInfo.birthDate,'years');
+  }
+
+  cancel(){
+    this.location.back();
   }
 }

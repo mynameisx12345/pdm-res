@@ -47,7 +47,8 @@ export class PatientService {
       contact_number: data.contactNumber,
       contact_person: data.contactPerson,
       contact_person_no: data.contactPerNumber,
-      account_type: data.accountType
+      account_type: data.accountType,
+      is_approved: data.isApproved
     }
     
     return this.http.post(`${this.apiUrl}/user/register`,formatted);
@@ -220,6 +221,49 @@ export class PatientService {
         patientInfo.civilStatus = civilStatus?.name;
         return patientInfo;
       })
+      
+    )
+  }
+
+  getUsers(){
+    return this.http.get(`${this.apiUrl}/user/list`).pipe(
+      map((resp: {message: string, user:PatientModelI[]})=>{
+        let formatted: PatientModel[];
+
+        formatted = resp.user.map((data:PatientModelI)=>{
+          return {
+            id:data.id,
+            firstname:data.first_name,
+            middlename: data.middle_name,
+            lastname: data.last_name,
+            ext: data.ext_name,
+            collegeId: data.college_id,
+            courseId: data.course_year_id,
+            birthDate: data.date_of_birth,
+            genderId: data.gender_id,
+            civilStatusId: data.civil_status_id,
+            bloodType: data.blood_type,
+            birthPlace: data.place_of_birth,
+            religion: data.religion,
+            nationality: data.nationality,
+            email: data.email,
+            password: data.password,
+            address: data.address,
+            contactNumber: data.contact_number,
+            contactPerson: data.contact_person,
+            contactPerNumber: data.contact_person_no,
+            accountType: data.account_type === 'S' ? 'Student' : (data.account_type === 'F' ? 'Faculty' : 'Administrator'),
+            college: null,
+            course: null,
+            gender: null,
+            civilStatus: null,
+            isApproved: data.is_approved ? 'Yes' : 'No'
+
+          }
+        });
+
+        return formatted;
+      }),
       
     )
   }

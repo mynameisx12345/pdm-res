@@ -23,9 +23,84 @@
       <div>Contact No.: {{patientInfo?.contactPerNumber}}</div>
     </div>
     <hr/>
+    <div *ngIf="(medicalExamInfo$ | async) as medicalExamInfo" fxLayout="column">
+      <div fxLayout="row">
+        <div fxLayout="column" fxFlex="50" fxLayoutAlign="start start">
+          <div>Height: {{medicalExamInfo?.height}}</div>
+          <div>Weight: {{medicalExamInfo?.weight}}</div>
+          <div>Temperature:{{medicalExamInfo?.temperature}}</div>
+          <div>Pulse Rate: {{medicalExamInfo?.pulseRate}}</div>
+          <div>Blood Pressure: {{medicalExamInfo?.bloodPressure}}</div>
+        </div>
+        <div fxLayout="column" fxFlex="50" fxLayoutAlign="start start">
+          <span>Purpose</span>
+  
+          
+          <div fxLayout="row">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="medicalExamInfo?.isEnrollment"></span>
+            </span> 
+            <span>Enrollment</span>
+          </div>
+          <div fxLayout="row">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="medicalExamInfo?.isTraining"></span>
+            </span> 
+            <span>On-the-Job Training</span>
+          </div>
+          <div fxLayout="row">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="medicalExamInfo?.isIntramurals"></span>
+            </span>
+             <span>Intramurals/SCUAA</span>
+          </div>
+          <div fxLayout="row">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="medicalExamInfo?.isOthers"></span>
+            </span>
+             <span>Others/SCUAA (pls. specify): {{medicalExamInfo?.othersDet}}</span>
+          </div>
+          
+        </div>
+      </div>
+
+      <div fxLawyout="column" class="mt-3">
+        <div>1.	Head and Neck: {{medicalExamInfo?.headAndNeck}}</div>
+        <div>2.	Respiratory System: {{medicalExamInfo?.respiratory}}</div>
+        <div>3.	Cardiovascular System: {{medicalExamInfo?.cardio}}</div>
+        <div>4.	Digestive System: {{medicalExamInfo?.digestive}}</div>
+        <div>5.	Genito-Urinary: {{medicalExamInfo?.genito}}</div>
+        <div>6.	Nervous System: {{medicalExamInfo?.nervous}}</div>
+        <div>7.	Reproductive System: {{medicalExamInfo?.reproductive}}</div>
+        <div>8.	Locomotor System: {{medicalExamInfo?.locomotor}}</div>
+        <div>9.	Past Medical History: {{medicalExamInfo?.pastMedical}}</div>
+        <div class="mt-3">Remarks: {{medicalExamInfo?.remarks}}</div>
+      </div>
+      <div fxLayout="column" class="mt-3">
+        <div fxLayout="row" fxFlex="50px" fxLayoutAlign="start center">
+          <div fxLayout="column" fxLayoutAlign="center center">
+            <span>____________________________</span>
+            <span>Signature</span>
+          </div>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start end">
+          <span>Physician Signature over Printed Name: {{medicalExamInfo?.physician}}</span>
+          <span>License No.: {{medicalExamInfo?.licenseNo}}</span>
+        </div>
+        
+      </div>
+      <div fxLayout="column" class="note">
+        Please submit this form to the UA-TLMS Medical Clinic together with the laboratory results after your Medical Examination.
+      </div>
+      <div fxLayout="row" fxLayoutAlign="space-between center">
+        <span>HS-FM-012</span>
+        <span>REV.1 / 03-05-20</span>
+      </div>
+    </div>
   </div>
   
-  <div fxLayout="row" fxLayoutAlign="center center">
-    <button mat-button (click)="startPrint(print)">PRINT</button>
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <button mat-raised-button (click)="startPrint(print)">PRINT</button>
+    <button mat-raised-button color="warn" (click)="cancel()">Cancel</button>
   </div>
 </div>

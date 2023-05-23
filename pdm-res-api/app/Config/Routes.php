@@ -43,6 +43,7 @@ $routes->group('user', function($routes){
     $routes->post('register', 'MaintenanceController::register');
     $routes->post('login', 'MaintenanceController::login');
     $routes->get('getPatientInfo', 'MaintenanceController::getPatientInfo');
+    $routes->get('list','MaintenanceController::getUsers');
 });
 $routes->group('request', function($routes){
     $routes->post('add', 'RequestsController::request');

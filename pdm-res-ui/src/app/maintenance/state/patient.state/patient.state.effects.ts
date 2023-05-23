@@ -5,7 +5,7 @@ import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { catchError, exhaustMap, map, of, switchMap, tap, throwError } from "rxjs";
 import { PatientService } from "src/app/patient/patient-personal.service";
 import { MyRequestsModel, PatientModel } from "src/app/shared/model/patient.model";
-import { addMyRequest, changeStatus, login, populateMyRequest, registerStart, startAddMyRequest, updateCurrentPatient, updateMyRequest } from "./patient.state.action";
+import { addMyRequest, changeStatus, loadUsers, login, logout, populateMyRequest, populateUsers, registerStart, startAddMyRequest, updateCurrentPatient, updateMyRequest, updateStatus, updateUser } from "./patient.state.action";
 
 @Injectable()
 export class PatientEffects {
@@ -15,6 +15,19 @@ export class PatientEffects {
     private readonly router: Router,
     private readonly snackbar: MatSnackBar
   ){}
+
+  updateStatus$ = createEffect(()=>{
+    return this.actions$.pipe(
+      ofType(updateStatus),
+      exhaustMap((data)=>{
+        return this.patientService.register(data).pipe(
+          map((response)=>{
+            return updateUser(data);
+          })
+        )
+      })
+    )
+  })
 
   register$ = createEffect(()=>{
     return this.actions$.pipe(
@@ -26,10 +39,10 @@ export class PatientEffects {
               ...data,
               id: response.userId
             }
-            return updateCurrentPatient(data);
+            return logout();
           }),
           tap(()=>{
-            this.router.navigate(['home']);
+            this.router.navigate(['login']);
           }),
           catchError((error)=>{
             this.snackbar.open(error.error.message,null,{
@@ -144,6 +157,19 @@ export class PatientEffects {
           map((response:{message: string, request: MyRequestsModel[]})=>{
             return populateMyRequest({requests: response.request});
           }))
+      })
+    )
+  });
+
+  populateUsers$ = createEffect(()=>{
+    return this.actions$.pipe(
+      ofType(populateUsers),
+      exhaustMap(()=>{
+        return this.patientService.getUsers().pipe(
+         map((users: PatientModel[])=>{
+          return loadUsers({users});
+         })
+        )
       })
     )
   })
