@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { login } from '../maintenance/state/patient.state/patient.state.action';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,8 @@ export class LoginComponent implements OnInit {
   loginFg: FormGroup;
   constructor(
     private readonly store: Store,
-    private readonly fb: FormBuilder
+    private readonly fb: FormBuilder,
+    private readonly router: Router
   ){}
 
   ngOnInit(): void {
@@ -24,5 +26,9 @@ export class LoginComponent implements OnInit {
   
   login(){
     this.store.dispatch(login(this.loginFg.value));
+  }
+
+  resetPassword(){
+    this.router.navigate(['/forgot-password']);
   }
 }

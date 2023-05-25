@@ -21,6 +21,11 @@ class RequestsModel{
     if($data->status === 'Processing'){
       $data->dt_processed = $curDate;
     }
+
+    if($data->status === 'Completed'){
+      $data->dt_completed = $curDate;
+    }
+
     $dataA = get_object_vars($data);
     if($isInsert){
       $this->db->table('requests')
@@ -45,6 +50,9 @@ class RequestsModel{
       requests.request_type,
       requests.request_json,
       requests.status,
+      requests.dt_initiated,
+      requests.dt_processed,
+      requests.dt_completed,
       CONCAT(users.last_name, ",", users.first_name) patient_name'
     );
     $builder->orderBy('requests.id', 'DESC');
@@ -57,8 +65,35 @@ class RequestsModel{
       $builder->where('requests.patient_id', $param->patientId);
     }
 
+    if($param->requestType){
+      $builder->where('requests.request_type', $param->requestType);
+    }
+
+
     $query = $builder->get()->getResult();
 
     return $query;
+  }
+
+  function resetPassword($email){
+   
+    $builder = $this->db->table('users');
+    $builder->where('email',$email);
+    $builder->where('is_approved',true);
+    $query = $builder->countAllResults();
+
+    $isEmailExist = true;
+   
+    if($query === 0){
+      $isEmailExist = false;
+      return ["message"=>"Invalid Email", "newPassword" => null];
+    }
+    $newPassword = base64_encode(openssl_random_pseudo_bytes(30));
+    $builder = $this->db->table('users');
+    $builder->set('password',$newPassword);
+    $builder->where('email',$email);
+    $builder->update();
+
+    return ["message"=>"Success", "newPassword"=>$newPassword];
   }
 }

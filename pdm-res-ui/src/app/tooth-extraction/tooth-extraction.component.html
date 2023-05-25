@@ -1,5 +1,9 @@
 <div class="mt-3 mb-3 w-100" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="20px">
-  <div class="w-100" fxLayout="row" fxLayoutAlign="center center">
+  <app-admin-panel class="w-100" *ngIf="patientInfo?.accountType==='A' || patientInfo?.accountType==='F'"
+    (startProcessing)="startProcessing()"
+    (complete)="completeRequest()"
+    [requestData]="currentRequest"></app-admin-panel>
+  <div class="w-100" fxLayout="column" fxLayoutAlign="center center">
     <!-- <mat-stepper linear #stepper >
       <mat-step [completed]="stepsStatus.one" isEditable="true">
         <ng-template matStepLabel>Fill out health data</ng-template>
@@ -19,8 +23,11 @@
         <ng-template matStepLabel>Done</ng-template>
       </mat-step>
     </mat-stepper> -->
+    <app-request-status [requestData]="currentRequest" class="w-100"></app-request-status>
     <app-stepper [stepOneDisabled]="!dentalFg.valid"
-      [stepOneContent]="content"></app-stepper>
+      (complete)="complete()"
+      [stepOneContent]="content"
+      [stepTwoContent]="purpose" class="w-100"></app-stepper>
   </div>
 </div>  
 
@@ -34,4 +41,17 @@
 
     <app-dental [dentalFg]="dentalFg"></app-dental>
   </mat-expansion-panel>
+</ng-template>
+
+<ng-template #purpose >
+  <mat-accordion>
+    <mat-expansion-panel hideToggle expanded>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          DENTAL PURPOSE
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <app-dental-purpose [dentalPurposeFg]="dentalPurposeFg"></app-dental-purpose>
+    </mat-expansion-panel>
+  </mat-accordion>
 </ng-template>

@@ -80,7 +80,8 @@ export class PatientPersonalInfoComponent implements OnInit, OnDestroy {
       birthPlace: [''],
       religion: [''],
       nationality: [''],
-      id:[null]
+      id:[null],
+      studentId: ['', [Validators.required]]
     });
 
     this.setDataIds('college', this.colleges$, 'description', 'collegeId');

@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ToothExtractionComponent } from './tooth-extraction.component';
-import { ComponentsModule } from '../shared/components/components.module';
-import { ModuleModule } from '../shared/module/module.module';
+import { HealthCounsellingComponent } from './health-counselling.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ModuleModule } from '../shared/module/module.module';
+import { ComponentsModule } from '../shared/components/components.module';
 import { StoreModule } from '@ngrx/store';
 import { patientReducer } from '../maintenance/state/patient.state/patient.state.reducer';
 import { EffectsModule } from '@ngrx/effects';
@@ -11,23 +11,25 @@ import { PatientEffects } from '../maintenance/state/patient.state/patient.state
 
 const routes: Routes = [
   {
-    path: '',
-    component: ToothExtractionComponent,
+    path:'',
+    component: HealthCounsellingComponent,
     data: {
-      breadcrumb: 'Tooth Extraction'
+      breadcrumb: 'Health Counselling'
     }
   }
 ]
 
 @NgModule({
-  declarations: [ToothExtractionComponent],
+  declarations: [
+    HealthCounsellingComponent
+  ],
   imports: [
     CommonModule,
-    ComponentsModule,
-    ModuleModule,
     RouterModule.forChild(routes),
+    ModuleModule,
+    ComponentsModule,
     StoreModule.forFeature('patient', patientReducer),
     EffectsModule.forFeature([PatientEffects])
   ]
 })
-export class ToothExtractionModule { }
+export class HealthCounsellingModule { }

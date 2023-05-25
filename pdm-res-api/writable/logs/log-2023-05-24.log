@@ -1,0 +1,560 @@
+ERROR - 2023-05-24 11:22:21 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2023-05-24 11:22:21 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+AND `password` = :password:
+AND `is_approved` = :is_approved:', [...], false)
+ 3 APPPATH\Models\MaintenanceModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\MaintenanceController.php(51): App\Models\MaintenanceModel->login(Object(stdClass))
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-05-24 11:22:33 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2023-05-24 11:22:33 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+AND `password` = :password:
+AND `is_approved` = :is_approved:', [...], false)
+ 3 APPPATH\Models\MaintenanceModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\MaintenanceController.php(51): App\Models\MaintenanceModel->login(Object(stdClass))
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-05-24 11:22:43 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2023-05-24 11:22:43 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+AND `password` = :password:
+AND `is_approved` = :is_approved:', [...], false)
+ 3 APPPATH\Models\MaintenanceModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\MaintenanceController.php(51): App\Models\MaintenanceModel->login(Object(stdClass))
+ 5 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 14:09:10 --> Undefined property: stdClass::$requestType
+in APPPATH\Models\RequestsModel.php on line 65.
+ 1 APPPATH\Models\RequestsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$requestType', 'APPPATH\\Models\\RequestsModel.php', 65)
+ 2 APPPATH\Controllers\RequestsController.php(32): App\Models\RequestsModel->getRequest(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->getRequest()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 14:09:31 --> Undefined property: stdClass::$requestType
+in APPPATH\Models\RequestsModel.php on line 65.
+ 1 APPPATH\Models\RequestsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$requestType', 'APPPATH\\Models\\RequestsModel.php', 65)
+ 2 APPPATH\Controllers\RequestsController.php(32): App\Models\RequestsModel->getRequest(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->getRequest()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 14:09:36 --> Undefined property: stdClass::$requestType
+in APPPATH\Models\RequestsModel.php on line 65.
+ 1 APPPATH\Models\RequestsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$requestType', 'APPPATH\\Models\\RequestsModel.php', 65)
+ 2 APPPATH\Controllers\RequestsController.php(32): App\Models\RequestsModel->getRequest(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->getRequest()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 14:09:49 --> Undefined property: stdClass::$requestType
+in APPPATH\Models\RequestsModel.php on line 65.
+ 1 APPPATH\Models\RequestsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$requestType', 'APPPATH\\Models\\RequestsModel.php', 65)
+ 2 APPPATH\Controllers\RequestsController.php(32): App\Models\RequestsModel->getRequest(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->getRequest()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 14:10:51 --> Undefined property: stdClass::$requestType
+in APPPATH\Models\RequestsModel.php on line 65.
+ 1 APPPATH\Models\RequestsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$requestType', 'APPPATH\\Models\\RequestsModel.php', 65)
+ 2 APPPATH\Controllers\RequestsController.php(32): App\Models\RequestsModel->getRequest(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->getRequest()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 14:11:48 --> Undefined property: stdClass::$requestType
+in APPPATH\Models\RequestsModel.php on line 65.
+ 1 APPPATH\Models\RequestsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$requestType', 'APPPATH\\Models\\RequestsModel.php', 65)
+ 2 APPPATH\Controllers\RequestsController.php(32): App\Models\RequestsModel->getRequest(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->getRequest()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:36:46 --> Undefined property: App\Controllers\RequestsController::$load
+in APPPATH\Controllers\RequestsController.php on line 50.
+ 1 APPPATH\Controllers\RequestsController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RequestsController::$load', 'APPPATH\\Controllers\\RequestsController.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:37:29 --> Undefined property: App\Controllers\RequestsController::$load
+in APPPATH\Controllers\RequestsController.php on line 50.
+ 1 APPPATH\Controllers\RequestsController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RequestsController::$load', 'APPPATH\\Controllers\\RequestsController.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:37:43 --> Undefined property: App\Controllers\RequestsController::$load
+in APPPATH\Controllers\RequestsController.php on line 51.
+ 1 APPPATH\Controllers\RequestsController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RequestsController::$load', 'APPPATH\\Controllers\\RequestsController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:37:52 --> Undefined property: App\Controllers\RequestsController::$load
+in APPPATH\Controllers\RequestsController.php on line 51.
+ 1 APPPATH\Controllers\RequestsController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RequestsController::$load', 'APPPATH\\Controllers\\RequestsController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:38:03 --> Undefined property: App\Controllers\RequestsController::$load
+in APPPATH\Controllers\RequestsController.php on line 51.
+ 1 APPPATH\Controllers\RequestsController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RequestsController::$load', 'APPPATH\\Controllers\\RequestsController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:40:42 --> Undefined property: App\Controllers\RequestsController::$load
+in APPPATH\Controllers\RequestsController.php on line 41.
+ 1 APPPATH\Controllers\RequestsController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RequestsController::$load', 'APPPATH\\Controllers\\RequestsController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:40:43 --> Undefined property: App\Controllers\RequestsController::$load
+in APPPATH\Controllers\RequestsController.php on line 41.
+ 1 APPPATH\Controllers\RequestsController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RequestsController::$load', 'APPPATH\\Controllers\\RequestsController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:40:48 --> Undefined property: App\Controllers\RequestsController::$load
+in APPPATH\Controllers\RequestsController.php on line 41.
+ 1 APPPATH\Controllers\RequestsController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RequestsController::$load', 'APPPATH\\Controllers\\RequestsController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:41:00 --> Undefined property: App\Controllers\RequestsController::$load
+in APPPATH\Controllers\RequestsController.php on line 41.
+ 1 APPPATH\Controllers\RequestsController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RequestsController::$load', 'APPPATH\\Controllers\\RequestsController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:41:01 --> Undefined property: App\Controllers\RequestsController::$load
+in APPPATH\Controllers\RequestsController.php on line 41.
+ 1 APPPATH\Controllers\RequestsController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RequestsController::$load', 'APPPATH\\Controllers\\RequestsController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:43:01 --> Undefined variable $config
+in APPPATH\Controllers\RequestsController.php on line 45.
+ 1 APPPATH\Controllers\RequestsController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Controllers\\RequestsController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:43:10 --> Undefined variable $config
+in APPPATH\Controllers\RequestsController.php on line 45.
+ 1 APPPATH\Controllers\RequestsController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Controllers\\RequestsController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:43:11 --> Undefined variable $config
+in APPPATH\Controllers\RequestsController.php on line 45.
+ 1 APPPATH\Controllers\RequestsController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Controllers\\RequestsController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:43:12 --> Undefined variable $config
+in APPPATH\Controllers\RequestsController.php on line 45.
+ 1 APPPATH\Controllers\RequestsController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Controllers\\RequestsController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:43:13 --> Undefined variable $config
+in APPPATH\Controllers\RequestsController.php on line 45.
+ 1 APPPATH\Controllers\RequestsController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Controllers\\RequestsController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:43:27 --> Undefined variable $config
+in APPPATH\Controllers\RequestsController.php on line 45.
+ 1 APPPATH\Controllers\RequestsController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Controllers\\RequestsController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:43:28 --> Undefined variable $config
+in APPPATH\Controllers\RequestsController.php on line 45.
+ 1 APPPATH\Controllers\RequestsController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Controllers\\RequestsController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:43:29 --> Undefined variable $config
+in APPPATH\Controllers\RequestsController.php on line 45.
+ 1 APPPATH\Controllers\RequestsController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Controllers\\RequestsController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:43:29 --> Undefined variable $config
+in APPPATH\Controllers\RequestsController.php on line 45.
+ 1 APPPATH\Controllers\RequestsController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'APPPATH\\Controllers\\RequestsController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:43:52 --> Undefined property: App\Controllers\RequestsController::$email
+in APPPATH\Controllers\RequestsController.php on line 59.
+ 1 APPPATH\Controllers\RequestsController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RequestsController::$email', 'APPPATH\\Controllers\\RequestsController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:44:02 --> Undefined property: App\Controllers\RequestsController::$load
+in APPPATH\Controllers\RequestsController.php on line 45.
+ 1 APPPATH\Controllers\RequestsController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RequestsController::$load', 'APPPATH\\Controllers\\RequestsController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:44:03 --> Undefined property: App\Controllers\RequestsController::$load
+in APPPATH\Controllers\RequestsController.php on line 45.
+ 1 APPPATH\Controllers\RequestsController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RequestsController::$load', 'APPPATH\\Controllers\\RequestsController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:44:18 --> Undefined property: App\Controllers\RequestsController::$email
+in APPPATH\Controllers\RequestsController.php on line 59.
+ 1 APPPATH\Controllers\RequestsController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RequestsController::$email', 'APPPATH\\Controllers\\RequestsController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 16:44:29 --> Undefined property: App\Controllers\RequestsController::$email
+in APPPATH\Controllers\RequestsController.php on line 59.
+ 1 APPPATH\Controllers\RequestsController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RequestsController::$email', 'APPPATH\\Controllers\\RequestsController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->sendEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-05-24 17:05:18 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:06:43 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:20:11 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:20:17 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:22:02 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:30:30 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:30:46 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:32:59 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:34:03 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:34:43 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:36:15 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:37:02 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:41:36 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:42:16 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:44:34 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:44:56 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:45:00 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:45:09 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:45:14 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:45:19 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:45:22 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:45:33 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:45:37 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:45:40 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:45:45 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:45:48 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:45:50 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:46:39 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:46:43 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:46:46 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:48:17 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:49:27 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:49:32 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:51:39 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:51:43 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:52:19 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 17:53:45 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 17:58:00 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2023-05-24 17:58:11 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 17:58:46 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 17:58:49 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 17:58:52 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 17:58:56 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:01:03 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:01:06 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:01:12 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:04:12 --> Email: sendWithSmtp throwed fsockopen(): php_network_getaddresses: getaddrinfo for ssl failed: No such host is known. 
+ERROR - 2023-05-24 18:06:12 --> Email: sendWithSmtp throwed fsockopen(): php_network_getaddresses: getaddrinfo for ssl failed: No such host is known. 
+ERROR - 2023-05-24 18:06:34 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:08:22 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:08:33 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:10:04 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:10:07 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:10:09 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:10:22 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:10:34 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:10:54 --> Email: sendWithSmtp throwed fsockopen(): SSL: An existing connection was forcibly closed by the remote host
+ERROR - 2023-05-24 18:11:20 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:11:43 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:13:16 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:14:30 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:16:24 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:24:19 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:28:30 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:30:01 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:30:31 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:31:42 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:32:19 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:34:36 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:34:38 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:34:39 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:34:40 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:34:41 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:34:43 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:34:44 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:34:45 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:35:43 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:36:03 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:37:06 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:38:32 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:40:55 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:41:04 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:43:21 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:43:25 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:43:28 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:44:04 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:50:38 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 18:55:34 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:02:48 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:07:01 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:07:33 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:07:49 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:13:15 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:13:32 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:13:34 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:13:36 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:13:38 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:13:39 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:15:51 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:16:16 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:16:17 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:16:19 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:16:21 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:16:23 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:19:38 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:19:41 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:19:43 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:20:38 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+ERROR - 2023-05-24 19:24:28 --> Email: sendWithSmtp throwed stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed
+CRITICAL - 2023-05-24 19:28:30 --> Maximum execution time of 60 seconds exceeded
+in APPPATH\Controllers\RequestsController.php on line 84.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-24 19:33:47 --> Maximum execution time of 60 seconds exceeded
+in APPPATH\Controllers\RequestsController.php on line 84.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-24 19:36:54 --> Maximum execution time of 60 seconds exceeded
+in APPPATH\Controllers\RequestsController.php on line 84.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-24 21:02:14 --> Attempt to read property "message" on array
+in APPPATH\Controllers\RequestsController.php on line 51.
+ 1 APPPATH\Controllers\RequestsController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "message" on array', 'APPPATH\\Controllers\\RequestsController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->resetPassword()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 21:02:50 --> Attempt to read property "message" on array
+in APPPATH\Controllers\RequestsController.php on line 51.
+ 1 APPPATH\Controllers\RequestsController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "message" on array', 'APPPATH\\Controllers\\RequestsController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->resetPassword()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 21:03:22 --> Attempt to read property "message" on array
+in APPPATH\Controllers\RequestsController.php on line 51.
+ 1 APPPATH\Controllers\RequestsController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "message" on array', 'APPPATH\\Controllers\\RequestsController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->resetPassword()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 21:03:26 --> Attempt to read property "message" on array
+in APPPATH\Controllers\RequestsController.php on line 51.
+ 1 APPPATH\Controllers\RequestsController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "message" on array', 'APPPATH\\Controllers\\RequestsController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->resetPassword()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 21:03:48 --> Attempt to read property "message" on array
+in APPPATH\Controllers\RequestsController.php on line 51.
+ 1 APPPATH\Controllers\RequestsController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "message" on array', 'APPPATH\\Controllers\\RequestsController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->resetPassword()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 21:04:12 --> Attempt to read property "message" on array
+in APPPATH\Controllers\RequestsController.php on line 51.
+ 1 APPPATH\Controllers\RequestsController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "message" on array', 'APPPATH\\Controllers\\RequestsController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->resetPassword()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 21:04:20 --> Attempt to read property "message" on array
+in APPPATH\Controllers\RequestsController.php on line 51.
+ 1 APPPATH\Controllers\RequestsController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "message" on array', 'APPPATH\\Controllers\\RequestsController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->resetPassword()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 21:04:31 --> Undefined array key "ret"
+in APPPATH\Controllers\RequestsController.php on line 51.
+ 1 APPPATH\Controllers\RequestsController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ret"', 'APPPATH\\Controllers\\RequestsController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->resetPassword()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-24 21:04:39 --> Attempt to read property "message" on array
+in APPPATH\Controllers\RequestsController.php on line 55.
+ 1 APPPATH\Controllers\RequestsController.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "message" on array', 'APPPATH\\Controllers\\RequestsController.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->resetPassword()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-05-24 21:05:16 --> Unknown column 'passwprd' in 'field list'
+ERROR - 2023-05-24 21:06:04 --> Unknown column 'passwprd' in 'field list'
+ERROR - 2023-05-24 21:07:10 --> Unknown column 'passwprd' in 'field list'

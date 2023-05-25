@@ -24,7 +24,7 @@ export class DashboardComponent implements OnInit {
       label:'First-Aid Treatment', link:'/first-aid'
     },
     {
-      label:'Health Counselling', link:''
+      label:'Health Counselling', link:'/health-counselling'
     },
   ];
 

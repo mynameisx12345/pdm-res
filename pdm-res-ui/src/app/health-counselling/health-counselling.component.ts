@@ -1,24 +1,24 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
 import { MedicalService } from '../shared/components/medical/medical.service';
-import { MyRequestsModel, PatientModel } from '../shared/model/patient.model';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { changeStatus, startAddMyRequest } from '../maintenance/state/patient.state/patient.state.action';
 import { ActivatedRoute } from '@angular/router';
-import { combineLatest, map, Subscription, take, tap, withLatestFrom } from 'rxjs';
 import { getPatient, getPatientRequests } from '../maintenance/state/patient.state/patient.state.selector';
+import { combineLatest, map, Subscription, take, tap, withLatestFrom } from 'rxjs';
+import { MyRequestsModel, PatientModel } from '../shared/model/patient.model';
+import { changeStatus, startAddMyRequest } from '../maintenance/state/patient.state/patient.state.action';
 
 @Component({
-  selector: 'app-first-aid',
-  templateUrl: './first-aid.component.html',
-  styleUrls: ['./first-aid.component.sass']
+  selector: 'app-health-counselling',
+  templateUrl: './health-counselling.component.html',
+  styleUrls: ['./health-counselling.component.sass']
 })
-export class FirstAidComponent implements OnInit, AfterViewInit {
+export class HealthCounsellingComponent implements OnInit, AfterViewInit {
   medicalFg: FormGroup = this.medicalService.setMedicalFormGroup();
   medicalPurposeFg: FormGroup;
+  patientInfo: PatientModel;
   currentRequest: MyRequestsModel;
   reqId = null;
-  patientInfo: PatientModel;
   myRequests$ = this.store.select(getPatientRequests);
 
   constructor(
@@ -76,7 +76,7 @@ export class FirstAidComponent implements OnInit, AfterViewInit {
     let myRequest: MyRequestsModel = {
       id: this.reqId,
       patientId: this.patientInfo.id,
-      requestType: 'First-Aid Treatment',
+      requestType: 'Health Counselling',
       requestJson: JSON.stringify(consultationDetails),
       status: 'Initiated',
       patientName: `${this.patientInfo.lastname}, ${this.patientInfo.firstname}`

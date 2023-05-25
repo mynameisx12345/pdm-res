@@ -1,14 +1,20 @@
 <div fxLayout="row" fxLayoutAlign="space-between center"  class="header" fxLayout.xs="column">
-  <div fxLayout="row" fxLayoutGap="50px" class="h-100" (click)="goHome()">
-    <div>
+  <div fxLayout="row" fxLayoutGap="50px" class="h-100" >
+    <div (click)="goHome()">
       <img src="../../../../assets/icons/app-logo.png" height="100%" width="auto">
     </div>
     
     <div fxLayout="column" fxLayoutAlign="center start" class="title">
-      <div>
+      <div (click)="goHome()">
         PATIENTS MEDICAL AND DENTAL RECORD SYSTEM
       </div>
-        <app-breadcrumb></app-breadcrumb>
+      <app-breadcrumb></app-breadcrumb>
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" class="mt-4" *ngIf="showLinks">
+        <div *ngFor="let service of services; let last=last" class="link" (click)="onServiceSelect(service.link)">
+          <span class="label">{{service.label}}</span>
+          <span *ngIf="!last">|</span>
+        </div>
+      </div>
     </div>
   </div>
   <div fxLayot="row" fxLayoutAlign="start end" class="h-100 signing" fxLayoutGap="10px"
@@ -38,8 +44,12 @@
     Appointments
   </button>
   <button mat-menu-item [matMenuTriggerFor]="adminSettings" *ngIf="(currentPatient$ | async)?.accountType !== 'S'">
-    <mat-icon>perm_media</mat-icon>
+    <mat-icon>tune</mat-icon>
     Admin Settings
+  </button>
+  <button mat-menu-item [matMenuTriggerFor]="reports" *ngIf="(currentPatient$ | async)?.accountType !== 'S'">
+    <mat-icon>assignment</mat-icon>
+    Reports
   </button>
   <button mat-menu-item (click)="signOut()">
     <mat-icon>exit_to_app</mat-icon>
@@ -54,3 +64,21 @@
   </button>
 </mat-menu>
 
+<mat-menu #reports="matMenu">
+  <button mat-menu-item (click)="openSummary('C')">
+    <mat-icon>assignment</mat-icon>
+    Summary of Consultation
+  </button>
+  <button mat-menu-item (click)="openSummary('T')">
+    <mat-icon>assignment</mat-icon>
+    Summary of Tooth Extraction
+  </button>
+  <button mat-menu-item (click)="openSummary('F')">
+    <mat-icon>assignment</mat-icon>
+    Summary of First-Aid Treatment
+  </button>
+  <button mat-menu-item (click)="openSummary('H')">
+    <mat-icon>assignment</mat-icon>
+    Summary of Health Counselling
+  </button>
+</mat-menu>

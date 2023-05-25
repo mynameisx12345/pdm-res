@@ -41,8 +41,23 @@ export class RequestsComponent implements OnInit, AfterViewInit{
     
   }
 
-  viewRequest(id){
-    this.router.navigateByUrl(`/consultation?id=${id}`);
+  viewRequest(element){
+    let route = '/';
+    switch(element.requestType){
+      case 'Consultation':
+        route = `/consultation?id=${element.id}`;
+        break;
+      case 'Tooth Extraction':
+        route = `/tooth-extraction?id=${element.id}`
+        break;
+      case 'First-Aid Treatment':
+        route = `/first-aid?id=${element.id}`;
+        break;
+      case 'Health Counselling':
+        route = `/health-counselling?id=${element.id}`;
+        break;
+    }
+    this.router.navigateByUrl(route);
   }
 
   applyFilter(event: Event) {

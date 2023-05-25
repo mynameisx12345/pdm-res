@@ -1,0 +1,16 @@
+<div  fxLayout="column" class="w-100" >
+  <mat-form-field>
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" #input>
+  </mat-form-field>
+  
+  <table mat-table [dataSource]="_data" matSort> 
+    <ng-container *ngFor="let column of _columns | keyvalue" [matColumnDef]="column.key" >
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>{{column.value}}</th>
+      <td mat-cell *matCellDef="let element">{{element[column.key]}}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <mat-paginator [pageSizeOptions]="[10, 25, 100]" aria-label="Select page of requests"></mat-paginator>
+</div>

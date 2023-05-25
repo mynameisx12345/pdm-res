@@ -3,11 +3,56 @@
     <app-print-header></app-print-header>
     <span class="mt-3" fxLayout="row" fxLayoutAlign="center center">MEDICAL CLEARANCE FORM</span>
     <div fxLayout="row" fxLayoutAlign="end center">Date: {{curDate}}</div>
-    <div fxLayout="row" fxLayoutAlign="start start">TO WHOM IT MAY CONCERN:</div>
-    <div fxLayout="row" *ngIf="(patientInfo$  | async) as patientInfo" class="ps-3">
-      This is to certify that {{patientInfo.firstname}} {{patientInfo.middlename}} {{patientInfo.lastname}} {{patientInfo.ext}}
-      , {{getAge(patientInfo)}} years old of {{patientInfo?.course}} was seen and examined at the Medical Clinic last ____________________________
-      and physically fit for:
+    <div fxLayout="row" fxLayoutAlign="start start" class="py-3">TO WHOM IT MAY CONCERN:</div>
+    
+    <div fxLayout="column" *ngIf="(content$  | async) as content" >
+      <div fxLayout="row" class="content">
+        This is to certify that {{content?.patientInfo.firstname}} {{content?.patientInfo.middlename}} {{content?.patientInfo.lastname}} {{content?.patientInfo.ext}}
+        , {{getAge(content?.patientInfo)}} years old of {{content?.patientInfo?.course}} was seen and examined at the Medical Clinic last {{content?.medicalClearance?.dtExam}}
+        and physically fit for:
+      </div>
+      <div fxLayout="column" class="ps-5 pb-3">
+        <div fxLayout="row">
+          <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+            <span class="check" *ngIf="content?.medicalClearance?.isEnrollment"></span>
+          </span> 
+          <span>Enrollment</span>
+        </div>
+        <div fxLayout="row">
+          <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+            <span class="check" *ngIf="content?.medicalClearance?.isTraining"></span>
+          </span> 
+          <span>On-the-job Training</span>
+        </div>
+        <div fxLayout="row">
+          <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+            <span class="check" *ngIf="content?.medicalClearance?.isEmployment"></span>
+          </span> 
+          <span>Employment</span>
+        </div>
+        <div fxLayout="row">
+          <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+            <span class="check" *ngIf="content?.medicalClearance?.isOthers"></span>
+          </span> 
+          <span>Others: {{content?.medicalClearance?.othersDet}}</span>
+        </div>
+      </div>
+      <div fxLayou="row">
+        This certificate is being issued upon the request of the above-mentioned for whatever purpose it may serve, except those medico-legal in nature.
+      </div>
+      <div fxLayout="column" fxLayoutAlign="start end" class="mt-5"> 
+        <span>Physician: {{content?.medicalClearance?.physician}}</span>
+        <span>License No: {{content?.medicalClearance?.licenseNo}}</span>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="space-between center" class="mt-5">
+        <span>HS-FM-012</span>
+        <span>REV.1 / 03-16-20</span>
+      </div>
     </div>
+    
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <button mat-raised-button (click)="startPrint(print)">PRINT</button>
+    <button mat-raised-button color="warn" (click)="cancel()">Cancel</button>
   </div>
 </div>

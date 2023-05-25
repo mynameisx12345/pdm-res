@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { switchMap, take, tap, withLatestFrom } from 'rxjs';
+import { filter, switchMap, take, tap, withLatestFrom } from 'rxjs';
 import { logout } from 'src/app/maintenance/state/patient.state/patient.state.action';
 import { getPatient } from 'src/app/maintenance/state/patient.state/patient.state.selector';
 import { PatientService } from 'src/app/patient/patient-personal.service';
@@ -13,13 +13,51 @@ import { PatientService } from 'src/app/patient/patient-personal.service';
 })
 export class HeaderComponent implements OnInit {
   currentPatient$ = this.store.select(getPatient);
+
+  services = [
+    {
+      label:'Home', link:'/home'
+    },
+    {
+      label:'Medical and Dental Consultation', link:'/consultation'
+    },
+    {
+      label:'Tooth Extraction', link:'/tooth-extraction'
+    },
+    {
+      label:'First-Aid Treatment', link:'/first-aid'
+    },
+    {
+      label:'Health Counselling', link:'/health-counselling'
+    },
+  ];
+
+  showLinks = false;
+
   constructor(
     private readonly store: Store,
     private readonly router: Router,
-    private readonly patientService: PatientService
+    private readonly patientService: PatientService,
+    private readonly route: ActivatedRoute
   ){}
 
   ngOnInit(): void {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+  )
+      .subscribe((event:any) => {
+
+          switch(event.url){
+            case '/login':
+            case '/home':
+            case '/register':
+              this.showLinks =false;
+              break;
+            default:
+              this.showLinks = true;
+              break;
+          }
+      });
   }
 
   register(){
@@ -55,5 +93,13 @@ export class HeaderComponent implements OnInit {
 
   openUserList(){
     this.router.navigate(['maintenance/user-list'])
+  }
+
+  onServiceSelect(link){
+    this.router.navigate([link]);
+  }
+
+  openSummary(type){
+    this.router.navigateByUrl(`reports/summary?type=${type}`);
   }
 }

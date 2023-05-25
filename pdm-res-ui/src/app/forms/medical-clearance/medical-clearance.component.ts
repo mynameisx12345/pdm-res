@@ -47,7 +47,7 @@ export class MedicalClearanceComponent implements OnInit{
   }
 
   printPreview(){
-    this.printService.changeMedicalExamination(this.clearanceFg.value);
+    this.printService.changeMedicalClearance(this.clearanceFg.value);
     this.router.navigateByUrl(`forms/medical-clearance-print?id=${this.id}`);
   }
 

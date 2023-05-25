@@ -48,7 +48,8 @@ export interface PatientModel {
   contactPerson: string,
   contactPerNumber: string,
   accountType: string,
-  isApproved?: string
+  isApproved?: string,
+  studentId: string
 }
 
 export interface PatientModelI {
@@ -73,7 +74,8 @@ export interface PatientModelI {
   contact_person: string,
   contact_person_no: string,
   account_type: string,
-  is_approved?: string
+  is_approved?: string,
+  student_id: string
 };
 
 export interface MyRequestsModel {
@@ -82,7 +84,10 @@ export interface MyRequestsModel {
   requestType: string,
   requestJson: string,
   status: string,
-  patientName: string
+  patientName: string,
+  dtInitiated?: string,
+  dtProcessed?: string,
+  dtCompleted?: string
 }
 
 export interface MyRequestsModlI {
@@ -91,5 +96,8 @@ export interface MyRequestsModlI {
   request_type: string,
   request_json: string,
   status: string,
-  patient_name?: string
+  patient_name?: string,
+  dt_initiated?: string,
+  dt_processed?: string,
+  dt_completed?: string,
 }

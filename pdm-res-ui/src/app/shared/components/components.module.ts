@@ -20,6 +20,8 @@ import { civilStatusesReducer, collegeReducer, courseYearsReducer, gendersReduce
 import { EffectsModule } from '@ngrx/effects';
 import { MaintenanceEffects } from 'src/app/maintenance/state/college.state/college.effects';
 import { PatientEffects } from 'src/app/maintenance/state/patient.state/patient.state.effects';
+import { ReportTableComponent } from './report-table/report-table.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 
 
@@ -37,7 +39,9 @@ import { PatientEffects } from 'src/app/maintenance/state/patient.state/patient.
     DentalPurposeComponent,
     AdminPanelComponent,
     RequestStatusComponent,
-    PrintHeaderComponent
+    PrintHeaderComponent,
+    ReportTableComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     CommonModule,
@@ -63,7 +67,8 @@ import { PatientEffects } from 'src/app/maintenance/state/patient.state/patient.
     DentalPurposeComponent,
     AdminPanelComponent,
     RequestStatusComponent,
-    PrintHeaderComponent
+    PrintHeaderComponent,
+    ReportTableComponent
   ]
 })
 export class ComponentsModule { }

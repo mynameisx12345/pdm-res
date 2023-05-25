@@ -3,14 +3,14 @@
     (startProcessing)="startProcessing()"
     (complete)="completeRequest()"
     [requestData]="currentRequest"></app-admin-panel>
-  <div class="w-100" fxLayout="column" fxLayoutAlign="center center">
+  <div class="w-100" fxLayout="column" fxLayoutAlign="center center" style="position:relative">
     <app-request-status [requestData]="currentRequest" class="w-100"></app-request-status>
     <app-stepper [stepOneDisabled]="!medicalFg.valid"
       (complete)="complete()"
       [stepOneContent]="content"
-      [stepTwoContent]="purpose"></app-stepper>
+      [stepTwoContent]="purpose" class="w-100"></app-stepper>
   </div>
-</div>  
+</div>
 
 <ng-template #content>
   <mat-expansion-panel hideToggle expanded>

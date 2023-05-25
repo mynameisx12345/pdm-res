@@ -44,11 +44,13 @@ $routes->group('user', function($routes){
     $routes->post('login', 'MaintenanceController::login');
     $routes->get('getPatientInfo', 'MaintenanceController::getPatientInfo');
     $routes->get('list','MaintenanceController::getUsers');
+    $routes->get('forgot-password','RequestsController::resetPassword');
 });
 $routes->group('request', function($routes){
     $routes->post('add', 'RequestsController::request');
     $routes->get('get', 'RequestsController::getRequest');
 });
+
 
 /*
  * --------------------------------------------------------------------

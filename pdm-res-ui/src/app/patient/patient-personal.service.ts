@@ -48,7 +48,8 @@ export class PatientService {
       contact_person: data.contactPerson,
       contact_person_no: data.contactPerNumber,
       account_type: data.accountType,
-      is_approved: data.isApproved
+      is_approved: data.isApproved,
+      student_id: data.studentId
     }
     
     return this.http.post(`${this.apiUrl}/user/register`,formatted);
@@ -79,7 +80,10 @@ export class PatientService {
             requestType: a.request_type,
             requestJson: a.request_json,
             status: a.status,
-            patientName: a.patient_name
+            patientName: a.patient_name,
+            dtInitiated: a.dt_initiated,
+            dtProcessed: a.dt_processed,
+            dtCompleted: a.dt_completed
           })
         })
 
@@ -119,7 +123,8 @@ export class PatientService {
           college: null,
           course: null,
           gender: null,
-          civilStatus: null
+          civilStatus: null,
+          studentId: data.student_id
         };
 
         return formatted;
@@ -189,7 +194,8 @@ export class PatientService {
           college: null,
           course: null,
           gender: null,
-          civilStatus: null
+          civilStatus: null,
+          studentId: data.student_id
         };
 
         return formatted;
@@ -257,7 +263,8 @@ export class PatientService {
             course: null,
             gender: null,
             civilStatus: null,
-            isApproved: data.is_approved ? 'Yes' : 'No'
+            isApproved: data.is_approved ? 'Yes' : 'No',
+            studentId: data.student_id
 
           }
         });
@@ -266,5 +273,9 @@ export class PatientService {
       }),
       
     )
+  }
+
+  resetPassword(email){
+    return this.http.get(`${this.apiUrl}/user/forgot-password?email=${email}`);
   }
 }
