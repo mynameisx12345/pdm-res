@@ -50,7 +50,8 @@ export class HeaderComponent implements OnInit {
           switch(event.url){
             case '/login':
             case '/home':
-            case '/register':
+            case '/patient/register':
+            case '/forgot-password':
               this.showLinks =false;
               break;
             default:
