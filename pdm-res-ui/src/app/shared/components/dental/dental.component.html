@@ -43,7 +43,7 @@
     </div>
     <div fxLayout="column" class="mt-2 mb-2 ms-3">
       <span>Do you have any:</span>
-      <div fxLayout="row wrap">
+      <div fxLayout="row wrap" fxLayout.xs="column">
         <div *ngFor="let condition of dentalConditions" fxFlex="33">
           <mat-checkbox [formControlName]="condition.controlKey">{{condition.name}}</mat-checkbox>
         </div>
@@ -64,9 +64,9 @@
     <div>
       <mat-checkbox formControlName="hasPeriod">(Women) are you having your monthly period right now?</mat-checkbox>
     </div>
-    <div class="mt-4" fxLayout="column">
+    <div class="mt-4 w-100" fxLayout="column"  fxLayoutAlign="start start" style="position:relative">
       <span class="warning-label">Please check this to move to Next Step</span>
-      <mat-checkbox formControlName="remarksCheck">
+      <mat-checkbox formControlName="remarksCheck" class="w-100">
         I do you hereby consent the performance upon myself/spouse/son/daughter/others of all dental procedures, operations and/or treatment that may be considered necessary to restore my oral and dental health.
         This consent is given voluntarily and whatever result of any intervention or treatment maybe, I absolve my dentist from all liability.        
       </mat-checkbox>
