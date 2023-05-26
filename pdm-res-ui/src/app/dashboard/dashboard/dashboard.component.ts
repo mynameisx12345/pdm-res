@@ -15,16 +15,16 @@ export class DashboardComponent implements OnInit {
   welcomeMessage = 'Welcome to Your School Health Clinic! \nWe are glad to help you on your health needs! Checkout our services below:';
   services = [
     {
-      label:'Medical and Dental Consultation', link:'/consultation'
+      label:'Medical and Dental Consultation', link:'/consultation',icon:'monitor_heart'
     },
     {
-      label:'Tooth Extraction', link:'/tooth-extraction'
+      label:'Tooth Extraction', link:'/tooth-extraction',icon: 'mood'
     },
     {
-      label:'First-Aid Treatment', link:'/first-aid'
+      label:'First-Aid Treatment', link:'/first-aid', icon: 'healing'
     },
     {
-      label:'Health Counselling', link:'/health-counselling'
+      label:'Health Counselling', link:'/health-counselling', icon: 'medication_liquid'
     },
   ];
 

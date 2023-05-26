@@ -1,8 +1,10 @@
 
 <div fxLayout="column" fxLayoutAlign="center center" class="dashboard">
   <div class="welcome">{{welcomeMessage}}</div>
-  <div *ngFor="let service of services" class="services" (click)="onServiceSelect(service.link)">
-    {{service.label}}
+  <div *ngFor="let service of services" class="services" (click)="onServiceSelect(service.link)" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+    <mat-icon>{{service.icon}}</mat-icon>
+    <span>{{service.label}}</span>
+    
   </div>
 
   
