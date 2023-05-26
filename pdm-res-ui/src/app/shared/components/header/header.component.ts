@@ -5,6 +5,7 @@ import { filter, switchMap, take, tap, withLatestFrom } from 'rxjs';
 import { logout } from 'src/app/maintenance/state/patient.state/patient.state.action';
 import { getPatient } from 'src/app/maintenance/state/patient.state/patient.state.selector';
 import { PatientService } from 'src/app/patient/patient-personal.service';
+import { SharedUtility } from '../../util';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +14,7 @@ import { PatientService } from 'src/app/patient/patient-personal.service';
 })
 export class HeaderComponent implements OnInit {
   currentPatient$ = this.store.select(getPatient);
-
+  isMobile = this.util.isMobile;
   services = [
     {
       label:'Home', link:'/home'
@@ -38,7 +39,8 @@ export class HeaderComponent implements OnInit {
     private readonly store: Store,
     private readonly router: Router,
     private readonly patientService: PatientService,
-    private readonly route: ActivatedRoute
+    private readonly route: ActivatedRoute,
+    private readonly util: SharedUtility
   ){}
 
   ngOnInit(): void {
@@ -48,6 +50,7 @@ export class HeaderComponent implements OnInit {
       .subscribe((event:any) => {
 
           switch(event.url){
+            case '/':
             case '/login':
             case '/home':
             case '/patient/register':
