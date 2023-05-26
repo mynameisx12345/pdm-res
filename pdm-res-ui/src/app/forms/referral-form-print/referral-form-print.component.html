@@ -1,0 +1,125 @@
+<div fxLayout="column" fxLayoutAlign="center center" class="w-100" >
+  <div fxLayout="column" class="w-100 print" #print >
+    <app-print-header></app-print-header>
+    <span class="mt-3" fxLayout="row" fxLayoutAlign="center center">REFERRAL FORM</span>
+    <span fxLayout="row" fxLayoutAlign="end center">Date: {{curDate}}</span>
+    <div fxLayout="column" *ngIf="(content$  | async) as content" >
+      <div fxLayout="row" fxLayoutAlign="space-between center" class="mt-3">
+        <span>Name of Patient: {{content?.patientInfo.firstname}} {{content?.patientInfo.middlename}} {{content?.patientInfo.lastname}} {{content?.patientInfo.ext}}</span>
+        <span>Age: {{getAge(content?.patientInfo)}}</span>
+        <span>Sex: {{content?.patientInfo.gender}} </span>
+        <span>Course & Year: {{content?.patientInfo.course}} </span>
+      </div>
+      <div>
+        Address: {{content?.patientInfo.address}}
+      </div>
+      <div>
+        Complaints: {{content?.referral.complaints}}
+      </div>
+      <div class="mt-3">
+        Referred To
+      </div>
+      <div fxLayout="row">
+        <div fxLayout="column" fxFlex="40">
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.referral.rhu"></span>
+            </span> 
+            <span>RHU:</span>
+            <span>{{content?.referral.rhuDet}}</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.referral.hospital"></span>
+            </span> 
+            <span>Hospital:</span>
+            <span>{{content?.referral.hospitalDet}}</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.referral.private"></span>
+            </span> 
+            <span>Private Practicioner:</span>
+            <span>{{content?.referral.privateDet}}</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span>&nbsp;</span>
+            </span> 
+            <span>Others:</span>
+            <span>{{content?.referral.others}}</span>
+          </div>
+        </div>
+
+        <div fxLayout="column" fxFlex="40">
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.referral.hospitalization"></span>
+            </span> 
+            <span>Hospitalization:</span>
+            <span>{{content?.referral.hospitalizationDet}}</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.referral.physical"></span>
+            </span> 
+            <span>Physical Examination:</span>
+            <span>{{content?.referral.physicalDet}}</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.referral.xray"></span>
+            </span> 
+            <span>X-Ray (Specify):</span>
+            <span>{{content?.referral.xrayDet}}</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span>&nbsp;</span>
+            </span> 
+            <span>Others (Specify):</span>
+            <span>{{content?.referral.othersS}}</span>
+          </div>
+        </div>s
+      </div>
+      <div fxLayout="row" fxLayoutAlign="end center" class="mt-3">
+        <div fxLayout="column">
+          <span>Referred By:</span>
+          <span class="my-3">{{content?.referral.referredBy}}</span>
+        </div>
+      </div>
+      <div>
+        <hr/>
+      </div>
+      <div style="color: red">
+        To be detached and send back to referring agency
+      </div>
+      <div fxLayout="row" fxLayoutAlign="end center">
+        Date: _________________________
+      </div>
+      <div class="my-3">
+        Sir/Madam:
+      </div>
+      <div class="mb-1">
+        This is to certify that {{content?.patientInfo.firstname}} {{content?.patientInfo.middlename}} {{content?.patientInfo.lastname}} {{content?.patientInfo.ext}},
+        age {{getAge(content?.patientInfo)}}, sex {{content?.patientInfo.gender}} of {{content?.patientInfo.address}} has&nbsp;
+        been referred to this office/institution and was given the following services:
+      </div>
+      <hr/>
+      <hr/>
+      <span>Remarks:</span>
+      <hr/>
+      <span class="mt-3">Name:</span>
+      <span>Designation:</span>
+      <span>Office:</span>
+      <div fxLayout="row" fxLayoutAlign="space-between center" class="mt-3">
+        <span>HS-FM-011</span>
+        <span>REV.1 / 03-05-20</span>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <button mat-raised-button (click)="startPrint(print)">PRINT</button>
+    <button mat-raised-button color="warn" (click)="cancel()">Cancel</button>
+  </div>
+</div>

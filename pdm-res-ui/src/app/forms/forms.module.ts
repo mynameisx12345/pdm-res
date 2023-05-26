@@ -7,6 +7,14 @@ import { MedicalExaminationPrintComponent } from './medical-examination-print/me
 import { ComponentsModule } from '../shared/components/components.module';
 import { MedicalClearanceComponent } from './medical-clearance/medical-clearance.component';
 import { MedicalClearancePrintComponent } from './medical-clearance-print/medical-clearance-print.component';
+import { OralHealthComponent } from './oral-health/oral-health.component';
+import { OralHealthPrintComponent } from './oral-health-print/oral-health-print.component';
+import { ReferralFormComponent } from './referral-form/referral-form.component';
+import { ReferralFormPrintComponent } from './referral-form-print/referral-form-print.component';
+import { RefusalComponent } from './refusal/refusal.component';
+import { RefusalPrintComponent } from './refusal-print/refusal-print.component';
+import { LaboratoryComponent } from './laboratory/laboratory.component';
+import { LaboratoryPrintComponent } from './laboratory-print/laboratory-print.component';
 
 const routes: Routes = [
   {
@@ -39,6 +47,62 @@ const routes: Routes = [
         data: {
           breadcrumb: 'Print Medical Clearance'
         }
+      },
+      {
+        path: 'oral-health',
+        component: OralHealthComponent,
+        data: {
+          breadcrumb: 'Oral Health Condition'
+        }
+      },
+      {
+        path: 'oral-health-print',
+        component: OralHealthPrintComponent,
+        data: {
+          breadcrumb: 'Print Oral Health Condition'
+        }
+      },
+      {
+        path: 'referral',
+        component: ReferralFormComponent,
+        data: {
+          breadcrumb: 'Referral Form'
+        }
+      },
+      {
+        path: 'referral-print',
+        component: ReferralFormPrintComponent,
+        data: {
+          breadcrumb: 'Print Referral Form'
+        }
+      },
+      {
+        path: 'refusal',
+        component: RefusalComponent,
+        data: {
+          breadcrumb: 'Refusal of Care'
+        }
+      },
+      {
+        path: 'refusal-print',
+        component: RefusalPrintComponent,
+        data: {
+          breadcrumb: 'Print Refusal of Care'
+        }
+      },
+      {
+        path: 'laboratory',
+        component: LaboratoryComponent,
+        data: {
+          breadcrumb: 'Laboratory and Diagnostic Form'
+        }
+      },
+      {
+        path: 'laboratory-print',
+        component: LaboratoryPrintComponent,
+        data: {
+          breadcrumb: 'Print Laboratory and Diagnostic Form'
+        }
       }
     ]
   }
@@ -49,7 +113,15 @@ const routes: Routes = [
     MedicalExaminationComponent,
     MedicalExaminationPrintComponent,
     MedicalClearanceComponent,
-    MedicalClearancePrintComponent
+    MedicalClearancePrintComponent,
+    OralHealthComponent,
+    OralHealthPrintComponent,
+    ReferralFormComponent,
+    ReferralFormPrintComponent,
+    RefusalComponent,
+    RefusalPrintComponent,
+    LaboratoryComponent,
+    LaboratoryPrintComponent
   ],
   imports: [
     CommonModule,

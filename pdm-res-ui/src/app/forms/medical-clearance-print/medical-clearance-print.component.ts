@@ -70,7 +70,7 @@ export class MedicalClearancePrintComponent implements OnInit {
     doc.html(printHtml,{
       callback: function(doc) {
         // Save the PDF
-        doc.save('medical-examination.pdf');
+        doc.save('pdm-res.pdf');
       },
       //margin: [10, 10, 10, 10],
       autoPaging: 'text',

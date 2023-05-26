@@ -36,4 +36,23 @@ export class AdminPanelComponent {
     window.open(url, '_blank');
     //this.router.navigateByUrl(`forms/medical-examination?id=${this.requestData.patientId}`);
   }
+
+  openOralHealth(){
+    let url = `http://localhost:4200/forms/oral-health?id=${this.requestData.patientId}`;
+    window.open(url, '_blank');
+  }
+
+  openReferral(){
+    let url = `http://localhost:4200/forms/referral?id=${this.requestData.patientId}`;
+    window.open(url, '_blank');
+  }
+
+  openRefusal(){
+    let url = `http://localhost:4200/forms/refusal?id=${this.requestData.patientId}`;
+    window.open(url, '_blank');
+  }
+  openLaboratory(){
+    let url = `http://localhost:4200/forms/laboratory?id=${this.requestData.patientId}`;
+    window.open(url, '_blank');
+  }
 }

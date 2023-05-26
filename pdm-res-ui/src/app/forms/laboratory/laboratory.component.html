@@ -1,0 +1,63 @@
+<div class="laboratory" fxLayout="column" [formGroup]="laboratoryFg">
+  <mat-form-field>
+    <mat-label>Requested By:</mat-label>
+    <input matInput formControlName="requestedBy">
+  </mat-form-field>
+  <div fxLayout="row">
+    <div fxLayout="column" fxFlex="30">
+      <mat-checkbox formControlName="cbc">CBC</mat-checkbox>
+      <mat-checkbox formControlName="platelet">Platelet Count</mat-checkbox>
+      <mat-checkbox formControlName="blood">Blood Typing</mat-checkbox>
+      <mat-checkbox formControlName="urinalysis">Urinalysis</mat-checkbox>
+      <mat-checkbox formControlName="fecalysis">Fecalysis</mat-checkbox>
+      <mat-checkbox formControlName="hbsag">HBsAg</mat-checkbox>
+      <mat-checkbox formControlName="audiometry">Audiometry</mat-checkbox>
+      <mat-checkbox formControlName="ishihara">Ishihara</mat-checkbox>
+      <mat-checkbox formControlName="serum">Serum Prenancy Test</mat-checkbox>
+      <mat-checkbox formControlName="sputum">Sputum Exam</mat-checkbox>
+    </div>
+
+    <div fxLayout="column" fxFlex="30">
+      <mat-checkbox formControlName="fbs">FBS</mat-checkbox>
+      <mat-checkbox formControlName="cholesterol">Cholesterol</mat-checkbox>
+      <mat-checkbox formControlName="triglycerides">Triglycerides</mat-checkbox>
+      <mat-checkbox formControlName="belirubin">Bilirubin</mat-checkbox>
+      <mat-checkbox formControlName="lipid">Lipid Profile</mat-checkbox>
+      <mat-checkbox formControlName="sgpt">SGPT/ALT</mat-checkbox>
+      <mat-checkbox formControlName="sgot">SGOT/AST</mat-checkbox>
+      <mat-checkbox formControlName="creatinine">Creatinine</mat-checkbox>
+      <mat-checkbox formControlName="bun">BUN</mat-checkbox>
+      <mat-checkbox formControlName="uric">Uric Acid</mat-checkbox>
+      <mat-checkbox formControlName="hba">HBA 1C</mat-checkbox>
+      <mat-checkbox formControlName="tsh">TSH, T3, T4</mat-checkbox>
+    </div>
+
+    <div fxLayout="column" fxFlex="30">
+      <mat-form-field>
+        <mat-label>X-RAY</mat-label>
+        <input matInput formControlName="xray">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>UTZ</mat-label>
+        <input matInput formControlName="utz">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>ECG</mat-label>
+        <input matInput formControlName="ecg">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>CT Scan</mat-label>
+        <input matInput formControlName="ct">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Others</mat-label>
+        <input matInput formControlName="others">
+      </mat-form-field>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <button mat-raised-button (click)="printPreview()">
+      PRINT PREVIEW
+    </button>
+  </div>
+</div>

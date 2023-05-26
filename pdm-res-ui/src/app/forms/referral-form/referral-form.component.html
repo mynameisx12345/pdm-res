@@ -1,0 +1,83 @@
+<div class="referral" fxLayout="column" [formGroup]="referralFg">
+  <mat-form-field>
+    <mat-label>Complaints</mat-label>
+    <input matInput formControlName="complaints">
+  </mat-form-field>
+
+  <div fxLayout="column">
+    <span>Referred To:</span>
+    <div fxLayout="row" fxFlex="50"> 
+      <div fxLayout="column" fxFlex="50">
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+          <mat-checkbox formControlName="rhu">RHU</mat-checkbox>
+          <mat-form-field>
+            <mat-label></mat-label>
+            <input matInput formControlName="rhuDet">
+          </mat-form-field>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+          <mat-checkbox formControlName="hospital">Hospital</mat-checkbox>
+          <mat-form-field>
+            <mat-label></mat-label>
+            <input matInput formControlName="hospitalDet">
+          </mat-form-field>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+          <mat-checkbox formControlName="private">Private Practitioner</mat-checkbox>
+          <mat-form-field>
+            <mat-label></mat-label>
+            <input matInput formControlName="privateDet">
+          </mat-form-field>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+          <mat-form-field>
+            <mat-label>Others</mat-label>
+            <input matInput formControlName="others">
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div fxLayout="column" fxFlex="50">
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+          <mat-checkbox formControlName="hospitalization">Hospitalization</mat-checkbox>
+          <mat-form-field>
+            <mat-label></mat-label>
+            <input matInput formControlName="hospitalizationDet">
+          </mat-form-field>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+          <mat-checkbox formControlName="physical">Physical Examination</mat-checkbox>
+          <mat-form-field>
+            <mat-label></mat-label>
+            <input matInput formControlName="physicalDet">
+          </mat-form-field>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+          <mat-checkbox formControlName="xray">X-ray (Specify)</mat-checkbox>
+          <mat-form-field>
+            <mat-label></mat-label>
+            <input matInput formControlName="xrayDet">
+          </mat-form-field>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+          <mat-form-field>
+            <mat-label>Others (Specify)</mat-label>
+            <input matInput formControlName="othersS">
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <mat-form-field>
+        <mat-label>Referred By:</mat-label>
+        <input matInput formControlName="referredBy">
+      </mat-form-field>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <button mat-raised-button (click)="printPreview()">
+      PRINT PREVIEW
+    </button>
+  </div>
+</div>

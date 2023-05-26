@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { login } from '../maintenance/state/patient.state/patient.state.action';
 import { Router } from '@angular/router';
+import { SharedUtility } from '../shared/util';
 
 @Component({
   selector: 'app-login',
@@ -11,10 +12,12 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   loginFg: FormGroup;
+  isMobile = this.util.isMobile;
   constructor(
     private readonly store: Store,
     private readonly fb: FormBuilder,
-    private readonly router: Router
+    private readonly router: Router,
+    private readonly util: SharedUtility
   ){}
 
   ngOnInit(): void {

@@ -1,35 +1,35 @@
 import { Location } from '@angular/common';
-import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { jsPDF}  from 'jspdf';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import jsPDF from 'jspdf';
 import * as moment from 'moment';
-import { map, Observable, switchMap, tap } from 'rxjs';
+import { combineLatest, map, Observable, switchMap } from 'rxjs';
 import { PatientService } from 'src/app/patient/patient-personal.service';
 import { PatientModel } from 'src/app/shared/model/patient.model';
 import { PrintService } from 'src/app/shared/services/print.service';
 
 @Component({
-  selector: 'app-medical-examination-print',
-  templateUrl: './medical-examination-print.component.html',
-  styleUrls: ['./medical-examination-print.component.sass']
+  selector: 'app-referral-form-print',
+  templateUrl: './referral-form-print.component.html',
+  styleUrls: ['./referral-form-print.component.sass']
 })
-export class MedicalExaminationPrintComponent implements OnInit{
-  @ViewChild('print') print: HTMLElement;
-  curDate = moment().format('YYYY-MM-DD');
-  patientId: string;
+export class ReferralFormPrintComponent implements OnInit{
+
   patientInfo$: Observable<PatientModel>;
-  medicalExamInfo$ = this.printService.medicalExamination$;
+  patientId: string;
+  referral$ = this.printService.referral$;
+  content$: Observable<{patientInfo: PatientModel,referral:any }>;
+  curDate = moment().format('YYYY-MM-DD');
 
   constructor(
+    private readonly printService: PrintService,
     private readonly route: ActivatedRoute,
     private readonly patientService: PatientService,
-    private readonly printService: PrintService,
-    private readonly location: Location,
-    private readonly router: Router
+    private readonly location: Location
   ){}
 
   ngOnInit(): void {
-   this.patientInfo$ =  this.route.queryParams.pipe(
+    this.patientInfo$ =  this.route.queryParams.pipe(
       map((params)=>{
         if(params.hasOwnProperty('id')){
           this.patientId = params['id'];
@@ -39,6 +39,22 @@ export class MedicalExaminationPrintComponent implements OnInit{
       }),
       switchMap((id)=> this.patientService.getPatientInfo(id))
     )
+
+    this.content$ = combineLatest([this.patientInfo$, this.referral$]).pipe(
+      map(([patientInfo, referral])=>{
+        if(!referral){
+          referral = {};
+        }
+        return {
+          patientInfo,
+          referral
+        }
+      })
+    )
+  }
+
+  getAge(patientInfo: PatientModel){
+    return moment().diff(patientInfo.birthDate,'years');
   }
 
   startPrint(printHtml){
@@ -59,10 +75,6 @@ export class MedicalExaminationPrintComponent implements OnInit{
     setTimeout(() => {
       window.close();
     }, 1000);
-  }
-
-  getAge(patientInfo: PatientModel){
-    return moment().diff(patientInfo.birthDate,'years');
   }
 
   cancel(){

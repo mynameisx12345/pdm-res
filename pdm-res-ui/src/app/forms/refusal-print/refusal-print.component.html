@@ -1,0 +1,52 @@
+<div fxLayout="column" fxLayoutAlign="center center" class="w-100" >
+  <div fxLayout="column" class="w-100 print" #print >
+    <app-print-header></app-print-header>
+    <span class="mt-3" fxLayout="row" fxLayoutAlign="center center">Refusal of Care Against Medical Advice</span>
+    <span class="mt-3">1.	Acknowledgement of Information</span>
+    <span>
+      _____ I have been advised by the UA-TLMC Health Service staff of the medical  treatment that should be given to me including the nature, purpose, risks, and benefits of the proposed treatment, the possible alternatives thereto, and the risks and consequences of not proceeding. I nonetheless refuse to consent to the proposed treatment.
+    </span>
+    <span>
+      _____ I acknowledge  that I may have a medical problem which may acquire additional medical attention, and that transportation is available to conduct me to the hospital. Instead, I elect to seek alternative medical care and/ or refuse further evaluation, treatment and/ or transport.
+    </span>
+    <span class="mt-3">2.	Release of Liability</span>
+    <span>
+      _____ By signing this form, I am releasing University Health Service, University Of Antique-TLMC, of any liability or medical claims resulting from my decision to refuse care against medical advice.
+    </span>
+    <span class="mt-3">
+      I confirm that I have read and fully understand the acknowledgement of Information and Release of Liability
+    </span>
+    <div fxLayout="row" *ngIf="(patientInfo$ | async) as patientInfo" class="mt-5">
+      <div fxLayout="column" fxFlex="40" fxLayoutAlign="center center">
+        <span>
+          {{patientInfo.firstname}} {{patientInfo.middlename}} {{patientInfo.lastname}} {{patientInfo.ext}}
+        </span>  
+        <div>
+          Patient
+        </div>
+        <div>(Signature Over Printed Name)</div>
+        <span>Date:_____________________</span>
+      </div>
+
+      <div fxLayout="column" fxFlex="40" fxLayoutAlign="center center">
+        <span>
+         &nbsp;
+        </span>  
+        <div>
+          Witness
+        </div>
+        <div>(Signature Over Printed Name)</div>
+        <span>Date:_____________________</span>
+      </div>
+      
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between center" class="mt-3">
+      <span>HS-FM-019</span>
+      <span>RREV.1 / 09-24-20</span>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <button mat-raised-button (click)="startPrint(print)">PRINT</button>
+    <button mat-raised-button color="warn" (click)="cancel()">Cancel</button>
+  </div>
+</div>

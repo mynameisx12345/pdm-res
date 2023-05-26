@@ -1,35 +1,32 @@
 import { Location } from '@angular/common';
-import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { jsPDF}  from 'jspdf';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import jsPDF from 'jspdf';
 import * as moment from 'moment';
-import { map, Observable, switchMap, tap } from 'rxjs';
+import { combineLatest, map, Observable, switchMap } from 'rxjs';
 import { PatientService } from 'src/app/patient/patient-personal.service';
 import { PatientModel } from 'src/app/shared/model/patient.model';
 import { PrintService } from 'src/app/shared/services/print.service';
 
 @Component({
-  selector: 'app-medical-examination-print',
-  templateUrl: './medical-examination-print.component.html',
-  styleUrls: ['./medical-examination-print.component.sass']
+  selector: 'app-oral-health-print',
+  templateUrl: './oral-health-print.component.html',
+  styleUrls: ['./oral-health-print.component.sass']
 })
-export class MedicalExaminationPrintComponent implements OnInit{
-  @ViewChild('print') print: HTMLElement;
-  curDate = moment().format('YYYY-MM-DD');
-  patientId: string;
+export class OralHealthPrintComponent implements OnInit{
   patientInfo$: Observable<PatientModel>;
-  medicalExamInfo$ = this.printService.medicalExamination$;
-
+  patientId: string;
+  oralHealth$ = this.printService.oralHealth$;
+  content$: Observable<{patientInfo: PatientModel,oralHealth:any }>;
   constructor(
     private readonly route: ActivatedRoute,
     private readonly patientService: PatientService,
     private readonly printService: PrintService,
-    private readonly location: Location,
-    private readonly router: Router
+    private readonly location: Location
   ){}
 
   ngOnInit(): void {
-   this.patientInfo$ =  this.route.queryParams.pipe(
+    this.patientInfo$ =  this.route.queryParams.pipe(
       map((params)=>{
         if(params.hasOwnProperty('id')){
           this.patientId = params['id'];
@@ -38,6 +35,23 @@ export class MedicalExaminationPrintComponent implements OnInit{
         return this.patientId;
       }),
       switchMap((id)=> this.patientService.getPatientInfo(id))
+    )
+
+    this.content$ = combineLatest([this.patientInfo$, this.oralHealth$]).pipe(
+      map(([patientInfo, oralHealth])=>{
+        if(!oralHealth){
+          oralHealth = {};
+        }
+
+        if(oralHealth?.dtExamined){
+          oralHealth.dtExamined = moment(oralHealth.dtExamined).format('YYYY-MM-DD');
+        }
+    
+        return {
+          patientInfo,
+          oralHealth
+        }
+      })
     )
   }
 
@@ -59,10 +73,6 @@ export class MedicalExaminationPrintComponent implements OnInit{
     setTimeout(() => {
       window.close();
     }, 1000);
-  }
-
-  getAge(patientInfo: PatientModel){
-    return moment().diff(patientInfo.birthDate,'years');
   }
 
   cancel(){

@@ -13,6 +13,8 @@ export class MedicalClearanceComponent implements OnInit{
   clearanceFg: FormGroup;
   id: string;
 
+  medicalClerance$ = this.printService.medicalClearance$;
+
   constructor(
     private readonly fb: FormBuilder,
     private readonly router: Router,
@@ -38,11 +40,11 @@ export class MedicalClearanceComponent implements OnInit{
           this.id = params['id'];
         }
       }),
-      take(1)
-      // switchMap(()=>this.medicalExamInfo$),
-      // tap((data)=>{
-      //   this.examFg.patchValue(data);
-      // })
+      take(1),
+      switchMap(()=>this.medicalClerance$),
+      tap((data)=>{
+        this.clearanceFg.patchValue(data);
+      })
     ).subscribe();
   }
 

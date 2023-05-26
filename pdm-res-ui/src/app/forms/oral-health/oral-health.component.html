@@ -1,0 +1,39 @@
+<div class="oral" fxLayout="column">
+  <div fxLayout="column" fxLayoutGap="20px" [formGroup]="oralFg">
+    <div fxFlex="30" *ngFor="let field of fields; let i=index" >
+      <mat-form-field  *ngIf="field.type==='text' || field.type==='number'">
+        <mat-label>{{field.label}}</mat-label>
+        <input matInput [formControlName]="field.code" [type]="field.type">
+      </mat-form-field>
+      <mat-checkbox *ngIf="field.type==='checkbox'" [formControlName]="field.code">{{field.label}}</mat-checkbox>
+  
+      <div fxLayout="row" fxLayoutGap="10px" *ngIf="field.type==='checkbox-text'">
+        <mat-checkbox [formControlName]="field.code">{{field.label}}</mat-checkbox>
+        <mat-form-field>
+          <mat-label >{{field.label}}</mat-label>
+          <input matInput [formControlName]="field.othersCode">
+        </mat-form-field>
+      </div>
+  
+      <mat-form-field *ngIf="field.type === 'date'">
+        <mat-label>{{field.label}}</mat-label>
+        <input matInput [matDatepicker]="dtPicker"
+          [formControlName]="field.code">
+        <mat-datepicker-toggle matIconSuffix [for]="dtPicker"></mat-datepicker-toggle>
+        <mat-datepicker #dtPicker></mat-datepicker>
+      </mat-form-field>
+      
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <button mat-raised-button (click)="printPreview()">
+      PRINT PREVIEW
+    </button>
+  </div>
+ 
+  
+  <!-- <button mat-raised-button color="warn">
+    Cancel
+  </button> -->
+
+</div>

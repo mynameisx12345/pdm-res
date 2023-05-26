@@ -1,0 +1,40 @@
+<div fxLayout="column" fxLayoutAlign="center center" class="w-100" >
+  <div fxLayout="column" class="w-100 print" #print >
+    <app-print-header></app-print-header>
+    <span class="mt-3" fxLayout="row" fxLayoutAlign="center center">ORAL HEALTH CONDITION</span>
+    <div fxLayout="column" *ngIf="(content$  | async) as content" >
+      <div fxLayout="row" fxLayoutAlign="space-between center">
+        <span>Name: {{content?.patientInfo.firstname}} {{content?.patientInfo.middlename}} {{content?.patientInfo.lastname}} {{content?.patientInfo.ext}}</span>
+        <span>Year and Section: {{content?.patientInfo.course}}</span>
+      </div>
+      <div fxLayout="column" class="mt-3">
+        <span>Date of Oral Examination: {{content?.oralHealth.dtExamined}}</span>
+        <span>Dental Caries: {{content?.oralHealth.dentalCaries  ? '/' : 'X'}}</span>
+        <span>Gingivitis: {{content?.oralHealth.gingivitis  ? '/' : 'X'}}</span>
+        <span>Debris: {{content?.oralHealth.debris  ? '/' : 'X'}}</span>
+        <span>Calculus: {{content?.oralHealth.calculus  ? '/' : 'No'}}</span>
+        <span>Abnormal Growth: {{content?.oralHealth.abnormalGrowth  ? '/' : 'X'}}</span>
+        <span>Cleft Lip/Palate: {{content?.oralHealth.cleft  ? '/' : 'X'}}</span>
+        <div fxLayout="row" fxLayoutGap="10px">
+          <span>Others(Supernumerary/mesiodents,etc.): {{content?.oralHealth.others  ? '/' : 'X'}}</span>
+          <span>{{content?.oralHealth.othersDet}}</span>
+        </div>
+        
+      </div>
+
+      <div fxLayout="column" class="mt-3">
+        <span>No. of Perm. Teeth Present: {{content?.oralHealth.noPermTeeth}}</span>
+        <span>No. of Perm. Sound Teeth: {{content?.oralHealth.noPermSound}}</span>
+        <span>No. of Decayed Teeth (D): {{content?.oralHealth.noDecayed}}</span>
+        <span>No. of Missing Teeth (M): {{content?.oralHealth.noMissing}}</span>
+        <span>No. of Filling Teeth (F): {{content?.oralHealth.noFilling}}</span>
+        <span>Total DMF Teeth: {{content?.oralHealth.totalDmf}}</span>
+        <span>Total Teeth: {{content?.oralHealth.totalTeeth}}</span>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <button mat-raised-button (click)="startPrint(print)">PRINT</button>
+    <button mat-raised-button color="warn" (click)="cancel()">Cancel</button>
+  </div>
+</div>

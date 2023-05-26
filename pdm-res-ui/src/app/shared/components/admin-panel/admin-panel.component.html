@@ -17,16 +17,18 @@
       (click)="openMedClearance()">
       <mat-icon>medical_services</mat-icon> Medical Clearance
     </button>
-    <button mat-menu-item>
-      <mat-icon>description</mat-icon> Dental Service Summary
+    <button mat-menu-item
+      (click)="openOralHealth()">
+      <mat-icon>description</mat-icon> Oral Health Condition
     </button>
-    <button mat-menu-item>
+    <button mat-menu-item 
+      (click)="openReferral()">
       <mat-icon>medical_information</mat-icon> Referral Form
     </button>
-    <button mat-menu-item>
+    <button mat-menu-item (click)="openRefusal()">
       <mat-icon>arrow_right_alt</mat-icon> Refusal of Care
     </button>
-    <button mat-menu-item>
+    <button mat-menu-item (click)="openLaboratory()">
       <mat-icon>analytics</mat-icon> Laboratory and Diagnostic Form
     </button>
   </mat-menu>

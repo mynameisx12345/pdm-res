@@ -162,8 +162,8 @@ export class PatientService {
   }
 
   getPatientInfo(id): Observable<PatientModel>{
-    // this.store.dispatch(populateColleges());
-    // this.store.dispatch(populateCourseYears());
+    this.store.dispatch(populateColleges());
+    this.store.dispatch(populateCourseYears());
     return this.http.get(`${this.apiUrl}/user/getPatientInfo?id=${id}`).pipe(
       map((resp: {message: string, user:PatientModelI[]})=>{
         let [data] = resp.user;

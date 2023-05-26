@@ -1,0 +1,172 @@
+<div fxLayout="column" fxLayoutAlign="center center" class="w-100">
+  <div fxLayout="column" class="w-100 print" #print >
+    <app-print-header></app-print-header>
+    <span class="mt-3" fxLayout="row" fxLayoutAlign="center center">Laboratory and Diagnostic Form</span>
+    <div fxLayout="row" fxLayoutAlign="end center">Date: {{curDate}}</div>
+    <div fxLayout="column" *ngIf="(content$  | async) as content" >
+      <div fxLayout="row" fxLayoutAlign="space-between center" class="mt-3">
+        <span>Name of Patient: {{content?.patientInfo.firstname}} {{content?.patientInfo.middlename}} {{content?.patientInfo.lastname}} {{content?.patientInfo.ext}}</span>
+        <span>Age: {{getAge(content?.patientInfo)}}</span>
+        <span>Sex: {{content?.patientInfo.gender}} </span>
+        <span>Course & Year: {{content?.patientInfo.course}} </span>
+      </div>
+      <div>Requested by: {{content?.laboratory.requestedBy}}</div>
+      <div fxLayout="row" class="mt-3">
+        <div fxLayout="column" fxFlex="30">
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.cbc"></span>
+            </span> 
+            <span>CBC</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.platelet"></span>
+            </span> 
+            <span>Platelet Count</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.blood"></span>
+            </span> 
+            <span>Blood Typing</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.urinalysis"></span>
+            </span> 
+            <span>Urinalysis</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.fecalysis"></span>
+            </span> 
+            <span>Fecalysis</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.hbsag"></span>
+            </span> 
+            <span>HBsAg</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.audiometry"></span>
+            </span> 
+            <span>Audiometry</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.ishihara"></span>
+            </span> 
+            <span>Ishihara</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.serum"></span>
+            </span> 
+            <span>Serum Pregnancy Test</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.sputum"></span>
+            </span> 
+            <span>Sputum Exam</span>
+          </div>
+        </div>
+
+        <div fxLayout="column" fxFlex="30">
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.fbs"></span>
+            </span> 
+            <span>FBS</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.cholesterol"></span>
+            </span> 
+            <span>Cholesterol</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.triglycerides"></span>
+            </span> 
+            <span>Triglycerides</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.belirubin"></span>
+            </span> 
+            <span>Bilirubin</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.lipid"></span>
+            </span> 
+            <span>Lipid Profile</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.sgpt"></span>
+            </span> 
+            <span>SGPT/ALT</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.sgot"></span>
+            </span> 
+            <span>SGOT/AST</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.creatinine"></span>
+            </span> 
+            <span>Creatinine</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.bun"></span>
+            </span> 
+            <span>BUN</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.uric"></span>
+            </span> 
+            <span>Uric Acid</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.hba"></span>
+            </span> 
+            <span>HBA 1C</span>
+          </div>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <span class="icon" fxFlex="20px" fxLayout="row" fxLayoutAlign="center center">
+              <span class="check" *ngIf="content?.laboratory.tsh"></span>
+            </span> 
+            <span>TSH, T3, T4</span>
+          </div>
+        </div>
+
+        <div fxLayout="column" fxFlex="30">
+          <span>X-RAY: {{content?.laboratory.xray}}</span>
+          <span>UTZ: {{content?.laboratory.utz}}</span>
+          <span>ECG: {{content?.laboratory.ecg}}</span>
+          <span>CT Scan: {{content?.laboratory.ct}}</span>
+          <span>Others: {{content?.laboratory.others}}</span>
+        </div>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="space-between center" class="mt-3">
+        <span>HS-FM-014</span>
+        <span>REV.1 / 03-05-20</span>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <button mat-raised-button (click)="startPrint(print)">PRINT</button>
+    <button mat-raised-button color="warn" (click)="cancel()">Cancel</button>
+  </div>
+</div>  
