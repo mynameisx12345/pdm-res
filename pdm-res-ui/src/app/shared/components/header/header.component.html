@@ -8,7 +8,7 @@
       <div (click)="goHome()">
         PATIENTS MEDICAL AND DENTAL RECORD SYSTEM
       </div>
-      <app-breadcrumb></app-breadcrumb>
+
       <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" class="mt-4" *ngIf="showLinks && !isMobile">
         <div *ngFor="let service of services; let last=last" class="link" (click)="onServiceSelect(service.link)">
           <span class="label">{{service.label}}</span>
