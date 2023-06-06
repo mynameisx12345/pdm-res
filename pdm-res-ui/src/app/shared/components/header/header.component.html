@@ -41,7 +41,7 @@
   </button>
   <button mat-menu-item (click)="openRequestList()">
     <mat-icon>perm_media</mat-icon>
-    Appointments
+    Patients Request
   </button>
   <button mat-menu-item [matMenuTriggerFor]="adminSettings" *ngIf="(currentPatient$ | async)?.accountType !== 'S'">
     <mat-icon>tune</mat-icon>

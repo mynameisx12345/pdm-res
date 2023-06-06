@@ -26,7 +26,7 @@ const routes: Routes = [
         path: 'request',
         component: RequestsComponent,
         data: {
-          breadcrumb: 'Appointments'
+          breadcrumb: 'Patients Request'
         },
         canActivate: [AuthGuard],
       }
