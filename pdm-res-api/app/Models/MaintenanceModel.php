@@ -79,7 +79,15 @@ class MaintenanceModel{
 
   function getUsers(){
     $builder = $this->db->table('users');
-    $builder->orderBy('id', 'DESC');
+    $builder->select(
+      'users.*,
+      colleges.description as college,
+      course_years.name as course,
+      (SELECT data_json FROM actions WHERE actions.patient_id = users.id ORDER BY dt_added DESC LIMIT 1 ) actions'
+    );
+    $builder->join('colleges', 'colleges.id = users.college_id');
+    $builder->join('course_years','course_years.id=users.course_year_id');
+    $builder->orderBy('users.id', 'DESC');
     $query = $builder->get()->getResult();
 
     return $query;

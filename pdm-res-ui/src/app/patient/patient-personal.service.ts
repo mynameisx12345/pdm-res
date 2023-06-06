@@ -5,9 +5,10 @@ import { BehaviorSubject, combineLatest, forkJoin, map, Observable, Subject, Sub
 import { environment } from "src/environments/environment";
 import { collegeReducer } from "../maintenance/state/college.state/college.state.reducer";
 import { getCivilStatuses, getColleges, getCourseYears, getGenders } from "../maintenance/state/college.state/college.state.selector";
-import { CivilStatusModel, CollegeModel, Gender, MyRequestsModel, MyRequestsModlI, PatientModel, PatientModelI } from "../shared/model/patient.model";
+import { ActionI, Action, CivilStatusModel, CollegeModel, Gender, MyRequestsModel, MyRequestsModlI, PatientModel, PatientModelI } from "../shared/model/patient.model";
 import * as moment from 'moment';
 import { populateColleges, populateCourseYears } from "../maintenance/state/college.state/college.state.action";
+
 @Injectable({
   providedIn: 'root'
 })
@@ -83,7 +84,10 @@ export class PatientService {
             patientName: a.patient_name,
             dtInitiated: a.dt_initiated,
             dtProcessed: a.dt_processed,
-            dtCompleted: a.dt_completed
+            dtCompleted: a.dt_completed,
+            college: a.college,
+            course: a.course,
+            action: a.action
           })
         })
 
@@ -259,12 +263,13 @@ export class PatientService {
             contactPerson: data.contact_person,
             contactPerNumber: data.contact_person_no,
             accountType: data.account_type === 'S' ? 'Student' : (data.account_type === 'F' ? 'Faculty' : 'Administrator'),
-            college: null,
-            course: null,
+            college: data.college,
+            course: data.course,
             gender: null,
             civilStatus: null,
             isApproved: data.is_approved ? 'Yes' : 'No',
-            studentId: data.student_id
+            studentId: data.student_id,
+            actions: data.actions
 
           }
         });
@@ -277,5 +282,35 @@ export class PatientService {
 
   resetPassword(email){
     return this.http.get(`${this.apiUrl}/user/forgot-password?email=${email}`);
+  }
+
+  addAction(action: Action){
+    let actionData:ActionI = {
+      'id': action.id,
+      'action_type': action.actionType,
+      'data_json': action.data,
+      'request_id': action.requestId,
+      'patient_id': action.patientId
+    }
+    return this.http.post(`${this.apiUrl}/action/add`,actionData);
+  }
+
+  getAction(requestId):Observable<Action>{
+    return  this.http.get(`${this.apiUrl}/action/get?request_id=${requestId}`).pipe(
+      map((resp: {message: string, action:ActionI[]})=>{
+        console.log('resp',resp)
+        let action: Action = null;
+        if(resp.action.length>0){
+          action = {
+            id: resp.action[0].id,
+            requestId: resp.action[0].request_id,
+            data: resp.action[0].data_json,
+            actionType: resp.action[0].action_type,
+            patientId: resp.action[0].patient_id
+          }
+        }
+       return action;
+      })
+    )
   }
 }

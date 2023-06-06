@@ -15,6 +15,7 @@ import { RefusalComponent } from './refusal/refusal.component';
 import { RefusalPrintComponent } from './refusal-print/refusal-print.component';
 import { LaboratoryComponent } from './laboratory/laboratory.component';
 import { LaboratoryPrintComponent } from './laboratory-print/laboratory-print.component';
+import { PrescriptionComponent } from './prescription/prescription.component';
 
 const routes: Routes = [
   {
@@ -103,6 +104,13 @@ const routes: Routes = [
         data: {
           breadcrumb: 'Print Laboratory and Diagnostic Form'
         }
+      },
+      {
+        path: 'prescription',
+        component: PrescriptionComponent,
+        data: {
+          breadcrumb: 'Prescription'
+        }
       }
     ]
   }
@@ -121,7 +129,8 @@ const routes: Routes = [
     RefusalComponent,
     RefusalPrintComponent,
     LaboratoryComponent,
-    LaboratoryPrintComponent
+    LaboratoryPrintComponent,
+    PrescriptionComponent
   ],
   imports: [
     CommonModule,

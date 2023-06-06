@@ -50,6 +50,11 @@ $routes->group('request', function($routes){
     $routes->post('add', 'RequestsController::request');
     $routes->get('get', 'RequestsController::getRequest');
 });
+$routes->group('action', function($routes){
+    $routes->post('add', 'RequestsController::action');
+    $routes->get('get', 'RequestsController::getAction');
+});
+
 
 
 /*

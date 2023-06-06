@@ -40,4 +40,8 @@ export class ReportTableComponent implements OnInit, AfterViewInit{
       this._data.paginator.firstPage();
     }
   }
+
+  extractPrescription(action){
+    return JSON.parse(action)?.prescription;
+  }
 }

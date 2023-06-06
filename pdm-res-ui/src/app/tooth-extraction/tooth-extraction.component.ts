@@ -90,7 +90,7 @@ export class ToothExtractionComponent implements OnInit, AfterViewInit {
     let myRequest: MyRequestsModel = {
       id: this.reqId,
       patientId: this.patientInfo.id,
-      requestType: 'Tooth Extraction',
+      requestType: 'Dental Consultation',
       requestJson: JSON.stringify(consultationDetails),
       status: 'Initiated',
       patientName: `${this.patientInfo.lastname}, ${this.patientInfo.firstname}`

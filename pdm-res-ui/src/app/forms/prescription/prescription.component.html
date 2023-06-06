@@ -1,0 +1,11 @@
+<div class="prescription" [formGroup]="prescriptionFg" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+  <mat-form-field class="w-100">
+    <mat-label>Enter Prescription</mat-label>
+    <input matInput formControlName="prescription">
+  </mat-form-field>
+  <button mat-raised-button color="accent"
+    [disabled]="!prescriptionFg.valid"
+    (click)="save()">
+    Save
+  </button>
+</div>

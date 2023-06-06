@@ -1,0 +1,43 @@
+ERROR - 2023-06-05 22:09:31 --> Not unique table/alias: 'users'
+CRITICAL - 2023-06-05 22:09:31 --> Call to a member function getResult() on bool
+in APPPATH\Models\MaintenanceModel.php on line 88.
+ 1 APPPATH\Controllers\MaintenanceController.php(79): App\Models\MaintenanceModel->getUsers()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->getUsers()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-06-05 22:10:01 --> Not unique table/alias: 'users'
+CRITICAL - 2023-06-05 22:10:01 --> Call to a member function getResult() on bool
+in APPPATH\Models\MaintenanceModel.php on line 88.
+ 1 APPPATH\Controllers\MaintenanceController.php(79): App\Models\MaintenanceModel->getUsers()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->getUsers()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-06-05 22:10:21 --> Not unique table/alias: 'users'
+CRITICAL - 2023-06-05 22:10:21 --> Call to a member function getResult() on bool
+in APPPATH\Models\MaintenanceModel.php on line 87.
+ 1 APPPATH\Controllers\MaintenanceController.php(79): App\Models\MaintenanceModel->getUsers()
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\MaintenanceController->getUsers()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MaintenanceController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-05 22:59:53 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::rightJoin()
+in APPPATH\Models\RequestsModel.php on line 65.
+ 1 APPPATH\Controllers\RequestsController.php(37): App\Models\RequestsModel->getRequest(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->getRequest()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-05 22:59:53 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::rightJoin()
+in APPPATH\Models\RequestsModel.php on line 65.
+ 1 APPPATH\Controllers\RequestsController.php(37): App\Models\RequestsModel->getRequest(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->getRequest()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

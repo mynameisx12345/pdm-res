@@ -1,0 +1,226 @@
+CRITICAL - 2023-06-06 09:29:00 --> get_object_vars(): Argument #1 ($object) must be of type object, null given
+in APPPATH\Models\RequestsModel.php on line 103.
+ 1 APPPATH\Models\RequestsModel.php(103): get_object_vars(null)
+ 2 APPPATH\Controllers\RequestsController.php(104): App\Models\RequestsModel->action(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:29:22 --> get_object_vars(): Argument #1 ($object) must be of type object, null given
+in APPPATH\Models\RequestsModel.php on line 103.
+ 1 APPPATH\Models\RequestsModel.php(103): get_object_vars(null)
+ 2 APPPATH\Controllers\RequestsController.php(104): App\Models\RequestsModel->action(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:29:56 --> get_object_vars(): Argument #1 ($object) must be of type object, null given
+in APPPATH\Models\RequestsModel.php on line 103.
+ 1 APPPATH\Models\RequestsModel.php(103): get_object_vars(null)
+ 2 APPPATH\Controllers\RequestsController.php(105): App\Models\RequestsModel->action(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:30:12 --> get_object_vars(): Argument #1 ($object) must be of type object, null given
+in APPPATH\Models\RequestsModel.php on line 103.
+ 1 APPPATH\Models\RequestsModel.php(103): get_object_vars(null)
+ 2 APPPATH\Controllers\RequestsController.php(105): App\Models\RequestsModel->action(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:30:28 --> get_object_vars(): Argument #1 ($object) must be of type object, null given
+in APPPATH\Models\RequestsModel.php on line 103.
+ 1 APPPATH\Models\RequestsModel.php(103): get_object_vars(null)
+ 2 APPPATH\Controllers\RequestsController.php(106): App\Models\RequestsModel->action(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:30:55 --> get_object_vars(): Argument #1 ($object) must be of type object, null given
+in APPPATH\Models\RequestsModel.php on line 103.
+ 1 APPPATH\Models\RequestsModel.php(103): get_object_vars(null)
+ 2 APPPATH\Controllers\RequestsController.php(105): App\Models\RequestsModel->action(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:30:56 --> get_object_vars(): Argument #1 ($object) must be of type object, null given
+in APPPATH\Models\RequestsModel.php on line 103.
+ 1 APPPATH\Models\RequestsModel.php(103): get_object_vars(null)
+ 2 APPPATH\Controllers\RequestsController.php(105): App\Models\RequestsModel->action(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:30:57 --> get_object_vars(): Argument #1 ($object) must be of type object, null given
+in APPPATH\Models\RequestsModel.php on line 103.
+ 1 APPPATH\Models\RequestsModel.php(103): get_object_vars(null)
+ 2 APPPATH\Controllers\RequestsController.php(105): App\Models\RequestsModel->action(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:30:58 --> get_object_vars(): Argument #1 ($object) must be of type object, null given
+in APPPATH\Models\RequestsModel.php on line 103.
+ 1 APPPATH\Models\RequestsModel.php(103): get_object_vars(null)
+ 2 APPPATH\Controllers\RequestsController.php(105): App\Models\RequestsModel->action(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:31:11 --> get_object_vars(): Argument #1 ($object) must be of type object, null given
+in APPPATH\Models\RequestsModel.php on line 103.
+ 1 APPPATH\Models\RequestsModel.php(103): get_object_vars(null)
+ 2 APPPATH\Controllers\RequestsController.php(105): App\Models\RequestsModel->action(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:31:12 --> get_object_vars(): Argument #1 ($object) must be of type object, null given
+in APPPATH\Models\RequestsModel.php on line 103.
+ 1 APPPATH\Models\RequestsModel.php(103): get_object_vars(null)
+ 2 APPPATH\Controllers\RequestsController.php(105): App\Models\RequestsModel->action(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:31:13 --> get_object_vars(): Argument #1 ($object) must be of type object, null given
+in APPPATH\Models\RequestsModel.php on line 103.
+ 1 APPPATH\Models\RequestsModel.php(103): get_object_vars(null)
+ 2 APPPATH\Controllers\RequestsController.php(105): App\Models\RequestsModel->action(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:32:37 --> get_object_vars(): Argument #1 ($object) must be of type object, null given
+in APPPATH\Models\RequestsModel.php on line 103.
+ 1 APPPATH\Models\RequestsModel.php(103): get_object_vars(null)
+ 2 APPPATH\Controllers\RequestsController.php(105): App\Models\RequestsModel->action(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:32:37 --> get_object_vars(): Argument #1 ($object) must be of type object, null given
+in APPPATH\Models\RequestsModel.php on line 103.
+ 1 APPPATH\Models\RequestsModel.php(103): get_object_vars(null)
+ 2 APPPATH\Controllers\RequestsController.php(105): App\Models\RequestsModel->action(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:32:38 --> get_object_vars(): Argument #1 ($object) must be of type object, null given
+in APPPATH\Models\RequestsModel.php on line 103.
+ 1 APPPATH\Models\RequestsModel.php(103): get_object_vars(null)
+ 2 APPPATH\Controllers\RequestsController.php(105): App\Models\RequestsModel->action(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:32:39 --> get_object_vars(): Argument #1 ($object) must be of type object, null given
+in APPPATH\Models\RequestsModel.php on line 103.
+ 1 APPPATH\Models\RequestsModel.php(103): get_object_vars(null)
+ 2 APPPATH\Controllers\RequestsController.php(105): App\Models\RequestsModel->action(null)
+ 3 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 4 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:32:48 --> Attempt to assign property "dt_added" on array
+in APPPATH\Models\RequestsModel.php on line 104.
+ 1 APPPATH\Controllers\RequestsController.php(105): App\Models\RequestsModel->action(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:33:00 --> Attempt to assign property "dt_added" on array
+in APPPATH\Models\RequestsModel.php on line 104.
+ 1 APPPATH\Controllers\RequestsController.php(105): App\Models\RequestsModel->action(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:33:03 --> Attempt to assign property "dt_added" on array
+in APPPATH\Models\RequestsModel.php on line 104.
+ 1 APPPATH\Controllers\RequestsController.php(105): App\Models\RequestsModel->action(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:33:04 --> Attempt to assign property "dt_added" on array
+in APPPATH\Models\RequestsModel.php on line 104.
+ 1 APPPATH\Controllers\RequestsController.php(105): App\Models\RequestsModel->action(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:33:39 --> Attempt to assign property "dt_added" on array
+in APPPATH\Models\RequestsModel.php on line 105.
+ 1 APPPATH\Controllers\RequestsController.php(104): App\Models\RequestsModel->action(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:34:00 --> Attempt to assign property "dt_added" on array
+in APPPATH\Models\RequestsModel.php on line 105.
+ 1 APPPATH\Controllers\RequestsController.php(104): App\Models\RequestsModel->action(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-06-06 09:34:39 --> CONSTRAINT `actions.data_json` failed for `app_pdm_res`.`actions`
+ERROR - 2023-06-06 09:35:13 --> CONSTRAINT `actions.data_json` failed for `app_pdm_res`.`actions`
+ERROR - 2023-06-06 09:35:14 --> CONSTRAINT `actions.data_json` failed for `app_pdm_res`.`actions`
+ERROR - 2023-06-06 09:35:49 --> CONSTRAINT `actions.data_json` failed for `app_pdm_res`.`actions`
+ERROR - 2023-06-06 09:35:50 --> CONSTRAINT `actions.data_json` failed for `app_pdm_res`.`actions`
+ERROR - 2023-06-06 09:35:51 --> CONSTRAINT `actions.data_json` failed for `app_pdm_res`.`actions`
+CRITICAL - 2023-06-06 09:53:46 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `actions` (`action_type`, `data_json`, `request_id`, `dt_added`) VALUES (:action_type:, :data_json:, :request_id:, :dt_added:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `actions` (`action_type`, `data_json`, `request_id`, `dt_added`) VALUES (:action_type:, :data_json:, :request_id:, :dt_added:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `actions` (`action_type`, `data_json`, `request_id`, `dt_added`) VALUES (:action_type:, :data_json:, :request_id:, :dt_added:)', [...], false)
+ 6 APPPATH\Models\RequestsModel.php(108): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH\Controllers\RequestsController.php(104): App\Models\RequestsModel->action(Object(stdClass))
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 09:54:10 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `actions` (`action_type`, `data_json`, `request_id`, `dt_added`) VALUES (:action_type:, :data_json:, :request_id:, :dt_added:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `actions` (`action_type`, `data_json`, `request_id`, `dt_added`) VALUES (:action_type:, :data_json:, :request_id:, :dt_added:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `actions` (`action_type`, `data_json`, `request_id`, `dt_added`) VALUES (:action_type:, :data_json:, :request_id:, :dt_added:)', [...], false)
+ 6 APPPATH\Models\RequestsModel.php(108): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH\Controllers\RequestsController.php(104): App\Models\RequestsModel->action(Object(stdClass))
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\RequestsController->action()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequestsController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(62): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

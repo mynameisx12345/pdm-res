@@ -8,6 +8,7 @@ import { StoreModule } from '@ngrx/store';
 import { patientReducer } from '../maintenance/state/patient.state/patient.state.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { PatientEffects } from '../maintenance/state/patient.state/patient.state.effects';
+import { PrintTableComponent } from '../shared/components/print-table/print-table.component';
 
 const routes: Routes = [
   {
@@ -16,7 +17,14 @@ const routes: Routes = [
     data: {
       breadcrumb: 'Report Summary'
     }
-  }
+  },
+  {
+    path: 'summary-print',
+    component: PrintTableComponent,
+    data: {
+      breadcrumb: 'Print Report Summary'
+    }
+  },
 ]
 
 @NgModule({

@@ -22,6 +22,7 @@ import { MaintenanceEffects } from 'src/app/maintenance/state/college.state/coll
 import { PatientEffects } from 'src/app/maintenance/state/patient.state/patient.state.effects';
 import { ReportTableComponent } from './report-table/report-table.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { PrintTableComponent } from './print-table/print-table.component';
 
 
 
@@ -41,7 +42,8 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
     RequestStatusComponent,
     PrintHeaderComponent,
     ReportTableComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    PrintTableComponent
   ],
   imports: [
     CommonModule,

@@ -20,17 +20,17 @@ export class HeaderComponent implements OnInit {
       label:'Home', link:'/home'
     },
     {
-      label:'Medical and Dental Consultation', link:'/consultation'
+      label:'Medical Consultation', link:'/medical'
     },
     {
-      label:'Tooth Extraction', link:'/tooth-extraction'
+      label:'Dental Consultation', link:'/dental'
     },
-    {
-      label:'First-Aid Treatment', link:'/first-aid'
-    },
-    {
-      label:'Health Counselling', link:'/health-counselling'
-    },
+    // {
+    //   label:'First-Aid Treatment', link:'/first-aid'
+    // },
+    // {
+    //   label:'Health Counselling', link:'/health-counselling'
+    // },
   ];
 
   showLinks = false;

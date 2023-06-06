@@ -76,7 +76,7 @@ export class FirstAidComponent implements OnInit, AfterViewInit {
     let myRequest: MyRequestsModel = {
       id: this.reqId,
       patientId: this.patientInfo.id,
-      requestType: 'First-Aid Treatment',
+      requestType: 'Medical Consultation',
       requestJson: JSON.stringify(consultationDetails),
       status: 'Initiated',
       patientName: `${this.patientInfo.lastname}, ${this.patientInfo.firstname}`

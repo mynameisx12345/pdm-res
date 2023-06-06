@@ -56,6 +56,12 @@ export class RequestsComponent implements OnInit, AfterViewInit{
       case 'Health Counselling':
         route = `/health-counselling?id=${element.id}`;
         break;
+      case 'Medical Consultation':
+        route = `/medical?id=${element.id}`;
+        break;
+      case 'Dental Consultation':
+        route = `/dental?id=${element.id}`;
+        break;
     }
     this.router.navigateByUrl(route);
   }

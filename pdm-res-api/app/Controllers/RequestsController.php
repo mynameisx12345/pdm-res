@@ -95,4 +95,29 @@ class RequestsController extends BaseController
     //         print_r($data);
     //     }
   }
+
+  public function action(){
+    $db = db_connect();
+    
+    $model = new RequestsModel($db);
+    $data = $this->request->getJSON();
+    $ret = $model->action($data);
+
+    return $this->response
+    ->setStatusCode(200)
+    ->setJson(['message'=>'Success', "isInsert"=>'']);
+  }
+
+  public function getAction(){
+    $db = db_connect();
+    
+    $model = new RequestsModel($db);
+    $requestId = $this->request->getGet('request_id');
+
+    $ret = $model->getAction($requestId);
+
+    return $this->response
+    ->setStatusCode(200)
+    ->setJson(['message'=>'Success', "action"=>$ret]);
+  }
 }

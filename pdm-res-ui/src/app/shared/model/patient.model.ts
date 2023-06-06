@@ -49,7 +49,8 @@ export interface PatientModel {
   contactPerNumber: string,
   accountType: string,
   isApproved?: string,
-  studentId: string
+  studentId: string,
+  actions?: string
 }
 
 export interface PatientModelI {
@@ -75,7 +76,10 @@ export interface PatientModelI {
   contact_person_no: string,
   account_type: string,
   is_approved?: string,
-  student_id: string
+  student_id: string,
+  college?:string,
+  course?:string,
+  actions?:string
 };
 
 export interface MyRequestsModel {
@@ -87,7 +91,10 @@ export interface MyRequestsModel {
   patientName: string,
   dtInitiated?: string,
   dtProcessed?: string,
-  dtCompleted?: string
+  dtCompleted?: string,
+  college?:string,
+  course?:string,
+  action?:string
 }
 
 export interface MyRequestsModlI {
@@ -100,4 +107,23 @@ export interface MyRequestsModlI {
   dt_initiated?: string,
   dt_processed?: string,
   dt_completed?: string,
+  college?:string,
+  course?:string,
+  action?:string
+}
+
+export interface Action{
+  id: number,
+  requestId: number,
+  actionType: string,
+  data: string,
+  patientId: number
+}
+
+export interface ActionI{
+  id: number,
+  request_id: number,
+  action_type: string,
+  data_json: string,
+  patient_id: number
 }

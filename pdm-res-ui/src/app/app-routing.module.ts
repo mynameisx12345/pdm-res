@@ -42,12 +42,12 @@ const routes: Routes = [
     canActivate: [AuthGuard],
   },
   {
-    path: 'tooth-extraction',
+    path: 'dental',
     loadChildren: () => import('./tooth-extraction/tooth-extraction.module').then(m=>m.ToothExtractionModule),
     canActivate: [AuthGuard],
   },
   {
-    path: 'first-aid',
+    path: 'medical',
     loadChildren: () => import('./first-aid/first-aid.module').then(m=>m.FirstAidModule),
     canActivate: [AuthGuard],
   },

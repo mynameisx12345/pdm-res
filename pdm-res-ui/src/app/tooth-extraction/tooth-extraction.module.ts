@@ -14,7 +14,7 @@ const routes: Routes = [
     path: '',
     component: ToothExtractionComponent,
     data: {
-      breadcrumb: 'Tooth Extraction'
+      breadcrumb: 'Dental Consultation'
     }
   }
 ]

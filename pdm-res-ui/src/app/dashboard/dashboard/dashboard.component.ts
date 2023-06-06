@@ -14,18 +14,19 @@ import { getPatient } from 'src/app/maintenance/state/patient.state/patient.stat
 export class DashboardComponent implements OnInit {
   welcomeMessage = 'Welcome to Your School Health Clinic! \nWe are glad to help you on your health needs! Checkout our services below:';
   services = [
+    // {
+    //   label:'Medical and Dental Consultation', link:'/consultation',icon:'monitor_heart'
+    // },
     {
-      label:'Medical and Dental Consultation', link:'/consultation',icon:'monitor_heart'
+      label:'Medical Consultation', link:'/medical', icon: 'healing'
     },
     {
-      label:'Tooth Extraction', link:'/tooth-extraction',icon: 'mood'
+      label:'Dental Consultation', link:'/dental',icon: 'mood'
     },
-    {
-      label:'First-Aid Treatment', link:'/first-aid', icon: 'healing'
-    },
-    {
-      label:'Health Counselling', link:'/health-counselling', icon: 'medication_liquid'
-    },
+    
+    // {
+    //   label:'Health Counselling', link:'/health-counselling', icon: 'medication_liquid'
+    // },
   ];
 
   @ViewChild('registrationInfo') registrationInfo: TemplateRef<any>;
@@ -65,7 +66,7 @@ export class DashboardComponent implements OnInit {
 
   onRegister(){
     this.currentDialog.close();
-    this.router.navigate(['register']);
+    this.router.navigate(['patient/register']);
   }
 
   initiateMaintenanceData(){

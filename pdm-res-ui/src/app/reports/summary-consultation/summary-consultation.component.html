@@ -1,3 +1,6 @@
-<div class="report" fxLayout="column">
+<div class="report" fxLayout="column" fxLayoutGap="10px">
   <app-report-table [dataSource]="dataSource$ | async" [columns]="columns"></app-report-table>
+  <div>
+    <button mat-raised-button>PRINT</button>
+  </div>
 </div>

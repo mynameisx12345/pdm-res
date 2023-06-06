@@ -53,10 +53,16 @@ class RequestsModel{
       requests.dt_initiated,
       requests.dt_processed,
       requests.dt_completed,
-      CONCAT(users.last_name, ",", users.first_name) patient_name'
+      CONCAT(users.last_name, ",", users.first_name) patient_name,
+      colleges.description as college,
+      course_years.name as course,
+      actions.data_json as action'
     );
     $builder->orderBy('requests.id', 'DESC');
     $builder->join('users', 'users.id = requests.patient_id');
+    $builder->join('colleges','colleges.id=users.college_id');
+    $builder->join('course_years','course_years.id=users.course_year_id');
+    $builder->join('actions','actions.request_id=requests.id','left outer');
     if($param->id){
       $builder->where('requests.id',$param->id);
     }
@@ -95,5 +101,36 @@ class RequestsModel{
     $builder->update();
 
     return ["message"=>"Success", "newPassword"=>$newPassword];
+  }
+
+  function action($data){
+    date_default_timezone_set('Asia/Singapore');
+    $curDate = date('Y-m-d H:i:s');
+    $data->dt_added = $curDate;
+    $actionId = $data->id;
+    $isInsert =  !(!!$actionId);
+    $dataA = get_object_vars($data);
+
+    
+    if($isInsert){
+      $this->db->table('actions')
+      ->insert($dataA);
+      $actionId = $this->db->insertID();
+    } else {
+      $builder = $this->db->table('actions');
+      $builder->where('id', $actionId);
+      $builder->update($dataA);
+    }
+    
+
+    return $actionId;
+  }
+
+  function getAction($requestId){
+    $builder = $this->db->table('actions');
+    $builder->where('request_id',$requestId);
+    $query = $builder->get()->getResult();
+
+    return $query;
   }
 }

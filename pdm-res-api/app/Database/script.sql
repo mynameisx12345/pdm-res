@@ -63,3 +63,10 @@ CREATE TABLE requests (
   dt_processed VARCHAR(30),
   dt_completed VARCHAR(30)
 )
+
+CREATE TABLE actions(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    action_type VARCHAR(50),
+    data_json JSON,
+    dt_added VARCHAR(50)
+)

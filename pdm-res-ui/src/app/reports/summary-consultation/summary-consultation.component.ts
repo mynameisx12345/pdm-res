@@ -32,6 +32,12 @@ export class SummaryConsultationComponent implements OnInit {
             case 'H':
               this .requestType ='Health Counselling';
               break;
+            case 'D':
+              this.requestType = 'Dental Consultation';
+              break;
+            case 'M':
+              this.requestType = 'Medical Consultation';
+              break;
           }
         }
         return this.requestType;
@@ -56,6 +62,9 @@ export class SummaryConsultationComponent implements OnInit {
     'id':'ID',
     'requestType':'Request Type',
     'patientName': 'Patient Name',
+    'college': 'College',
+    'course': 'Course',
+    'action': 'Prescription',
     'status':'Status',
     dtInitiated: 'Date Initiated',
     dtProcessed: 'Date Processed',

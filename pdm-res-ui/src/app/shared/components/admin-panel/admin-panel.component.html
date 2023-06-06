@@ -9,6 +9,9 @@
   <button mat-raised-button color="primary"
     [matMenuTriggerFor]="actionMenu">ACTIONS / FORMS</button>
   <mat-menu #actionMenu="matMenu">
+    <button mat-menu-item (click)="openPrescription()">
+      <mat-icon>medication_liquid</mat-icon> Prescription
+    </button>
     <button mat-menu-item
       (click)="openMedExam()">
       <mat-icon>monitor_heart</mat-icon> Medical Examination

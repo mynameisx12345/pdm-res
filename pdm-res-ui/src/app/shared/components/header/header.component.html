@@ -65,7 +65,7 @@
 </mat-menu>
 
 <mat-menu #reports="matMenu">
-  <button mat-menu-item (click)="openSummary('C')">
+  <!-- <button mat-menu-item (click)="openSummary('C')">
     <mat-icon>assignment</mat-icon>
     Summary of Consultation
   </button>
@@ -80,5 +80,13 @@
   <button mat-menu-item (click)="openSummary('H')">
     <mat-icon>assignment</mat-icon>
     Summary of Health Counselling
+  </button> -->
+  <button mat-menu-item (click)="openSummary('M')">
+    <mat-icon>assignment</mat-icon>
+    Summary of Medical Consultation
+  </button>
+  <button mat-menu-item (click)="openSummary('D')">
+    <mat-icon>assignment</mat-icon>
+    Summary of Dental Consultation
   </button>
 </mat-menu>

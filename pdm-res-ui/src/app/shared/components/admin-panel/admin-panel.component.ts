@@ -57,4 +57,9 @@ export class AdminPanelComponent {
     let url = `${this.uiUrl}/forms/laboratory?id=${this.requestData.patientId}`;
     window.open(url, '_blank');
   }
+
+  openPrescription(){
+    let url = `${this.uiUrl}/forms/prescription?id=${this.requestData.patientId}&requestId=${this.requestData.id}`;
+    window.open(url, '_blank');
+  }
 }

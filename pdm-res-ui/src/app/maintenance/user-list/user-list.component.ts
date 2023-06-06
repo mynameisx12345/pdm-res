@@ -16,7 +16,7 @@ import { MatSort } from '@angular/material/sort';
 export class UserListComponent implements OnInit, AfterViewInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
-  columns = ['studentId','email', 'firstname','lastname','accountType', 'isApproved','menu'];
+  columns = ['studentId','email', 'firstname','lastname','accountType', 'college','course','actions', 'isApproved','menu',];
   users$ = this.store.select(getUsers);
   dataSource = new MatTableDataSource<PatientModel>;
   constructor(
@@ -59,6 +59,10 @@ export class UserListComponent implements OnInit, AfterViewInit {
     }
 
     this.store.dispatch(updateStatus(newData));
+  }
+
+  extractPrescription(data){
+    return JSON.parse(data)?.prescription;
   }
 
 }
