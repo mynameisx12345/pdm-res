@@ -106,4 +106,8 @@ export class HeaderComponent implements OnInit {
   openSummary(type){
     this.router.navigateByUrl(`reports/summary?type=${type}`);
   }
+
+  openHistory(type){
+    this.router.navigateByUrl(`reports/patient-history?type=${type}`);
+  }
 }

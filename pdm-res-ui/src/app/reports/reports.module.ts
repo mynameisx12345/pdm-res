@@ -9,6 +9,8 @@ import { patientReducer } from '../maintenance/state/patient.state/patient.state
 import { EffectsModule } from '@ngrx/effects';
 import { PatientEffects } from '../maintenance/state/patient.state/patient.state.effects';
 import { PrintTableComponent } from '../shared/components/print-table/print-table.component';
+import { PatientHistoryComponent } from './patient-history/patient-history.component';
+import { PatientHistoryDetailsComponent } from './patient-history-details/patient-history-details.component';
 
 const routes: Routes = [
   {
@@ -25,11 +27,27 @@ const routes: Routes = [
       breadcrumb: 'Print Report Summary'
     }
   },
+  {
+    path: 'patient-history',
+    component: PatientHistoryComponent,
+    data: {
+      breadcrumb: 'Patient History'
+    }
+  },
+  {
+    path: 'patient-history-details',
+    component: PatientHistoryDetailsComponent,
+    data: {
+      breadcrumb: 'Patient History Details'
+    }
+  },
 ]
 
 @NgModule({
   declarations: [
-    SummaryConsultationComponent
+    SummaryConsultationComponent,
+    PatientHistoryComponent,
+    PatientHistoryDetailsComponent
   ],
   imports: [
     CommonModule,

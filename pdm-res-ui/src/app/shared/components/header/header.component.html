@@ -89,4 +89,17 @@
     <mat-icon>assignment</mat-icon>
     Summary of Dental Consultation
   </button>
+  <button mat-menu-item [matMenuTriggerFor]="history">
+    <mat-icon>assignment</mat-icon>
+    Patient History
+  </button>
+
+  <mat-menu #history="matMenu">
+    <button mat-menu-item (click)="openHistory('Faculty')">
+      <mat-icon>account_circle</mat-icon> Faculty/Staff
+    </button>
+    <button mat-menu-item (click)="openHistory('Student')">
+      <mat-icon>account_circle</mat-icon> Student
+    </button>
+  </mat-menu>
 </mat-menu>

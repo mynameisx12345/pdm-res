@@ -1,0 +1,181 @@
+<div class="history" fxLayout="column" fxLayoutGap="10px">
+  <mat-expansion-panel expanded>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+          <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+            <mat-icon>face</mat-icon>
+            <span>
+              PERSONAL INFORMATION
+            </span>
+          </div>
+        </div>
+      </mat-panel-title>
+ 
+    </mat-expansion-panel-header>
+    <ng-container [ngTemplateOutlet]="accountInfo"></ng-container>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel expanded>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+          <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+            <mat-icon>face</mat-icon>
+            <span>
+              VIEW HISTORY HERE
+            </span>
+          </div>
+        </div>
+      </mat-panel-title>
+ 
+    </mat-expansion-panel-header>
+    <ng-container [ngTemplateOutlet]="history"></ng-container>
+  </mat-expansion-panel>
+</div>
+
+<ng-template #accountInfo>
+  <div fxLayout="column" class="w-100" [formGroup]="personalFg">
+    <div>
+      <mat-form-field>
+        <mat-label>
+          Email
+        </mat-label>
+        <input matInput formControlName="email" readonly>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutGap="10px">
+      <mat-form-field fxFlex="20">
+        <mat-label>ID Number</mat-label>
+        <input matInput formControlName="studentId" readonly>
+      </mat-form-field>
+      <mat-form-field fxFlex="25">
+        <mat-label>First Name</mat-label>
+        <input matInput formControlName="firstname" readonly>
+      </mat-form-field>
+      <mat-form-field fxFlex="20">
+        <mat-label>Middle Name</mat-label>
+        <input matInput formControlName="middlename" readonly>
+      </mat-form-field>
+      <mat-form-field fxFlex="20">
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="lastname" readonly> 
+      </mat-form-field>
+      <mat-form-field fxFlex="15">
+        <mat-label>Ext.</mat-label>
+        <input matInput formControlName="ext" readonly>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutGap="10px">
+      <mat-form-field fxFlex="25">
+        <mat-label>College</mat-label>
+        <input matInput formControlName="college" readonly>
+      </mat-form-field>
+      <mat-form-field fxFlex="25">
+        <mat-label>Course & Year</mat-label>
+        <input matInput formControlName="course" readonly>
+      </mat-form-field>
+      <mat-form-field fxFlex="25">
+        <mat-label>Date of Birth</mat-label>
+        <input matInput formControlName="birthDate" readonly>
+      </mat-form-field>
+      <mat-form-field fxFlex="25">
+        <mat-label>Gender</mat-label>
+        <input matInput formControlName="gender" readonly>
+      </mat-form-field>
+      <mat-form-field fxFlex="25">
+        <mat-label>Civil Status</mat-label>
+        <input matInput formControlName="civilStatus" readonly>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutGap="10px">
+      <mat-form-field fxFlex="20">
+        <mat-label>Blood Type</mat-label>
+        <input matInput formControlName="bloodType" readonly> 
+      </mat-form-field>
+      <mat-form-field fxFlex="35">
+        <mat-label>Place of Birth</mat-label>
+        <input matInput formControlName="birthPlace" readonly>
+      </mat-form-field>
+      <mat-form-field fxFlex="20">
+        <mat-label>Religion</mat-label>
+        <input matInput formControlName="religion" readonly>
+      </mat-form-field>
+      <mat-form-field fxFlex="25">
+        <mat-label>Nationality</mat-label>
+        <input matInput formControlName="nationality" readonly>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutGap="10px">
+      <mat-form-field fxFlex="60">
+        <mat-label>Presesnt Address</mat-label>
+        <input matInput formControlName="address" readonly>
+      </mat-form-field>
+      <mat-form-field fxFlex="40">
+        <mat-label>Contact Number</mat-label>
+        <input matInput formControlName="contactNumber" readonly>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutGap="10px">
+      <mat-form-field fxFlex="60">
+        <mat-label>Contact Person (In Case of Emergency)</mat-label>
+        <input matInput formControlName="contactPerson" readonly>
+      </mat-form-field>
+      <mat-form-field fxFlex="40">
+        <mat-label>Contact Number</mat-label>
+        <input matInput formControlName="contactPerNumber" readonly>
+      </mat-form-field>
+    </div>
+    
+  </div>
+</ng-template>
+
+<ng-template #history>
+  <mat-accordion class="w-100">
+    <mat-expansion-panel hideToggle expanded *ngFor="let request of requests">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <div fxLayout="row" fxLayoutAlign="space-between center">
+            <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <mat-icon>account_circle</mat-icon>
+              <span>
+                {{request.requestType}}
+              </span>
+            </div>
+          </div>
+        </mat-panel-title>
+        <mat-panel-description fxLayout="row" fxLayoutAlign="space-between center">
+          <span>
+            {{request.status}}
+          </span>
+          <span>
+            {{request.dtInitiated}}
+          </span>
+          
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div fxLayout="column">
+        <span>
+          Prescription: {{getPrescription(request.action)}}
+        </span>
+        <span>
+          Status: {{request.status}}
+        </span>
+        <span>
+          Date Initiated: {{request.dtInitiated}}
+        </span>
+        <span>
+          Date Processed: {{request.dtProcessed}}
+        </span>
+        <span>
+          Date Completed: {{request.dtCompleted}}
+        </span>
+
+        <button mat-button color="primary" (click)="viewRequest(request)">
+          VIEW MORE DETAILS
+        </button>
+      </div>
+    </mat-expansion-panel>
+    
+  </mat-accordion>  
+</ng-template>

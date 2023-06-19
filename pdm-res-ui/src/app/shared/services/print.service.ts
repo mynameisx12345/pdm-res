@@ -20,6 +20,9 @@ export class PrintService {
   private laboratory = new BehaviorSubject(null);
   laboratory$ = this.laboratory.asObservable();
 
+  private summary = new BehaviorSubject(null);
+  summary$ = this.summary.asObservable();
+
   changeMedicalExamination(data){
     this.medicalExamination.next(data);
   }
@@ -38,5 +41,9 @@ export class PrintService {
 
   changeLaboratory(data){
     this.laboratory.next(data);
+  }
+
+  changeSummary(data){
+    this.summary.next(data);
   }
 }

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Observable, map, switchMap } from 'rxjs';
 import { PatientService } from 'src/app/patient/patient-personal.service';
+import { PrintService } from 'src/app/shared/services/print.service';
 
 @Component({
   selector: 'app-summary-consultation',
@@ -12,7 +13,9 @@ export class SummaryConsultationComponent implements OnInit {
   requestType = 'Consultation';
   constructor(
     private readonly patientService: PatientService,
-    private readonly route: ActivatedRoute
+    private readonly route: ActivatedRoute,
+    private readonly router: Router,
+    private readonly printService: PrintService
   ){}
 
   ngOnInit(): void {
@@ -45,6 +48,14 @@ export class SummaryConsultationComponent implements OnInit {
       switchMap((requestType)=>{
         return this.patientService.getRequest({requestType:requestType}).pipe(
           map((data)=>{
+            console.log('request', data.request);
+            data.request = data.request.map(req=>{
+              return {
+                ...req,
+                requestJson: this.extractPrescription(req.requestJson)
+              }
+            })
+            this.printService.changeSummary({columns: this.columns, data: data.request});
             return data.request;
           })
         )
@@ -69,6 +80,14 @@ export class SummaryConsultationComponent implements OnInit {
     dtInitiated: 'Date Initiated',
     dtProcessed: 'Date Processed',
     dtCompleted: 'Date Completed'
+  }
+
+  print(){
+    this.router.navigate(['reports/summary-print'])
+  }
+
+  extractPrescription(action){
+    return JSON.parse(action)?.prescription;
   }
 
 

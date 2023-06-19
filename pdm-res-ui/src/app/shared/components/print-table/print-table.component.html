@@ -1,3 +1,32 @@
-<div fxLayout="column">
+<div fxLayout="column" fxLayoutAlign="center center" class="print-table w-100" #print>
   <app-print-header></app-print-header>
+  <span class="mt-3">Report Summary</span>
+  <!-- <div fxLayout="column" *ngIf="(summary$ | async) as summary">
+    <div fxLayout="row">
+      <div *ngFor="let column of summary.columns | keyvalue">{{column.value}}</div>
+    </div>
+    <div fxLayout="row" *ngFor="let data of summary.data">
+      <div *ngFor="let value of data | keyvalue" fxLayout="row">
+     
+        {{value.value}}
+      </div>
+    </div>
+  </div> -->
+  <table *ngIf="(summaryB$  | async) as summary">
+    <tr>
+      <td *ngFor="let column of summary.columns | keyvalue">
+        {{column.value}}
+      </td>
+    </tr>
+    <tr *ngFor="let data of summary.data">
+      <td *ngFor="let value of data | keyvalue">
+        {{value.value}}
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="w-100" fxLayout="row" fxLayoutAlign="center center">
+   <button mat-raised-button (click)="startPrint(print)">
+    PRINT
+   </button>
 </div>
